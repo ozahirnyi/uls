@@ -1,13 +1,13 @@
 #include "../inc/libmx.h"
 
-bool cmp(void *a, void *b) {
+static bool cmp(void *a, void *b) {
     if (mx_strcmp((char *)a, (char *)b) > 0)
         return 1;
     else
         return 0;
 }
 
-void swaper(t_list *lst) {
+static void swaper(t_list *lst) {
     void *buf = NULL;
     
     buf = lst->data;

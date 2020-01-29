@@ -1,9 +1,9 @@
 #ifndef ULS_H
 #define ULS_H
 
-//#include "libmx.h"
+#include "libmx.h"
 #include <sys/stat.h>
-#include "libmx/inc/libmx.h"
+//#include "libmx/inc/libmx.h"
 #include <time.h>
 #include <dirent.h>
 #include <stdio.h>
@@ -17,6 +17,7 @@ typedef struct files {
     char *names;
 } s_file;
 
+void mx_write_uls(char **source, int argc);
 void mx_flag_l(int argc, char *argv[]);
 
 #endif
