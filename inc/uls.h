@@ -10,6 +10,8 @@
 #include <stdlib.h>
 #include <sys/types.h>
 #include <unistd.h>
+#include <grp.h>
+#include <pwd.h>
 
 typedef struct files {
     char *names;
