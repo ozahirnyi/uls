@@ -1,6 +1,8 @@
 #include "uls.h"
 #include <dirent.h>
 
+//ZALUPA
+
 void mx_read_directory(char *source, struct dirent *lupa) {
     DIR *directory = opendir(source);
 
