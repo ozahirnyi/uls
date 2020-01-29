@@ -24,7 +24,8 @@ void mx_write_uls(char **source, int argc) {
 }
 
 int main(int argc, char **argv) {
-    mx_write_uls(argv, argc);
+    mx_flag_l(argc, argv);
+    //mx_write_uls(argv, argc);
 //    struct stat *zhepa = NULL;
 //    lstat("../inc", zhepa);
 //    printf("%d\n", zhepa->st_birthtimespec);
