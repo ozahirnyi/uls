@@ -14,10 +14,6 @@
 #include <grp.h>
 #include <pwd.h>
 
-typedef struct files {
-    char *names;
-} s_file;
-
 void mx_write_uls(char **source, int argc);
 void mx_flag_l(int argc, char *argv[]);
 void mx_l_out_st_mode(unsigned long n);
