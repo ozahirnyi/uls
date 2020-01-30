@@ -1,7 +1,8 @@
 NAME = uls
 
 FILES = main \
-	mx_flag_l \
+		mx_flag_l \
+		mx_write_uls \
 
 LIBMX_A = libmx/libmx.a
 
