@@ -1,48 +1,52 @@
 #include "uls.h"
 
-char *change_date(char *date) {
-    int i;
-    int j = 0;
-    int len = mx_strlen(date);
-    char *new = (char *) malloc(sizeof(char *) * len);
+// static int mx_max_len_char(char *argv) {
+//     DIR *pointer = opendir(argv);
+//     struct dirent *box;
+//     struct stat buf;
+//     int len;
+//     int i;
 
-    for (i = 4; i < len - 9; i++) {
-        new[j] = date[i];
-        j++;
+//     box = readdir(pointer);
+//     while (box != NULL) {
+//         lstat(box->d_name, &buf);
+//         len = mx_strlen()
+//         if ()
+//     }
+//     closedir(pointer);
+//     return len;
+// }
+
+static void mx_l_part_1(char *argv, DIR *pointer) {
+    struct stat buf;
+    struct dirent *box;
+    long len = 0;
+
+    argv = "lol";
+    mx_printstr("total ");
+    mx_printint(len);
+    mx_printstr("\n");
+    box = readdir(pointer);
+    while (box != NULL) {
+        lstat(mx_strjoin("./",box->d_name), &buf);
+        mx_l_out_st_mode(buf.st_mode);
+        mx_l_out_st_nlink(buf.st_nlink);
+        mx_l_out_st_uid(buf.st_uid);
+        mx_l_out_st_gid(buf.st_gid);
+        mx_l_out_st_size(buf.st_size);
+        mx_l_out_st_mtime(buf.st_mtime);
+        mx_printstr(box->d_name);
+        mx_printchar('\n');
+        box = readdir(pointer);
     }
-    new[len - 9] = ' ';
-    for (i = len - 8; i < len; i++) {
-        new[j] = '\0';
-        j++;
-    }
-    return new;
 }
 
 void mx_flag_l(int argc, char *argv[]) {
-	DIR *pointer = opendir(argv[1]);
-    struct stat buf;
-    struct dirent *box;
-    char *date = NULL;
-    struct passwd *username = NULL;
-    argc = 2;
-    if (pointer == NULL) {
-        printf("ty loh");
-        exit(1);
-    }
-    box = readdir(pointer);
-    printf("total hui\n");
-    while (box != NULL) {
-        stat(box->d_name, &buf);
-        printf("%hu\t",buf.st_mode);
-        printf("%hu\t",buf.st_nlink);
-        username = getpwuid(buf.st_uid);
-        printf("%s\t",username->pw_name);
-        printf("%u\t",buf.st_gid);
-        printf("%lld\t",buf.st_size);
-        date = ctime(&buf.st_mtime);
-        date = change_date(date);
-        printf("%s ",date);
-        printf("%s\n",box->d_name);
-        box = readdir(pointer);
-    }
+	DIR *pointer = NULL;
+
+    if (argc == 1)
+        pointer = opendir(".");
+    else 
+        pointer = opendir(argv[1]);
+    mx_l_part_1(argv[1], pointer);
 }

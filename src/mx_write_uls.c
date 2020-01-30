@@ -1,12 +1,12 @@
 #include "uls.h"
 
-static
+// static
 
-static void mx_print_uls(t_list **files) {
-    t_list *buf = *files;
+// static void mx_print_uls(t_list **files) {
+//     t_list *buf = *files;
 
-    mx_sort_list(buf, )
-}
+//     mx_sort_list(buf, )
+// }
 
 static void mx_read_directory(char *source, t_list **files) {
     DIR *directory = opendir(source);
