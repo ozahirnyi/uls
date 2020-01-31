@@ -2,7 +2,9 @@ NAME = uls
 
 FILES = main \
 		mx_flag_l \
-		mx_write_uls \
+		mx_read_uls \
+		mx_print_uls \
+		mx_longest_name \
 
 LIBMX_A = libmx/libmx.a
 
