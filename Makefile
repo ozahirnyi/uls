@@ -1,14 +1,16 @@
 NAME = uls
 
 FILES = main \
-	mx_flag_l \
-	mx_write_uls \
-	mx_l_out_st_mode \
-	mx_l_out_st_nlink \
-	mx_l_out_st_uid \
-	mx_l_out_st_gid \
-	mx_l_out_st_size \
-	mx_l_out_st_mtime \
+		mx_flag_l \
+		mx_l_out_st_mode \
+		mx_l_out_st_nlink \
+		mx_l_out_st_uid \
+		mx_l_out_st_gid \
+		mx_l_out_st_size \
+		mx_l_out_st_mtime \
+		mx_read_uls \
+		mx_print_uls \
+		mx_longest_name \
 
 LIBMX_A = libmx/libmx.a
 
