@@ -65,6 +65,7 @@ FILES = mx_printchar \
 		mx_atoi \
 		mx_is_alpha \
 		mx_isdigit \
+		mx_sort_list \
 
 SRC_PREFFIX = $(addprefix "src/", $(FILES))
 
