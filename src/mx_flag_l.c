@@ -21,6 +21,7 @@ static void mx_l_part_1(char *argv, DIR *pointer) {
     struct stat buf;
     struct dirent *box;
     long len = 0;
+    char *buffstr = NULL;
 
     argv = "lol";
     mx_printstr("total ");
@@ -28,16 +29,18 @@ static void mx_l_part_1(char *argv, DIR *pointer) {
     mx_printstr("\n");
     box = readdir(pointer);
     while (box != NULL) {
-        lstat(mx_strjoin("./",box->d_name), &buf);
+        buffstr = mx_strjoin("/",box->d_name);
+        lstat(buffstr, &buf);
         mx_l_out_st_mode(buf.st_mode);
         mx_l_out_st_nlink(buf.st_nlink);
         mx_l_out_st_uid(buf.st_uid);
         mx_l_out_st_gid(buf.st_gid);
         mx_l_out_st_size(buf.st_size);
-        mx_l_out_st_mtime(buf.st_mtime);
+        mx_l_out_st_mtime(buf.st_mtimespec.tv_sec);
         mx_printstr(box->d_name);
         mx_printchar('\n');
         box = readdir(pointer);
+        mx_strdel(&buffstr);
     }
 }
 
@@ -49,4 +52,5 @@ void mx_flag_l(int argc, char *argv[]) {
     else 
         pointer = opendir(argv[1]);
     mx_l_part_1(argv[1], pointer);
+    closedir(pointer);
 }
