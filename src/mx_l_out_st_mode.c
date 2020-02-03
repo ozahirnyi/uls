@@ -14,9 +14,7 @@ void mx_l_out_st_mode(unsigned long n) {
 	prava[9] = (n & S_IXOTH) == S_IXOTH ? 'x' : '-';
 	if ((n & S_IFMT) == S_IFDIR) /* directory */
 		prava[0] = 'd';
-	else 
-		prava[0] = '-';
-	if ((n & S_IFMT) == S_IFLNK) /* link */
+	else if ((n & S_IFMT) == S_IFLNK) /* link */
 		prava[0] = 'l';
 	else 
 		prava[0] = '-';
