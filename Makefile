@@ -30,7 +30,7 @@ CFLAGS = -std=c11 -Werror -Wall -Wextra -Wpedantic
 
 LIB_A = libmx.a
 
-all: install
+all: install clean
 
 install:
 	@make -C libmx install
