@@ -20,23 +20,23 @@ static int mx_lines_count(int files_count, int *columns, int longest_name) {
     return lines;
 }
 
-static int *mx_sort_for_columns(int lines, int columns, int files_count) {
-    int *sorted_list = (int *)malloc(sizeof(int) * files_count + 1);
+static t_list *mx_sort_for_columns(int lines, int col, int files_count) {
+    t_list *sorted_list = NULL;
     int index = 0;
     int i = 0;
     int counter = 0;
 
-    for (i = 0; i < files_count; i++)
-        sorted_list[i] = -1;
-    sorted_list[i] = -2;
-    i = 0;
-    while (index < files_count) {
-        if (counter == columns - 1) {
+    while (index <= files_count) {
+        if (counter == col) {
             counter = 0;
             i++;
         }
-        sorted_list[index] = lines - 1 * counter; // NEED TO FINISH FORMULA)))
-        printf("Index = %d, value : %d + (%d - 1) * %d\n", index, index , lines, counter);
+        if (lines * counter + i <= files_count) {
+            int *buf = (int *)malloc(sizeof(int));
+            buf[0] = lines * counter + i;
+            printf("value : (%d * %d) + %d = %d\n", lines, counter, i, buf[0]);
+            mx_push_back(&sorted_list, buf);
+        }
         index++;
         counter++;
     }
@@ -44,17 +44,20 @@ static int *mx_sort_for_columns(int lines, int columns, int files_count) {
 }
 
 void mx_print_uls(t_list **files) {
-    t_list *buf = *files;
-    int files_count = mx_list_size(buf);
+    t_list *sorted_list = NULL;
+    int files_count = mx_list_size(*files);
     int *columns = (int *)malloc(sizeof(int));
-    int longest_name = mx_longest_name(buf);
+    int longest_name = mx_longest_name(*files);
     int lines = mx_lines_count(files_count, columns, longest_name);
 
-    mx_sort_list(buf, &own_cmp);
-    int *sorted_list = mx_sort_for_columns(lines, *columns, files_count);
+    mx_sort_list(*files, &own_cmp);
+    sorted_list = mx_sort_for_columns(lines, *columns, files_count);
     printf("\n");
-    for (int i = 0; sorted_list[i] != -2; i++)
-        printf("%d | ", sorted_list[i]);
+    while (sorted_list) {
+        int *buf = (int*)sorted_list->data;
+        printf("%d | ", buf[0]);
+        mx_pop_front(&sorted_list);
+    }
     printf("\n");
     printf("LINES = %d\n", lines);
     printf("COLUMNS = %d\n", *columns);
