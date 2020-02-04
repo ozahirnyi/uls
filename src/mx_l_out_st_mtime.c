@@ -6,18 +6,30 @@ static char *mx_l_change_date(char *date, long n) {
     int len = mx_strlen(date);
     char *new = (char *) malloc(sizeof(char *) * len);
     long days_diff = time(NULL);
-    n = 0;
-    days_diff = (days_diff - n)/86400;
-    //mx_printint(days_diff);
-    //mx_printchar('-');
-    for (i = 4; i < len - 9; i++) {
-        new[j] = date[i];
+
+    if ((days_diff - n)/86400 > 183) {
+        for (i = 4; i < len - 14; i++) {
+            new[j] = date[i];
+            j++;
+        }
+        new[j] = ' ';
         j++;
+        for (i = len - 5; i < len - 1; i++) {
+            new[j] = date[i];
+            j++;
+        }
+        new[len] = ' ';
     }
-    new[len - 9] = ' ';
-    for (i = len - 8; i < len; i++) {
-        new[j] = '\0';
-        j++;
+    else {
+        for (i = 4; i < len - 9; i++) {
+            new[j] = date[i];
+            j++;
+        }
+        new[len - 9] = ' ';
+        for (i = len - 8; i < len; i++) {
+            new[j] = '\0';
+            j++;
+        }
     }
     return new;
 }
