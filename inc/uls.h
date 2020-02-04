@@ -11,6 +11,9 @@
 #include <sys/ioctl.h>
 #include <grp.h>
 #include <pwd.h>
+#include <sys/types.h>
+#include <sys/xattr.h>
+#include <sys/acl.h>
 
 #define S_IFMT   0170000  /* type of file mask */
 #define S_IFIFO  0010000  /* named pipe (fifo) */
@@ -40,12 +43,13 @@
 int mx_longest_name(t_list *list);
 void mx_print_uls(t_list **files);
 void mx_read_uls(char **source, int argc);
-void mx_flag_l(int argc, char *argv[]);
-void mx_l_out_st_mode(unsigned long n);
+void mx_flag_l(t_list *names, char **argv);
+void mx_l_out_st_mode(unsigned long n, char *name);
 void mx_l_out_st_nlink(unsigned long n);
 void mx_l_out_st_uid(unsigned int n);
 void mx_l_out_st_gid(unsigned long n);
 void mx_l_out_st_size(unsigned long n);
 void mx_l_out_st_mtime(long n);
+bool mx_is_ascii(char *str, int len);
 
 #endif

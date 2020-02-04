@@ -17,40 +17,32 @@
 //     return len;
 // }
 
-static void mx_l_part_1(char *argv, DIR *pointer) {
+static void mx_l_part_1(char *argv, t_list *names) {
     struct stat buf;
-    struct dirent *box;
-    long len = 0;
-    //char *buffstr = NULL;
+    char *full_path = NULL;
+    char *part = NULL;
+    t_list *p = names;
 
-    argv = "lol";
-    mx_printstr("total ");
-    mx_printint(len);
-    mx_printstr("\n");
-    box = readdir(pointer);
-    while (box != NULL) {
-        //buffstr = mx_strjoin("/",box->d_name);
-        lstat(box->d_name, &buf);
-        mx_l_out_st_mode(buf.st_mode);
+    while (p) {
+        part = mx_strjoin("/",p->data);
+        full_path = mx_strjoin(argv, part);
+        lstat(full_path, &buf);
+        mx_l_out_st_mode(buf.st_mode, full_path);
         mx_l_out_st_nlink(buf.st_nlink);
         mx_l_out_st_uid(buf.st_uid);
         mx_l_out_st_gid(buf.st_gid);
         mx_l_out_st_size(buf.st_size);
         mx_l_out_st_mtime(buf.st_mtimespec.tv_sec);
-        mx_printstr(box->d_name);
+        mx_printstr(p->data);
+        if (!mx_is_ascii(p->data, mx_strlen(p->data)))
+            mx_printchar('?');
         mx_printchar('\n');
-        box = readdir(pointer);
-        //mx_strdel(&buffstr);
+        mx_strdel(&full_path);
+        mx_strdel(&part);
+        p = p->next;
     }
 }
 
-void mx_flag_l(int argc, char *argv[]) {
-	DIR *pointer = NULL;
-
-    if (argc == 1)
-        pointer = opendir(".");
-    else 
-        pointer = opendir(argv[1]);
-    mx_l_part_1(argv[1], pointer);
-    closedir(pointer);
+void mx_flag_l(t_list *names, char **argv) {
+    mx_l_part_1(argv[1], names);
 }
