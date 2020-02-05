@@ -12,6 +12,9 @@ FILES = main \
 		mx_print_uls \
 		mx_longest_name \
 		mx_is_ascii \
+		mx_max_len_int \
+		mx_max_len_char \
+		mx_len_int \
 
 LIBMX_A = libmx/libmx.a
 

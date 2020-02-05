@@ -1,10 +1,28 @@
 #include "uls.h"
 
-void mx_l_out_st_mode(unsigned long n, char *name) {
+static int mx_for_plus_and_dog(char *prava, char *str) {
     acl_t acl = NULL;
     ssize_t attr = 0;
-    char *str = name;
-    char prava[12];
+    int len = 2;
+
+    attr = listxattr(str, NULL, 0, XATTR_NOFOLLOW);
+    acl = acl_get_file(str, ACL_TYPE_EXTENDED);
+    if (attr > 0) {
+        prava[10] = '@';
+        acl_free(acl);
+        len--;
+    }
+    else if (acl != NULL) {
+        prava[10] = '+';
+        acl_free(acl);
+        len--;
+    }
+    return len;
+}
+
+void mx_l_out_st_mode(unsigned long n, char *name) {
+    char *prava = mx_strnew(12);
+    int len = 0;
 
     prava[1] = (n & S_IRUSR) == S_IRUSR ? 'r' : '-';
     prava[2] = (n & S_IWUSR) == S_IWUSR ? 'w' : '-';
@@ -31,16 +49,11 @@ void mx_l_out_st_mode(unsigned long n, char *name) {
         prava[6] = 's';
     if ((n & S_ISVTX) == S_ISVTX)
         prava[9] = 't';
-    attr = listxattr(str, NULL, 0, XATTR_NOFOLLOW);
-    acl = acl_get_file(str, ACL_TYPE_EXTENDED);
-    if (attr > 0) {
-        prava[10] = '@';
-        acl_free(acl);
-    }
-    else if (acl != NULL) {
-        prava[10] = '+';
-        acl_free(acl);
-    }
+    len = mx_for_plus_and_dog(prava, name);
     mx_printstr(prava);
-    mx_printchar('\t');
+    while (len > 0) {
+        mx_printchar(' ');
+        len--;
+    }
+    mx_strdel(&prava);
 }
