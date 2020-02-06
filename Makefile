@@ -8,9 +8,12 @@ FILES = main \
 		mx_l_out_st_gid \
 		mx_l_out_st_size \
 		mx_l_out_st_mtime \
-#		mx_read_uls \
-#		mx_print_uls \
-#		mx_longest_name \
+		mx_read_uls \
+		mx_print_uls \
+		mx_longest_name \
+		mx_lines_count \
+		mx_compare \
+		mx_sort_for_columns \
 
 LIBMX_A = libmx/libmx.a
 
@@ -30,7 +33,7 @@ CFLAGS = -std=c11 -Werror -Wall -Wextra -Wpedantic
 
 LIB_A = libmx.a
 
-all: install clean
+all: install
 
 install:
 	@make -C libmx install

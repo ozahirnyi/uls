@@ -2,8 +2,8 @@
 #define ULS_H
 
 //#include "libmx.h"
-#include <sys/stat.h>
 #include "libmx/inc/libmx.h"
+#include <sys/stat.h>
 #include <time.h>
 #include <dirent.h>
 #include <stdio.h>
@@ -37,8 +37,19 @@
 #define S_IWOTH  0000002        /* W rite permission, other */
 #define S_IXOTH  0000001        /* X execute/search permission, other */
 
+typedef struct print_uls {
+    int files_count;
+    int *columns;
+    int longest_name;
+    int lines;
+    int *cast;
+} s_print;
+
+t_list *mx_sort_for_columns(s_print *info);
+bool mx_compare(void *a, void *b);
 int mx_longest_name(t_list *list);
-void mx_print_uls(t_list **files);
+int mx_lines_count(int files_count, int *columns, int longest_name);
+void mx_print_uls(t_list **files, t_list *sorted_list);
 void mx_read_uls(char **source, int argc);
 void mx_flag_l(int argc, char *argv[]);
 void mx_l_out_st_mode(unsigned long n);
