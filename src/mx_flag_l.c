@@ -1,56 +1,49 @@
 #include "uls.h"
 
-// static int mx_max_len_char(char *argv) {
-//     DIR *pointer = opendir(argv);
-//     struct dirent *box;
-//     struct stat buf;
-//     int len;
-//     int i;
-
-//     box = readdir(pointer);
-//     while (box != NULL) {
-//         lstat(box->d_name, &buf);
-//         len = mx_strlen()
-//         if ()
-//     }
-//     closedir(pointer);
-//     return len;
-// }
-
-static void mx_l_part_1(char *argv, DIR *pointer) {
+static void mx_l_part_1(char *argv, t_list *names) {
     struct stat buf;
-    struct dirent *box;
-    long len = 0;
-    //char *buffstr = NULL;
+    char *full_path = NULL;
+    char *part = NULL;
+    t_list *p = names;
+    char *link = mx_strnew(20);
+    char *name;
+    int otstup1 = mx_max_len_int(names, 1, argv);
+    int otstup2 = mx_max_len_char(names, 1, argv);
+    int otstup3 = mx_max_len_char(names, 2, argv);
+    int otstup4 = mx_max_len_int(names, 2, argv);
 
-    argv = "lol";
-    mx_printstr("total ");
-    mx_printint(len);
-    mx_printstr("\n");
-    box = readdir(pointer);
-    while (box != NULL) {
-        //buffstr = mx_strjoin("/",box->d_name);
-        lstat(box->d_name, &buf);
-        mx_l_out_st_mode(buf.st_mode);
-        mx_l_out_st_nlink(buf.st_nlink);
-        mx_l_out_st_uid(buf.st_uid);
-        mx_l_out_st_gid(buf.st_gid);
-        mx_l_out_st_size(buf.st_size);
-        mx_l_out_st_mtime(buf.st_mtimespec.tv_sec);
-        mx_printstr(box->d_name);
+    while (p) {
+        part = mx_strjoin("/",p->data);
+        full_path = mx_strjoin(argv, part);
+        lstat(full_path, &buf);
+        mx_l_out_st_mode(buf.st_mode, full_path);
+        mx_l_out_st_nlink(buf.st_nlink, otstup1);
+        mx_l_out_st_uid(buf.st_uid, otstup2);
+        mx_l_out_st_gid(buf.st_gid, otstup3);
+        if ((buf.st_mode & S_IFMT) == S_IFBLK
+            ||(buf.st_mode & S_IFMT) == S_IFCHR)
+            mx_l_out_st_dev(buf.st_rdev, otstup4);
+        else
+            mx_l_out_st_size(buf.st_size, otstup4);
+        mx_l_out_st_mtime(buf.st_mtime);
+        name = p->data;
+        mx_is_ascii(name, mx_strlen(name));
+        if ((buf.st_mode & S_IFLNK) == S_IFLNK) { /* link */
+            readlink(full_path, link, 20);
+            mx_printstr(name);
+            mx_printstr(" -> ");
+            mx_printstr(link);
+        }
+        else
+            mx_printstr(name);
         mx_printchar('\n');
-        box = readdir(pointer);
-        //mx_strdel(&buffstr);
+        mx_strdel(&full_path);
+        mx_strdel(&part);
+        p = p->next;
     }
+    mx_strdel(&link);
 }
 
-void mx_flag_l(int argc, char *argv[]) {
-	DIR *pointer = NULL;
-
-    if (argc == 1)
-        pointer = opendir(".");
-    else 
-        pointer = opendir(argv[1]);
-    mx_l_part_1(argv[1], pointer);
-    closedir(pointer);
+void mx_flag_l(t_list *names, char **argv) {
+    mx_l_part_1(argv[1], names);
 }
