@@ -7,6 +7,7 @@ FILES = main \
 		mx_l_out_st_uid \
 		mx_l_out_st_gid \
 		mx_l_out_st_size \
+		mx_l_out_st_dev \
 		mx_l_out_st_mtime \
 		mx_read_uls \
 		mx_print_uls \

@@ -1,22 +1,5 @@
 #include "uls.h"
 
-// static int mx_max_len_char(t_list *names, char *full_path, char *str) {
-//     int len;
-//     t_list *p = names;
-//     struct stat buf;
-//     int n = 0;
-
-//     while (p) {
-//         lstat(full_path, &buf);
-//         n = mx_strlen(buf.str);
-//         if (len < n)
-//         len = n;
-//         p = p->next;
-//     }
-    
-//     return len;
-// }
-
 static void mx_l_part_1(char *argv, t_list *names) {
     struct stat buf;
     char *full_path = NULL;
@@ -37,7 +20,11 @@ static void mx_l_part_1(char *argv, t_list *names) {
         mx_l_out_st_nlink(buf.st_nlink, otstup1);
         mx_l_out_st_uid(buf.st_uid, otstup2);
         mx_l_out_st_gid(buf.st_gid, otstup3);
-        mx_l_out_st_size(buf.st_size, otstup4);
+        if ((buf.st_mode & S_IFMT) == S_IFBLK
+            ||(buf.st_mode & S_IFMT) == S_IFCHR)
+            mx_l_out_st_dev(buf.st_rdev, otstup4);
+        else
+            mx_l_out_st_size(buf.st_size, otstup4);
         mx_l_out_st_mtime(buf.st_mtime);
         name = p->data;
         mx_is_ascii(name, mx_strlen(name));
