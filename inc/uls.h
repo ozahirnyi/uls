@@ -55,11 +55,12 @@ void mx_l_out_st_nlink(unsigned long n, int otstup);
 void mx_l_out_st_uid(unsigned int n, int otstup);
 void mx_l_out_st_gid(unsigned long n, int otstup);
 void mx_l_out_st_size(unsigned long n, int otstup);
-void mx_l_out_st_dev(unsigned int n, int otstup);
+void mx_l_out_st_dev(unsigned int n, int otstup1, int otstup2);
 void mx_l_out_st_mtime(long n);
 bool mx_is_ascii(char *str, int len);
 int mx_max_len_int(t_list *names, int trig, char *argv);
 int mx_max_len_char(t_list *names, int trig, char *argv);
+char *mx_strjoin_for_path(char *argv, char *data);
 int mx_len_int(unsigned long n);
 
 #endif

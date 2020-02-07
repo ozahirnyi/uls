@@ -51,7 +51,7 @@ static void tab_corrector(char *str) {
     }
 }
 
-static void printer(t_list *sorted_list, t_list **files, int *buf, int files_count, int lines, int longest) {
+static void printer(t_list *sorted_list, t_list **files, int *buf, int files_count, int lines) {//, int longest) {
     t_list *bud = *files;
     int index = *(int *)sorted_list->data;
 

@@ -17,6 +17,7 @@ FILES = main \
 		mx_max_len_int \
 		mx_max_len_char \
 		mx_len_int \
+		mx_strjoin_for_path \
 
 LIBMX_A = libmx/libmx.a
 
