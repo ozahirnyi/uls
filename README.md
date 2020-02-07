@@ -1,2 +1,2 @@
 # uls
-My own console command uLS.
+Our own console command uLS.
