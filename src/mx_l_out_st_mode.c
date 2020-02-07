@@ -20,10 +20,7 @@ static int mx_for_plus_and_dog(char *prava, char *str) {
     return len;
 }
 
-void mx_l_out_st_mode(unsigned long n, char *name) {
-    char *prava = mx_strnew(12);
-    int len = 0;
-
+static void part_1(unsigned long n, char *prava) {
     prava[1] = (n & S_IRUSR) == S_IRUSR ? 'r' : '-';
     prava[2] = (n & S_IWUSR) == S_IWUSR ? 'w' : '-';
     prava[3] = (n & S_IXUSR) == S_IXUSR ? 'x' : '-';
@@ -33,16 +30,23 @@ void mx_l_out_st_mode(unsigned long n, char *name) {
     prava[7] = (n & S_IROTH) == S_IROTH ? 'r' : '-';
     prava[8] = (n & S_IWOTH) == S_IWOTH ? 'w' : '-';
     prava[9] = (n & S_IXGRP) == S_IXGRP ? 'x' : '-';
-    if ((n & S_IFBLK) == S_IFBLK) /* spec block */
+    if ((n & S_IFBLK) == S_IFBLK)
         prava[0] = 'b';
-    else if ((n & S_IFDIR) == S_IFDIR) /* directory */
+    else if ((n & S_IFDIR) == S_IFDIR)
         prava[0] = 'd';
-    else if ((n & S_IFLNK) == S_IFLNK) /* link */
+    else if ((n & S_IFLNK) == S_IFLNK)
         prava[0] = 'l';
-    else if ((n & S_IFCHR) == S_IFCHR) /* spec char */
+    else if ((n & S_IFCHR) == S_IFCHR)
         prava[0] = 'c';
     else 
         prava[0] = '-';
+}
+
+void mx_l_out_st_mode(unsigned long n, char *name) {
+    char *prava = mx_strnew(12);
+    int len = 0;
+
+    part_1(n, prava);
     if ((n & S_ISUID) == S_ISUID)
         prava[3] = 's';
     if ((n & S_ISGID) == S_ISGID)

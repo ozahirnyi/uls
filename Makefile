@@ -19,6 +19,7 @@ FILES = main \
 		mx_len_int \
 		mx_compare \
 		mx_sort_for_columns \
+		mx_strjoin_for_path \
 
 LIBMX_A = libmx/libmx.a
 
