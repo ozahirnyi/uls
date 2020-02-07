@@ -17,6 +17,8 @@ FILES = main \
 		mx_max_len_int \
 		mx_max_len_char \
 		mx_len_int \
+		mx_compare \
+		mx_sort_for_columns \
 
 LIBMX_A = libmx/libmx.a
 

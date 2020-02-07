@@ -15,5 +15,6 @@ int mx_longest_name(t_list *list) {
             buf = buf->next;
         }
     }
+    max = max + (8 - max % 8);
     return max;
 }

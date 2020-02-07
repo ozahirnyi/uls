@@ -12,6 +12,6 @@ add_library(mx STATIC ${LIB_SRC})
 
 #include_directories(inc)
 
-add_executable(uls src/main.c src/mx_write_uls.c)
+add_executable(uls src/main.c src/mx_read_uls.c src/mx_print_uls.c src/mx_longest_name.c src/mx_lines_count.c src/mx_compare.c src/mx_sort_for_columns.c)
 
 target_link_libraries(uls mx)

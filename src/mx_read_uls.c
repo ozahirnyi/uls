@@ -19,16 +19,15 @@ static void mx_read_directory(char *source, t_list **files) {
 }
 
 void mx_read_uls(char **source, int argc) {
+    t_list *sorted_list = NULL;
     t_list *files = NULL;
 
     if (argc > 1)
         for (int i = 1; source[i] != NULL; i++)
             mx_read_directory(source[i], &files);
     else
-        mx_read_directory(source[1] = ".", &files);
-    //mx_print_uls(&files);
-    mx_flag_l(files, source);
-    //printf("\nLONGEST = %d\n", mx_longest_name(files));
+        mx_read_directory(".", &files);
+    mx_print_uls(&files, sorted_list);
     while (files)
         mx_pop_front(&files);
 }
