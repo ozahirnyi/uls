@@ -14,6 +14,7 @@
 #include <sys/types.h>
 #include <sys/xattr.h>
 #include <sys/acl.h>
+#include <malloc/malloc.h>
 
 #define MAX_INT 2147483647
 #define MIN_INT -2147483648
