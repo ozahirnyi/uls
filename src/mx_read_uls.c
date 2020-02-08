@@ -23,11 +23,17 @@ void mx_read_uls(char **source, int argc) {
     t_list *files = NULL;
 
     if (argc > 1)
-        for (int i = 1; source[i] != NULL; i++)
+        for (int i = 1; source[i] != NULL; i++) {
             mx_read_directory(source[i], &files);
-    else
-        mx_read_directory(".", &files);
-    mx_print_uls(&files, sorted_list);
+            mx_print_uls(&files, sorted_list);
+            mx_flag_l(files, source[i]);
+            //mx_clear_list(files);
+        }
+    else {
+        mx_read_directory(source[1] = ".", &files);
+        mx_print_uls(&files, sorted_list);
+        mx_flag_l(files, source[1]);
+    }
     while (files)
         mx_pop_front(&files);
 }

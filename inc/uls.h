@@ -60,7 +60,7 @@ int mx_longest_name(t_list *list);
 int mx_lines_count(int files_count, int *columns, int longest_name);
 void mx_print_uls(t_list **files, t_list *sorted_list);
 void mx_read_uls(char **source, int argc);
-void mx_flag_l(t_list *names, char **argv);
+void mx_flag_l(t_list *names, char *argv);
 void mx_l_out_st_mode(unsigned long n, char *name);
 void mx_l_out_st_nlink(unsigned long n, int otstup);
 void mx_l_out_st_uid(unsigned int n, int otstup);
@@ -73,5 +73,6 @@ int mx_max_len_int(t_list *names, int trig, char *argv);
 int mx_max_len_char(t_list *names, int trig, char *argv);
 char *mx_strjoin_for_path(char *argv, char *data);
 int mx_len_int(unsigned long n);
+void mx_clear_list(t_list *list);
 
 #endif

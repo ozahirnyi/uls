@@ -19,7 +19,7 @@ static void printer(t_list *sorted_list, t_list **files, s_print *info) {
         buf = buf->next;
         index--;
     }
-    mx_printstr((const char *)buf->data);
+    mx_printstr((const char *) buf->data);
     if (sorted_list->next) {
         info->cast[1] = *(int *)sorted_list->next->data;
         if (info->cast[0] > info->cast[1] || info->files_count == info->lines)
@@ -35,8 +35,8 @@ void mx_print_uls(t_list **files, t_list *sorted_list) {
     info->columns = (int *)malloc(sizeof (int));
     info->cast = (int *)malloc(sizeof (int) * 2);
     info->longest_name = mx_longest_name(*files);
-    info->lines = mx_lines_count(
-            info->files_count, info->columns, info->longest_name);
+    info->lines = mx_lines_count(info->files_count,
+                                 info->columns, info->longest_name);
 
     sorted_list = mx_sort_for_columns(info);
     mx_sort_list(*files, &mx_compare);
@@ -45,6 +45,7 @@ void mx_print_uls(t_list **files, t_list *sorted_list) {
         printer(sorted_list, files, info);
         mx_pop_front(&sorted_list);
     }
+    mx_printchar('\n');
     free(info->columns);
     free(info->cast);
     free(info);
