@@ -1,12 +1,9 @@
 #include "uls.h"
 
 void mx_clear_list(t_list *list) {
-    // t_list *p1 = list;
-    // t_list *p2 = list;
+    t_list *p1 = list;
 
-    // while (p1 != NULL) {
-    //     p1 = p1->next->next;
-    //     p2 = p2->next;
-    //     p1->data = NULL;
-    // }
+    while (p1 != NULL) {
+    	mx_pop_front(&p1);
+    }
 }
