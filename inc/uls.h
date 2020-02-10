@@ -14,6 +14,7 @@
 #include <sys/types.h>
 #include <sys/xattr.h>
 #include <sys/acl.h>
+#include <malloc/malloc.h>
 
 #define MAX_INT 2147483647
 #define MIN_INT -2147483648
@@ -73,5 +74,6 @@ int mx_max_len_int(t_list *names, int trig, char *argv);
 int mx_max_len_char(t_list *names, int trig, char *argv);
 char *mx_strjoin_for_path(char *argv, char *data);
 int mx_len_int(unsigned long n);
+void mx_clear_list(t_list *list);
 
 #endif

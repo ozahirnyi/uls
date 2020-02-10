@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="uls"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/ozahirnyi/uls/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ozahirnyi/uls/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ozahirnyi/uls/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ozahirnyi/uls/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ozahirnyi/uls/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="uls">
+				<Option output="/Users/ozahirnyi/uls/cmake-build-debug/uls" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ozahirnyi/uls/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ozahirnyi/uls/inc"/>
+					<Add directory="/Users/ozahirnyi/uls/libmx/inc"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ozahirnyi/uls/cmake-build-debug/Makefile&quot;  VERBOSE=1 uls"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ozahirnyi/uls/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ozahirnyi/uls/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ozahirnyi/uls/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="uls/fast">
+				<Option output="/Users/ozahirnyi/uls/cmake-build-debug/uls" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ozahirnyi/uls/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ozahirnyi/uls/inc"/>
+					<Add directory="/Users/ozahirnyi/uls/libmx/inc"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ozahirnyi/uls/cmake-build-debug/Makefile&quot;  VERBOSE=1 uls/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ozahirnyi/uls/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ozahirnyi/uls/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ozahirnyi/uls/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/ozahirnyi/uls/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ozahirnyi/uls/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ozahirnyi/uls/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ozahirnyi/uls/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ozahirnyi/uls/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/ozahirnyi/uls/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ozahirnyi/uls/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ozahirnyi/uls/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ozahirnyi/uls/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ozahirnyi/uls/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mx">
+				<Option output="/Users/ozahirnyi/uls/cmake-build-debug/libmx.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ozahirnyi/uls/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ozahirnyi/uls/inc"/>
+					<Add directory="/Users/ozahirnyi/uls/libmx/inc"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ozahirnyi/uls/cmake-build-debug/Makefile&quot;  VERBOSE=1 mx"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ozahirnyi/uls/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ozahirnyi/uls/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ozahirnyi/uls/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mx/fast">
+				<Option output="/Users/ozahirnyi/uls/cmake-build-debug/libmx.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ozahirnyi/uls/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ozahirnyi/uls/inc"/>
+					<Add directory="/Users/ozahirnyi/uls/libmx/inc"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ozahirnyi/uls/cmake-build-debug/Makefile&quot;  VERBOSE=1 mx/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ozahirnyi/uls/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ozahirnyi/uls/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ozahirnyi/uls/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_atoi.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_binary_search.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_bubble_sort.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_count_substr.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_count_words.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_create_node.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_del_extra_spaces.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_del_intarr.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_del_strarr.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_file_to_str.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_foreach.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_get_char_index.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_get_substr_index.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_hex_to_nbr.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_is_alpha.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_is_space.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_isdigit.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_itoa.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_list_size.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_memccpy.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_memchr.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_memcmp.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_memcpy.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_memmem.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_memmove.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_memrchr.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_memset.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_nbr_to_hex.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_pop_back.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_pop_front.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_pow.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_print_strarr.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_print_unicode.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_printchar.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_printerr.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_printint.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_printstr.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_push_back.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_push_front.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_realloc.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_replace_substr.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_skip_substr_index.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_sort_list.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_sqrt.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_str_reverse.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_strcat.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_strcmp.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_strcpy.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_strdel.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_strdup.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_strjoin.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_strlen.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_strncmp.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_strncpy.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_strndup.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_strnew.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_strsplit.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_strstr.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_strtrim.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_swap_char.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_ultra_del_extra_spaces.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_ultra_strtrim.c">
+			<Option target="mx"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/src/main.c">
+			<Option target="uls"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/src/mx_check_for_flags.c">
+			<Option target="uls"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/src/mx_compare.c">
+			<Option target="uls"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/src/mx_flag_l.c">
+			<Option target="uls"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/src/mx_is_ascii.c">
+			<Option target="uls"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/src/mx_l_out_st_dev.c">
+			<Option target="uls"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/src/mx_l_out_st_gid.c">
+			<Option target="uls"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/src/mx_l_out_st_mode.c">
+			<Option target="uls"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/src/mx_l_out_st_mtime.c">
+			<Option target="uls"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/src/mx_l_out_st_nlink.c">
+			<Option target="uls"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/src/mx_l_out_st_size.c">
+			<Option target="uls"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/src/mx_l_out_st_uid.c">
+			<Option target="uls"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/src/mx_len_int.c">
+			<Option target="uls"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/src/mx_lines_count.c">
+			<Option target="uls"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/src/mx_longest_name.c">
+			<Option target="uls"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/src/mx_max_len_char.c">
+			<Option target="uls"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/src/mx_max_len_int.c">
+			<Option target="uls"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/src/mx_print_uls.c">
+			<Option target="uls"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/src/mx_read_uls.c">
+			<Option target="uls"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/src/mx_sort_for_columns.c">
+			<Option target="uls"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/src/mx_strjoin_for_path.c">
+			<Option target="uls"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

@@ -37,8 +37,8 @@ void mx_print_uls(t_list **files, t_list *sorted_list) {
     info->columns = (int *)malloc(sizeof (int));
     info->cast = (int *)malloc(sizeof (int) * 2);
     info->longest_name = mx_longest_name(*files);
-    info->lines = mx_lines_count(
-            info->files_count, info->columns, info->longest_name);
+    info->lines = mx_lines_count(info->files_count,
+                                 info->columns, info->longest_name);
 
     sorted_list = mx_sort_for_columns(info);
     while (sorted_list) {
@@ -46,6 +46,7 @@ void mx_print_uls(t_list **files, t_list *sorted_list) {
         printer(sorted_list, files, info);
         mx_pop_front(&sorted_list);
     }
+    mx_printchar('\n');
     free(info->columns);
     free(info->cast);
     free(info);
