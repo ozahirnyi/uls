@@ -32,15 +32,16 @@ static void printer(t_list *sorted_list, t_list **files, s_print *info) {
 }
 
 void mx_print_uls(t_list **files, t_list *sorted_list) {
-    s_print *info = (s_print *)malloc(sizeof (s_print));
+    s_print *info = (s_print *)malloc(sizeof(s_print));
     info->files_count = mx_list_size(*files);
-    info->columns = (int *)malloc(sizeof (int));
-    info->cast = (int *)malloc(sizeof (int) * 2);
+    info->columns = (int *)malloc(sizeof(int));
+    info->cast = (int *)malloc(sizeof(int) * 2);
     info->longest_name = mx_longest_name(*files);
     info->lines = mx_lines_count(
             info->files_count, info->columns, info->longest_name);
 
     sorted_list = mx_sort_for_columns(info);
+    mx_sort_list(*files, &mx_compare);
     while (sorted_list) {
         info->cast[0] = *(int *)sorted_list->data;
         printer(sorted_list, files, info);
