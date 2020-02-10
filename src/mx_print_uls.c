@@ -19,6 +19,8 @@ static void printer(t_list *sorted_list, t_list **files, s_print *info) {
         buf = buf->next;
         index--;
     }
+    char *data = (char *)buf->data;
+    mx_is_ascii(data, mx_strlen(data));
     mx_printstr((const char *)buf->data);
     if (sorted_list->next) {
         info->cast[1] = *(int *)sorted_list->next->data;
@@ -39,7 +41,6 @@ void mx_print_uls(t_list **files, t_list *sorted_list) {
             info->files_count, info->columns, info->longest_name);
 
     sorted_list = mx_sort_for_columns(info);
-    mx_sort_list(*files, &mx_compare);
     while (sorted_list) {
         info->cast[0] = *(int *)sorted_list->data;
         printer(sorted_list, files, info);

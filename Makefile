@@ -20,6 +20,7 @@ FILES = main \
 		mx_compare \
 		mx_sort_for_columns \
 		mx_strjoin_for_path \
+		mx_check_for_flags \
 
 LIBMX_A = libmx/libmx.a
 

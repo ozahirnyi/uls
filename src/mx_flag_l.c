@@ -13,7 +13,7 @@ static int *create_otstup(char *argv, t_list *names) {
     return otstup;
 }
 
-static void part_for_link (char *path, char *data)  {
+static void part_for_link(char *path, char *data)  {
     char *link = mx_strnew(20);
     char *name = data;
 
