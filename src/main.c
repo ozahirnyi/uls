@@ -29,27 +29,31 @@ int main(int argc, char **argv) {
     int ways_count = way_counter(argv);
     int flags_count = flag_counter(argv);
     char **ways = (char **)malloc(sizeof(char *) * ways_count + 1);
-    char *flags = (char *)malloc(sizeof(char) * flags_count+ 1);
-    int i = 1;
+    char *flags = (char *)malloc(sizeof(char) * flags_count + 1);
+    int count1 = 0;
+    int count2 = 0;
 
     if (argc > 2) {
         int j = 0;
-        for (int i = 1; i < argc; i++, j++) {
-            if (argv[i][0] == '-')
-                flags = argv[i];
-            else
-                ways[j] = mx_strdup(argv[i]);
-            printf("ARGV = %s | ", argv[i]);
+
+        for (int i = 1; i < argc; i++) {
+            if (argv[i][0] == '-' && argv[i][1] != '-')
+                for (j = 1; argv[i][j]; j++)
+                    flags[count1++] = argv[i][j];
+            else {
+                ways[count2] = mx_strdup(argv[i]);
+                count2++;
+            }
         }
-//        if (!path[0])
-//            path[0] = mx_strdup(".");
     }
-    for (int i = 0; ways[i]; i++) {
+    ways[ways_count] = "\0";
+    flags[flags_count] = '\0';
+    for (int i = 0; ways[i] != "\0"; i++) {
         mx_printstr(ways[i]);
         mx_printchar('\n');
     }
-//    mx_printstr("flags\n");
-    mx_read_uls(ways, flags);
+    mx_printstr(flags);
+    //mx_read_uls(ways, flags);
     printf("\n\n");
     system("leaks -q uls");
     return 0;

@@ -32,7 +32,8 @@ void mx_read_uls(char **source, char *flags) {
     }
     mx_sort_list(files, &mx_compare);
     if (mx_check_for_flags(flags, 'l'))
-        mx_flag_l(files, source);
+        for (int i = 1; source[i]; i++)
+            mx_flag_l(files, source[i]);
     else
         mx_print_uls(&files, sorted_list);
     while (files)

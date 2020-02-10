@@ -2,7 +2,7 @@
 #define ULS_H
 
 #include "libmx.h"
-//#include "libmx/inc/libmx.h"
+// #include "libmx/inc/libmx.h"
 #include <sys/stat.h>
 #include <time.h>
 #include <dirent.h>
@@ -61,7 +61,7 @@ int mx_longest_name(t_list *list);
 int mx_lines_count(int files_count, int *columns, int longest_name);
 void mx_print_uls(t_list **files, t_list *sorted_list);
 void mx_read_uls(char **source, char *flags);
-void mx_flag_l(t_list *names, char **argv);
+void mx_flag_l(t_list *names, char *argv);
 void mx_l_out_st_mode(unsigned long n, char *name);
 void mx_l_out_st_nlink(unsigned long n, int otstup);
 void mx_l_out_st_uid(unsigned int n, int otstup);
