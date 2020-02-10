@@ -15,9 +15,10 @@ static int *create_otstup(char *argv, t_list *names) {
 
 static void part_for_link(char *path, char *data)  {
     char *link = mx_strnew(20);
+    char *name = data;
 
     readlink(path, link, 20);
-    mx_printstr(data);
+    mx_printstr(name);
     mx_printstr(" -> ");
     mx_printstr(link);
     mx_strdel(&link);
@@ -40,10 +41,8 @@ static void part_1_of_cycle(int *otstup, struct stat buf,
 
 static void part_2_of_cycle(struct stat buf, t_list *p,
                             char *full_path) {
-    char *name = p->data;
-
     mx_l_out_st_mtime(buf.st_mtime);
-    mx_is_ascii(name, mx_strlen(name));
+    mx_is_ascii(p->data, mx_strlen(p->data));
     if ((buf.st_mode & S_IFLNK) == S_IFLNK)
         part_for_link(full_path, p->data);
     else
@@ -51,7 +50,7 @@ static void part_2_of_cycle(struct stat buf, t_list *p,
     mx_printchar('\n');
 }
 
-void mx_flag_l(t_list *names, char *argv) {
+static void mx_l_part_1(char *argv, t_list *names) {
     struct stat buf;
     char *full_path = NULL;
     t_list *p = names;
@@ -66,4 +65,8 @@ void mx_flag_l(t_list *names, char *argv) {
         p = p->next;
     }
     free(otstup);
+}
+
+void mx_flag_l(t_list *names, char **argv) {
+    mx_l_part_1(argv[1], names);
 }

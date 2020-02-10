@@ -1,8 +1,8 @@
 #ifndef ULS_H
 #define ULS_H
 
-#include "libmx.h"
-//#include "libmx/inc/libmx.h"
+//#include "libmx.h"
+#include "libmx/inc/libmx.h"
 #include <sys/stat.h>
 #include <time.h>
 #include <dirent.h>
@@ -14,7 +14,6 @@
 #include <sys/types.h>
 #include <sys/xattr.h>
 #include <sys/acl.h>
-#include <malloc/malloc.h>
 
 #define MAX_INT 2147483647
 #define MIN_INT -2147483648
@@ -54,13 +53,19 @@ typedef struct print_uls {
     int *cast;
 } s_print;
 
+typedef struct flags {
+    bool l;
+    bool a;
+    bool A;
+} s_flags;
+
 t_list *mx_sort_for_columns(s_print *info);
 bool mx_compare(void *a, void *b);
 bool mx_check_for_flags(char *str, char flag);
 int mx_longest_name(t_list *list);
 int mx_lines_count(int files_count, int *columns, int longest_name);
 void mx_print_uls(t_list **files, t_list *sorted_list);
-void mx_read_uls(char **source, char *flags);
+void mx_read_uls(char **source, s_flags *flags);
 void mx_flag_l(t_list *names, char **argv);
 void mx_l_out_st_mode(unsigned long n, char *name);
 void mx_l_out_st_nlink(unsigned long n, int otstup);
@@ -74,6 +79,5 @@ int mx_max_len_int(t_list *names, int trig, char *argv);
 int mx_max_len_char(t_list *names, int trig, char *argv);
 char *mx_strjoin_for_path(char *argv, char *data);
 int mx_len_int(unsigned long n);
-void mx_clear_list(t_list *list);
 
 #endif
