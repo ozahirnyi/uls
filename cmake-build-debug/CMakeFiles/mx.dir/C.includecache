@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ndykyy/Desktop/uls/libmx/inc/libmx.h
+unistd.h
+-
+wchar.h
+-
+stdlib.h
+-
+fcntl.h
+-
+stdbool.h
+-
+
+/Users/ndykyy/Desktop/uls/libmx/src/mx_strlen.c
+../inc/libmx.h
+/Users/ndykyy/Desktop/uls/libmx/inc/libmx.h
+

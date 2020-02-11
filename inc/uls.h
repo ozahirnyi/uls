@@ -1,8 +1,9 @@
 #ifndef ULS_H
 #define ULS_H
 
-//#include "libmx.h"
-#include "libmx/inc/libmx.h"
+#include "libmx.h"
+// #include "libmx/inc/libmx.h"
+>>>>>>> 8d7633177c19949b4224c71b529779372f5469d9
 #include <sys/stat.h>
 #include <time.h>
 #include <dirent.h>
@@ -65,8 +66,13 @@ bool mx_check_for_flags(char *str, char flag);
 int mx_longest_name(t_list *list);
 int mx_lines_count(int files_count, int *columns, int longest_name);
 void mx_print_uls(t_list **files, t_list *sorted_list);
+<<<<<<< HEAD
 void mx_read_uls(char **source, s_flags *flags);
 void mx_flag_l(t_list *names, char **argv);
+=======
+void mx_read_uls(char **source, char *flags);
+void mx_flag_l(t_list *names, char *argv);
+>>>>>>> 8d7633177c19949b4224c71b529779372f5469d9
 void mx_l_out_st_mode(unsigned long n, char *name);
 void mx_l_out_st_nlink(unsigned long n, int otstup);
 void mx_l_out_st_uid(unsigned int n, int otstup);
