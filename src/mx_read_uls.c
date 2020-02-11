@@ -15,7 +15,8 @@ static void read_directory(char *source, t_list **files, s_flags *flags) {
 
     if (directory) {
         while ((lupa = readdir(directory)) != NULL) {
-            if (!flags->a && (mx_strcmp(lupa->d_name, ".") && mx_strcmp(lupa->d_name, ".."))) {
+            if ((!flags->a && (mx_strcmp(lupa->d_name, ".") && mx_strcmp(lupa->d_name, "..")))
+                 || flags->a || (flags->A && (mx_strcmp(lupa->d_name, ".") && mx_strcmp(lupa->d_name, "..")))) {
                 buf = mx_strdup(lupa->d_name);
                 mx_push_front(files, buf);
             }
