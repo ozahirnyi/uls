@@ -24,15 +24,15 @@ void mx_read_uls(char **source, char *flags) {
     t_list *files = NULL;
 
     if (source)
-        for (int i = 0; source[i] != NULL; i++)
+        for (int i = 0; source[i]; i++)
             mx_read_directory(source[i], &files);
     else {
-//        *source = mx_strdup(".");
+        source[1] = mx_strdup(".");
         mx_read_directory(".", &files);
     }
     mx_sort_list(files, &mx_compare);
     if (mx_check_for_flags(flags, 'l'))
-        for (int i = 1; source[i]; i++)
+        for (int i = 0; source[i]; i++)
             mx_flag_l(files, source[i]);
     else
         mx_print_uls(&files, sorted_list);
