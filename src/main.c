@@ -33,29 +33,28 @@ int main(int argc, char **argv) {
     int count1 = 0;
     int count2 = 0;
 
-    if (argc > 2) {
+    if (argc > 1) {
         int j = 0;
 
         for (int i = 1; i < argc; i++) {
             if (argv[i][0] == '-' && argv[i][1] != '-')
                 for (j = 1; argv[i][j]; j++)
                     flags[count1++] = argv[i][j];
-            else {
-                ways[count2] = mx_strdup(argv[i]);
-                count2++;
-            }
+            else
+                ways[count2++] = mx_strdup(argv[i]);
         }
     }
-    ways[ways_count] = "\0";
-    flags[flags_count] = '\0';
-    for (int i = 0; ways[i] != "\0"; i++) {
-        mx_printstr(ways[i]);
-        mx_printchar('\n');
-    }
+    flags[count1] = '\0';
+    ways[ways_count][0] = '\0';
+     if (ways) {
+         for (int i = 0; ways[i][0] != '\0'; i++) {
+             mx_printstr(ways[i]);
+             mx_printchar('\n');
+         }
+     }
     mx_printstr(flags);
     //mx_read_uls(ways, flags);
     printf("\n\n");
->>>>>>> 8d7633177c19949b4224c71b529779372f5469d9
     system("leaks -q uls");
     return 0;
 }
