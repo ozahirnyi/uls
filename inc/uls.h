@@ -79,5 +79,7 @@ int mx_max_len_int(t_list *names, int trig, char *argv);
 int mx_max_len_char(t_list *names, int trig, char *argv);
 char *mx_strjoin_for_path(char *argv, char *data);
 int mx_len_int(unsigned long n);
+void mx_clear_list(t_list *list);
+void mx_flags_trig(char f, flags **trig);
 
 #endif

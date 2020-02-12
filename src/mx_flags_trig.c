@@ -1,0 +1,10 @@
+#include "uls.h"
+
+void mx_flags_trig(char f, flags **trig) {
+	if (f == 'A')
+		trig->A = 1;
+	else if (f == 'a')
+		trig->a = 1;
+	else if (f == 'l')
+		trig->l = 1;
+}
