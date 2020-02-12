@@ -22,6 +22,7 @@ FILES = main \
 		mx_strjoin_for_path \
 		mx_check_for_flags \
 		mx_clear_list \
+		mx_flags_trig \
 
 LIBMX_A = libmx/libmx.a
 
