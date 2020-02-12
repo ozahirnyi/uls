@@ -1,4 +1,4 @@
-#include <libmx.h>
+//#include <libmx.h>
 #include "uls.h"
 
 static int way_counter(char **argv) {
@@ -18,10 +18,10 @@ int main(int argc, char **argv) {
     char **ways = (char **)malloc(sizeof(char *) * ways_count + 1);
     int count = 0;
     s_flags *flags = (s_flags *)malloc(sizeof(s_flags));
+
     flags->a = 0;
     flags->A = 0;
     flags->l = 0;
-
     if (argc > 1) {
         int j = 0;
 
