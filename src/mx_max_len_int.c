@@ -11,6 +11,8 @@ static int part(int trig, struct stat buf) {
         n = mx_len_int(MX_MAJOR(buf.st_rdev));
     if (trig == 4)
         n = mx_len_int(MX_MINOR(buf.st_rdev));
+    if (trig == 5)
+        n = mx_len_int(buf.st_blocks);
     return n;
 }
 

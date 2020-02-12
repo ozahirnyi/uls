@@ -18,9 +18,6 @@ int main(int argc, char **argv) {
     char **ways = NULL;
     s_flags *flags = (s_flags *)malloc(sizeof(s_flags));
 
-    flags->a = 0;
-    flags->A = 0;
-    flags->l = 0;
     if (argc > 1) {
         ways = (char **)malloc(sizeof(char *) * ways_count + 1);
         for (int i = 1; i < argc; i++) {

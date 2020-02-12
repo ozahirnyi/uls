@@ -48,10 +48,10 @@ void mx_read_uls(char **source, s_flags *flags) {
             mx_sort_list(files, &mx_compare);
             if (source[1])
                 dir_name_print(i, source);
-            if (!flags->l)
-                mx_print_uls(&files, sorted_list);
+            if (flags->l || flags->o)
+                mx_flag_l(files, source[i], flags);
             else
-                mx_flag_l(files, source[i]);
+                mx_print_uls(&files, sorted_list);
             while (files)
                 mx_pop_front(&files);
         }
@@ -59,10 +59,10 @@ void mx_read_uls(char **source, s_flags *flags) {
     else {
         read_directory(".", &files, flags);
         mx_sort_list(files, &mx_compare);
-        if (!flags->l)
-            mx_print_uls(&files, sorted_list);
+        if (flags->l || flags->o)
+            mx_flag_l(files, ".", flags);
         else
-            mx_flag_l(files, ".");
+            mx_print_uls(&files, sorted_list);
     }
     while (files)
         mx_pop_front(&files);
