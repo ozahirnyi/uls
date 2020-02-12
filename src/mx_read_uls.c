@@ -29,14 +29,23 @@ static void read_directory(char *source, t_list **files, s_flags *flags) {
     }
 }
 
+static int count_src_len(char **source) {
+    int i = 0;
+
+    while (source[i++]);
+    return i;
+}
+
 void mx_read_uls(char **source, s_flags *flags) {
     t_list *sorted_list = NULL;
     t_list *files = NULL;
+    int src_len = count_src_len(source);
 
     if (source) {
         for (int i = 0; source[i] != NULL; i++) {
             read_directory(source[i], &files, flags);
-            dir_name_print(i, source);
+            if (src_len > 2)
+                dir_name_print(i, source);
             mx_print_uls(&files, sorted_list);
             while (files)
                 mx_pop_front(&files);
