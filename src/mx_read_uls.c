@@ -1,7 +1,7 @@
 #include "uls.h"
 
 static void dir_name_print(int i, char **source) {
-    if (i > 0)
+    if (i > 1)
         mx_printstr("\n\n");
     mx_printstr(source[i]);
     mx_printchar(':');
@@ -29,13 +29,6 @@ static void read_directory(char *source, t_list **files, s_flags *flags) {
     }
 }
 
-static int count_src_len(char **source) {
-    int i = 0;
-
-    while (source[i++]);
-    return i;
-}
-
 void mx_read_uls(char **source, s_flags *flags) {
     t_list *sorted_list = NULL;
     t_list *files = NULL;
@@ -44,8 +37,7 @@ void mx_read_uls(char **source, s_flags *flags) {
     if (source) {
         for (int i = 0; source[i] != NULL; i++) {
             read_directory(source[i], &files, flags);
-            if (src_len > 2)
-                dir_name_print(i, source);
+            dir_name_print(i, source);
             mx_print_uls(&files, sorted_list);
             while (files)
                 mx_pop_front(&files);
