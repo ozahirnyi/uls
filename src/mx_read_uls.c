@@ -41,8 +41,10 @@ static void read_directory(char *source, t_list **files, s_flags *flags) {
 void mx_read_uls(char **source, s_flags *flags) {
     t_list *sorted_list = NULL;
     t_list *files = NULL;
+    int size = mx_arrlen(source);
 
     if (source && *source) {
+        mx_bubble_sort(source, size);
         for (int i = 0; source[i] != NULL; i++) {
             read_directory(source[i], &files, flags);
             mx_sort_list(files, &mx_compare);

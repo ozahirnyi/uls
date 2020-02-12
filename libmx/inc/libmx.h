@@ -31,6 +31,7 @@ int mx_memcmp(const void *s1, const void *s2, size_t n);
 int mx_strlen(const char *s);
 int mx_strcmp(const char *s1, const char *s2);
 int mx_sqrt(int x);
+int mx_arrlen(char **str);
 int mx_is_alpha(char c);
 int mx_isdigit(char c);
 int mx_is_space(char c);
