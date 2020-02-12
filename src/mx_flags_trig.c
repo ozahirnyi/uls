@@ -1,6 +1,6 @@
 #include "uls.h"
 
-void mx_flags_trig(char f, flags **trig) {
+void mx_flags_trig(char f, s_flags *trig) {
 	if (f == 'A')
 		trig->A = 1;
 	else if (f == 'a')

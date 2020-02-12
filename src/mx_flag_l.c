@@ -50,7 +50,7 @@ static void part_2_of_cycle(struct stat buf, t_list *p,
     mx_printchar('\n');
 }
 
-static void mx_l_part_1(char *argv, t_list *names) {
+void mx_flag_l(t_list *names, char *argv) {
     struct stat buf;
     char *full_path = NULL;
     t_list *p = names;
@@ -65,8 +65,4 @@ static void mx_l_part_1(char *argv, t_list *names) {
         p = p->next;
     }
     free(otstup);
-}
-
-void mx_flag_l(t_list *names, char **argv) {
-    mx_l_part_1(argv[1], names);
 }

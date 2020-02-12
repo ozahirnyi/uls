@@ -1,3 +1,4 @@
+#include <libmx.h>
 #include "uls.h"
 
 static int way_counter(char **argv) {
@@ -16,7 +17,10 @@ int main(int argc, char **argv) {
     int ways_count = way_counter(argv);
     char **ways = (char **)malloc(sizeof(char *) * ways_count + 1);
     int count = 0;
-    flags *list_for_trig = NULL;
+    s_flags *flags = (s_flags *)malloc(sizeof(s_flags));
+    flags->a = 0;
+    flags->A = 0;
+    flags->l = 0;
 
     if (argc > 1) {
         int j = 0;
@@ -24,7 +28,7 @@ int main(int argc, char **argv) {
         for (int i = 1; i < argc; i++) {
             if (argv[i][0] == '-' && argv[i][1] != '-')
                 for (j = 1; argv[i][j]; j++)
-                    mx_flags_trig(argv[i][j], list_for_trig);
+                    mx_flags_trig(argv[i][j], flags);
             else
                 ways[count++] = mx_strdup(argv[i]);
         }
