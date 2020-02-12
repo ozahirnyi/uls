@@ -32,7 +32,6 @@ static void read_directory(char *source, t_list **files, s_flags *flags) {
 void mx_read_uls(char **source, s_flags *flags) {
     t_list *sorted_list = NULL;
     t_list *files = NULL;
-    int src_len = count_src_len(source);
 
     if (source) {
         for (int i = 0; source[i] != NULL; i++) {
