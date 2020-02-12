@@ -7,4 +7,8 @@ void mx_flags_trig(char f, s_flags *trig) {
 		trig->a = 1;
 	else if (f == 'l')
 		trig->l = 1;
+	else if (f == 'o')
+		trig->o = 1;
+	else if (f == 's')
+		trig->s = 1;
 }

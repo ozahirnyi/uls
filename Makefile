@@ -2,6 +2,7 @@ NAME = uls
 
 FILES = main \
 		mx_flag_l \
+		mx_l_out_st_blocks \
 		mx_l_out_st_mode \
 		mx_l_out_st_nlink \
 		mx_l_out_st_uid \
@@ -22,6 +23,7 @@ FILES = main \
 		mx_strjoin_for_path \
 		mx_clear_list \
 		mx_flags_trig \
+		mx_vivod_total \
 
 LIBMX_A = libmx/libmx.a
 
