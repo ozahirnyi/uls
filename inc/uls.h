@@ -1,8 +1,8 @@
 #ifndef ULS_H
 #define ULS_H
 
-#include "libmx.h"
-//#include "libmx/inc/libmx.h"
+//#include "libmx.h"
+#include "libmx/inc/libmx.h"
 #include <sys/stat.h>
 #include <time.h>
 #include <dirent.h>
@@ -53,6 +53,12 @@ typedef struct print_uls {
     int lines;
     int *cast;
 } s_print;
+
+typedef struct flags {
+    bool l;
+    bool a;
+    bool A;
+} s_flags;
 
 t_list *mx_sort_for_columns(s_print *info);
 bool mx_compare(void *a, void *b);
