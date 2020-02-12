@@ -46,7 +46,8 @@ void mx_read_uls(char **source, s_flags *flags) {
         for (int i = 0; source[i] != NULL; i++) {
             read_directory(source[i], &files, flags);
             mx_sort_list(files, &mx_compare);
-            dir_name_print(i, source);
+            if (source[1])
+                dir_name_print(i, source);
             if (!flags->l)
                 mx_print_uls(&files, sorted_list);
             else
