@@ -41,7 +41,6 @@ void mx_print_uls(t_list **files, t_list *sorted_list) {
             info->files_count, info->columns, info->longest_name);
 
     sorted_list = mx_sort_for_columns(info);
-    mx_sort_list(*files, &mx_compare);
     while (sorted_list) {
         info->cast[0] = *(int *)sorted_list->data;
         printer(sorted_list, files, info);
