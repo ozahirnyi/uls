@@ -11,7 +11,7 @@ static bool trig_a(char *d_name, s_flags *flags) {
 }
 
 static void dir_name_print(int i, char **source) {
-    if (i > 0)
+    if (i > 1)
         mx_printstr("\n\n");
     mx_printstr(source[i]);
     mx_printchar(':');
