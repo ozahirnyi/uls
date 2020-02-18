@@ -55,11 +55,20 @@ typedef struct print_uls {
 } s_print;
 
 typedef struct flags {
-    bool l;
-    bool a;
-    bool A;
-    bool o;
-    bool s; // SSSSANYA tobi treba tezh vivod lstat.st_blocks
+    bool l;//+
+    bool a;//+
+    bool A;//+
+    bool o;//+
+    bool s;//+
+    bool one;//+
+    bool d;//huinya
+    bool g;//+
+    bool t;//
+    bool T;//
+    bool u;//
+    bool f;//
+    bool S;//
+    bool X;//triger na papku
 } s_flags;
 
 t_list *mx_sort_for_columns(s_print *info);
@@ -77,13 +86,20 @@ void mx_l_out_st_gid(unsigned long n, int otstup);
 void mx_l_out_st_size(unsigned long n, int otstup);
 void mx_l_out_st_dev(unsigned int n, int otstup1, int otstup2);
 void mx_is_ascii(char *str, int len);
-void mx_l_out_st_mtime(long n);
+void mx_l_out_st_mtime(long a, long m, s_flags *fl);
 int mx_max_len_int(t_list *names, int trig, char *argv);
-int mx_max_len_char(t_list *names, int trig, char *argv);
+int mx_max_len_char(t_list *src, int trig, char *argv);
 char *mx_strjoin_for_path(char *argv, char *data);
 int mx_len_int(unsigned long n);
-void mx_clear_list(t_list *list);
 void mx_flags_trig(char f, s_flags *trig);
 void mx_vivod_total(t_list *names, char *argv);
+void mx_read_directory(char *source, t_list **files, s_flags *flags);
+void mx_dir_name_print(int i, char **source);
+void mx_flag_one(t_list *names);
+void mx_flag_d(char *source, t_list **files);
+void mx_change_argv(char *argv, int len);
+void mx_list_swap(t_list *lst);
+void mx_sort_by_time(s_flags *fl, t_list *files, char *argv);
+void mx_sort_by_size(t_list *files, char *argv);
 
 #endif

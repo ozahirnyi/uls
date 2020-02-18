@@ -49,4 +49,5 @@ void mx_print_uls(t_list **files, t_list *sorted_list) {
     free(info->columns);
     free(info->cast);
     free(info);
+    mx_printchar(10);
 }

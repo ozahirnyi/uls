@@ -17,9 +17,9 @@ static int is_group(unsigned int st_gid, int n) {
     return n;
 }
 
-int mx_max_len_char(t_list *names, int trig, char *argv) {
+int mx_max_len_char(t_list *src, int trig, char *argv) {
     int len = 0;
-    t_list *p = names;
+    t_list *p = src;
     struct stat buf;
     int n = 0;
     char *full_path = NULL;

@@ -21,9 +21,16 @@ FILES = main \
 		mx_compare \
 		mx_sort_for_columns \
 		mx_strjoin_for_path \
-		mx_clear_list \
 		mx_flags_trig \
 		mx_vivod_total \
+		mx_read_directory \
+		mx_dir_name_print \
+		mx_flag_one \
+		mx_flag_d \
+		mx_change_argv \
+		mx_list_swap \
+		mx_sort_by_time \
+		mx_sort_by_size \
 
 LIBMX_A = libmx/libmx.a
 

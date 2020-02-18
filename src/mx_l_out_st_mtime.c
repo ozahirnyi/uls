@@ -50,11 +50,15 @@ static char *mx_l_change_date(char *date, long n) {
     return new;
 }
 
-void mx_l_out_st_mtime(long n) {
-	char *date = NULL;
+void mx_l_out_st_mtime(long a, long m, s_flags *fl) {
+    char *date = NULL;
 
-	date = ctime(&n);
-    date = mx_l_change_date(date, n);
+    if (fl->t && !fl->u)
+        date = ctime(&m);
+    if (fl->t && fl->u)
+        date = ctime(&a);
+    if (!fl->T)
+        date = mx_l_change_date(date, m);
     mx_printstr(date);
     mx_printchar(' ');
     free(date);

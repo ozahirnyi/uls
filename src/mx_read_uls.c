@@ -1,43 +1,4 @@
 #include "uls.h"
-
-static bool trig_a(char *d_name, s_flags *flags) {
-    if (flags->a
-        || (flags->A && (mx_strcmp(d_name, ".") && mx_strcmp(d_name, "..")))
-        || (!flags->a && !flags->A && (mx_strcmp(d_name, ".")
-        && mx_strcmp(d_name, "..") && d_name[0] != '.')))
-        return 1;
-    else
-        return 0;
-}
-
-static void dir_name_print(int i, char **source) {
-    if (i > 1)
-        mx_printstr("\n\n");
-    mx_printstr(source[i]);
-    mx_printchar(':');
-    mx_printchar('\n');
-}
-
-static void read_directory(char *source, t_list **files, s_flags *flags) {
-    DIR *directory = opendir(source);
-    struct dirent *lupa = NULL;
-    char *buf = NULL;
-
-    if (directory) {
-        while ((lupa = readdir(directory)) != NULL) {
-            if (trig_a(lupa->d_name, flags)) {
-                buf = mx_strdup(lupa->d_name);
-                mx_push_front(files, buf);
-            }
-        }
-        closedir(directory);
-    }
-    else {
-        buf = mx_strdup(source);
-        mx_push_front(files, buf);
-    }
-}
-
 void mx_read_uls(char **source, s_flags *flags) {
     t_list *sorted_list = NULL;
     t_list *files = NULL;
@@ -45,13 +6,20 @@ void mx_read_uls(char **source, s_flags *flags) {
 
     if (source && *source) {
         mx_bubble_sort(source, size);
-        for (int i = 0; source[i] != NULL; i++) {
-            read_directory(source[i], &files, flags);
+        for (int i = 0; source[i]; i++) {
+            mx_read_directory(source[i], &files, flags);
             mx_sort_list(files, &mx_compare);
             if (source[1])
-                dir_name_print(i, source);
-            if (flags->l || flags->o)
+                mx_dir_name_print(i, source);
+            //if (flags->S)
+            //    mx_sort_by_size(files, source[i]);
+            // else if
+            if (flags->t || flags->u)
+               mx_sort_by_time(flags, files, source[i]);
+            if (flags->l || flags->o || flags->g)
                 mx_flag_l(files, source[i], flags);
+            else if (flags->one)
+                mx_flag_one(files);
             else
                 mx_print_uls(&files, sorted_list);
             while (files)
@@ -59,12 +27,19 @@ void mx_read_uls(char **source, s_flags *flags) {
         }
     }
     else {
-        read_directory(".", &files, flags);
+        mx_read_directory(".", &files, flags);
         mx_sort_list(files, &mx_compare);
-        if (flags->l || flags->o)
+        //if (flags->S)
+        //    mx_sort_by_size(files, ".");
+        // else if 
+        if (flags->t || flags->u)
+           mx_sort_by_time(flags, files, "."); 
+        if (flags->l || flags->o || flags->g)
             mx_flag_l(files, ".", flags);
+        else if (flags->one)
+            mx_flag_one(files);
         else
-            mx_print_uls(&files, sorted_list);
+           mx_print_uls(&files, sorted_list);
     }
     while (files)
         mx_pop_front(&files);
