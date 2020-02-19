@@ -50,7 +50,7 @@ static void part_2_of_cycle(struct stat buf, t_list *p,
                             char *full_path, s_flags *fl) {
     char *data = mx_strdup(p->data);
 
-    mx_l_out_st_mtime(buf.st_atime, buf.st_mtime, fl);
+    mx_l_out_st_mtime(buf.st_atime, buf.st_mtime, buf.st_ctime, buf.st_birthtime,  fl);
     mx_is_ascii(data, mx_strlen(data));
     if ((buf.st_mode & S_IFLNK) == S_IFLNK)
         part_for_link(full_path, p->data);

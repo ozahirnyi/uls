@@ -36,30 +36,39 @@ static char *part_2(int len, char *date) {
     return new;
 }
 
-static char *mx_l_change_date(char *date, long n) {
+static char *mx_l_change_date(char *date, long n, s_flags *fl) {
     int len = mx_strlen(date);
     long days_diff = time(NULL);
     char *new = NULL;
 
-    if ((days_diff - n)/86400 > 183) {
-        new = part_1(len, date);
+    if (!fl->T) {
+        if ((days_diff - n)/86400 >= 183) {
+            new = part_1(len, date);
+        }
+        else {
+            new = part_2(len, date);
+        }
     }
     else {
-        new = part_2(len, date);
+        new = date;
+        new[len - 1] = '\0';
     }
     return new;
 }
 
-void mx_l_out_st_mtime(long a, long m, s_flags *fl) {
+void mx_l_out_st_mtime(long a, long m, long c, long b, s_flags *fl) {
     char *date = NULL;
 
-    if (fl->t && !fl->u)
-        date = ctime(&m);
-    if (fl->t && fl->u)
+    date = ctime(&m);
+    if (fl->u)
         date = ctime(&a);
-    if (!fl->T)
-        date = mx_l_change_date(date, m);
+    if (fl->U)
+        date = ctime(&b);
+    if (fl->c)
+        date = ctime(&c);
+    date = mx_l_change_date(date, m, fl);
     mx_printstr(date);
     mx_printchar(' ');
-    free(date);
+    if (malloc_size(date))
+        free(date);
 }

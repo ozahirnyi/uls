@@ -61,13 +61,16 @@ typedef struct flags {
     bool o;//+
     bool s;//+
     bool one;//+
-    bool d;//huinya
     bool g;//+
-    bool t;//
-    bool T;//
-    bool u;//
-    bool f;//
-    bool S;//
+    bool t;//+
+    bool u;//+
+    bool U;//-
+    bool c;//-
+    bool T;//+
+    bool r;//-
+    bool p;//-
+    bool f;//-
+    bool S;//+/-
     bool X;//triger na papku
 } s_flags;
 
@@ -86,7 +89,7 @@ void mx_l_out_st_gid(unsigned long n, int otstup);
 void mx_l_out_st_size(unsigned long n, int otstup);
 void mx_l_out_st_dev(unsigned int n, int otstup1, int otstup2);
 void mx_is_ascii(char *str, int len);
-void mx_l_out_st_mtime(long a, long m, s_flags *fl);
+void mx_l_out_st_mtime(long a, long m, long c, long b, s_flags *fl);
 int mx_max_len_int(t_list *names, int trig, char *argv);
 int mx_max_len_char(t_list *src, int trig, char *argv);
 char *mx_strjoin_for_path(char *argv, char *data);
@@ -101,5 +104,6 @@ void mx_change_argv(char *argv, int len);
 void mx_list_swap(t_list *lst);
 void mx_sort_by_time(s_flags *fl, t_list *files, char *argv);
 void mx_sort_by_size(t_list *files, char *argv);
+void mx_flags_obnulyator(s_flags *flags);
 
 #endif

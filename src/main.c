@@ -18,6 +18,7 @@ int main(int argc, char **argv) {
     char **ways = NULL;
     s_flags *flags = (s_flags *)malloc(sizeof(s_flags));
 
+    mx_flags_obnulyator(flags);
     if (argc > 1) {
         ways = (char **)malloc(sizeof(char *) * ways_count + 1);
         for (int i = 1; i < argc; i++) {

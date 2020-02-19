@@ -31,6 +31,7 @@ FILES = main \
 		mx_list_swap \
 		mx_sort_by_time \
 		mx_sort_by_size \
+		mx_flags_obnulyator \
 
 LIBMX_A = libmx/libmx.a
 
