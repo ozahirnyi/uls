@@ -1,3 +1,4 @@
-/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles/uls.dir
+/Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles/uls.dir
+/Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles/mx.dir

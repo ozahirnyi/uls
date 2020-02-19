@@ -1,8 +1,8 @@
 #ifndef ULS_H
 #define ULS_H
 
-//#include "libmx.h"
-#include "libmx/inc/libmx.h"
+#include "libmx.h"
+//#include "libmx/inc/libmx.h"
 #include <sys/stat.h>
 #include <time.h>
 #include <dirent.h>
@@ -73,6 +73,7 @@ typedef struct flags {
     bool X;//triger na papku
 } s_flags;
 
+s_flags *mx_flags_obnulyator();
 t_list *mx_sort_for_columns(s_print *info);
 bool mx_compare(void *a, void *b);
 int mx_longest_name(t_list *list);
@@ -103,7 +104,6 @@ void mx_change_argv(char *argv, int len);
 void mx_list_swap(t_list *lst);
 void mx_sort_by_time(s_flags *fl, t_list *files, char *argv);
 void mx_sort_by_size(t_list *files, char *argv);
-void mx_flags_obnulyator(s_flags *flags);
 void mx_flag_p(t_list *files, s_flags *fl, char *argv);
 
 #endif

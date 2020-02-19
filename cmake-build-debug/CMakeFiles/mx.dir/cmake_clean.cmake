@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/mx.dir/libmx/src/mx_arrlen.c.o"
   "CMakeFiles/mx.dir/libmx/src/mx_atoi.c.o"
   "CMakeFiles/mx.dir/libmx/src/mx_binary_search.c.o"
   "CMakeFiles/mx.dir/libmx/src/mx_bubble_sort.c.o"

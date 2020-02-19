@@ -31,4 +31,8 @@ void mx_flags_trig(char f, s_flags *trig) {
 		trig->p = 1;
 	else if (f == 'r')
 		trig->r = 1;
+    else {
+        mx_printerr("usage: ls [-ATSUalo1gtucfpr] [file ...]\n");
+        exit(1);
+    }
 }

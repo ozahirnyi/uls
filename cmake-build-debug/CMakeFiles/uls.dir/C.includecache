@@ -46,131 +46,131 @@ fcntl.h
 stdbool.h
 -
 
-/Users/ndykyy/Desktop/uls/src/main.c
+/Users/ozahirnyi/uls/src/main.c
 uls.h
-/Users/ndykyy/Desktop/uls/src/uls.h
+/Users/ozahirnyi/uls/src/uls.h
 
-/Users/ndykyy/Desktop/uls/src/mx_change_argv.c
+/Users/ozahirnyi/uls/src/mx_change_argv.c
 uls.h
-/Users/ndykyy/Desktop/uls/src/uls.h
+/Users/ozahirnyi/uls/src/uls.h
 
-/Users/ndykyy/Desktop/uls/src/mx_compare.c
+/Users/ozahirnyi/uls/src/mx_compare.c
 uls.h
-/Users/ndykyy/Desktop/uls/src/uls.h
+/Users/ozahirnyi/uls/src/uls.h
 
-/Users/ndykyy/Desktop/uls/src/mx_dir_name_print.c
+/Users/ozahirnyi/uls/src/mx_dir_name_print.c
 uls.h
-/Users/ndykyy/Desktop/uls/src/uls.h
+/Users/ozahirnyi/uls/src/uls.h
 
-/Users/ndykyy/Desktop/uls/src/mx_flag_d.c
+/Users/ozahirnyi/uls/src/mx_flag_d.c
 uls.h
-/Users/ndykyy/Desktop/uls/src/uls.h
+/Users/ozahirnyi/uls/src/uls.h
 
-/Users/ndykyy/Desktop/uls/src/mx_flag_l.c
+/Users/ozahirnyi/uls/src/mx_flag_l.c
 uls.h
-/Users/ndykyy/Desktop/uls/src/uls.h
+/Users/ozahirnyi/uls/src/uls.h
 
-/Users/ndykyy/Desktop/uls/src/mx_flag_one.c
+/Users/ozahirnyi/uls/src/mx_flag_one.c
 uls.h
-/Users/ndykyy/Desktop/uls/src/uls.h
+/Users/ozahirnyi/uls/src/uls.h
 
-/Users/ndykyy/Desktop/uls/src/mx_flags_obnulyator.c
+/Users/ozahirnyi/uls/src/mx_flag_p.c
 uls.h
-/Users/ndykyy/Desktop/uls/src/uls.h
+/Users/ozahirnyi/uls/src/uls.h
 
-/Users/ndykyy/Desktop/uls/src/mx_flags_trig.c
+/Users/ozahirnyi/uls/src/mx_flags_obnulyator.c
 uls.h
-/Users/ndykyy/Desktop/uls/src/uls.h
+/Users/ozahirnyi/uls/src/uls.h
 
-/Users/ndykyy/Desktop/uls/src/mx_is_ascii.c
+/Users/ozahirnyi/uls/src/mx_flags_trig.c
 uls.h
-/Users/ndykyy/Desktop/uls/src/uls.h
+/Users/ozahirnyi/uls/src/uls.h
 
-/Users/ndykyy/Desktop/uls/src/mx_l_out_st_blocks.c
+/Users/ozahirnyi/uls/src/mx_is_ascii.c
 uls.h
-/Users/ndykyy/Desktop/uls/src/uls.h
+/Users/ozahirnyi/uls/src/uls.h
 
-/Users/ndykyy/Desktop/uls/src/mx_l_out_st_dev.c
+/Users/ozahirnyi/uls/src/mx_l_out_st_dev.c
 uls.h
-/Users/ndykyy/Desktop/uls/src/uls.h
+/Users/ozahirnyi/uls/src/uls.h
 
-/Users/ndykyy/Desktop/uls/src/mx_l_out_st_gid.c
+/Users/ozahirnyi/uls/src/mx_l_out_st_gid.c
 uls.h
-/Users/ndykyy/Desktop/uls/src/uls.h
+/Users/ozahirnyi/uls/src/uls.h
 
-/Users/ndykyy/Desktop/uls/src/mx_l_out_st_mode.c
+/Users/ozahirnyi/uls/src/mx_l_out_st_mode.c
 uls.h
-/Users/ndykyy/Desktop/uls/src/uls.h
+/Users/ozahirnyi/uls/src/uls.h
 
-/Users/ndykyy/Desktop/uls/src/mx_l_out_st_mtime.c
+/Users/ozahirnyi/uls/src/mx_l_out_st_mtime.c
 uls.h
-/Users/ndykyy/Desktop/uls/src/uls.h
+/Users/ozahirnyi/uls/src/uls.h
 
-/Users/ndykyy/Desktop/uls/src/mx_l_out_st_nlink.c
+/Users/ozahirnyi/uls/src/mx_l_out_st_nlink.c
 uls.h
-/Users/ndykyy/Desktop/uls/src/uls.h
+/Users/ozahirnyi/uls/src/uls.h
 
-/Users/ndykyy/Desktop/uls/src/mx_l_out_st_size.c
+/Users/ozahirnyi/uls/src/mx_l_out_st_size.c
 uls.h
-/Users/ndykyy/Desktop/uls/src/uls.h
+/Users/ozahirnyi/uls/src/uls.h
 
-/Users/ndykyy/Desktop/uls/src/mx_l_out_st_uid.c
+/Users/ozahirnyi/uls/src/mx_l_out_st_uid.c
 uls.h
-/Users/ndykyy/Desktop/uls/src/uls.h
+/Users/ozahirnyi/uls/src/uls.h
 
-/Users/ndykyy/Desktop/uls/src/mx_len_int.c
+/Users/ozahirnyi/uls/src/mx_len_int.c
 uls.h
-/Users/ndykyy/Desktop/uls/src/uls.h
+/Users/ozahirnyi/uls/src/uls.h
 
-/Users/ndykyy/Desktop/uls/src/mx_lines_count.c
+/Users/ozahirnyi/uls/src/mx_lines_count.c
 uls.h
-/Users/ndykyy/Desktop/uls/src/uls.h
+/Users/ozahirnyi/uls/src/uls.h
 
-/Users/ndykyy/Desktop/uls/src/mx_list_swap.c
+/Users/ozahirnyi/uls/src/mx_list_swap.c
 uls.h
-/Users/ndykyy/Desktop/uls/src/uls.h
+/Users/ozahirnyi/uls/src/uls.h
 
-/Users/ndykyy/Desktop/uls/src/mx_longest_name.c
+/Users/ozahirnyi/uls/src/mx_longest_name.c
 uls.h
-/Users/ndykyy/Desktop/uls/src/uls.h
+/Users/ozahirnyi/uls/src/uls.h
 
-/Users/ndykyy/Desktop/uls/src/mx_max_len_char.c
+/Users/ozahirnyi/uls/src/mx_max_len_char.c
 uls.h
-/Users/ndykyy/Desktop/uls/src/uls.h
+/Users/ozahirnyi/uls/src/uls.h
 
-/Users/ndykyy/Desktop/uls/src/mx_max_len_int.c
+/Users/ozahirnyi/uls/src/mx_max_len_int.c
 uls.h
-/Users/ndykyy/Desktop/uls/src/uls.h
+/Users/ozahirnyi/uls/src/uls.h
 
-/Users/ndykyy/Desktop/uls/src/mx_print_uls.c
+/Users/ozahirnyi/uls/src/mx_print_uls.c
 uls.h
-/Users/ndykyy/Desktop/uls/src/uls.h
+/Users/ozahirnyi/uls/src/uls.h
 
-/Users/ndykyy/Desktop/uls/src/mx_read_directory.c
+/Users/ozahirnyi/uls/src/mx_read_directory.c
 uls.h
-/Users/ndykyy/Desktop/uls/src/uls.h
+/Users/ozahirnyi/uls/src/uls.h
 
-/Users/ndykyy/Desktop/uls/src/mx_read_uls.c
+/Users/ozahirnyi/uls/src/mx_read_uls.c
 uls.h
-/Users/ndykyy/Desktop/uls/src/uls.h
+/Users/ozahirnyi/uls/src/uls.h
 
-/Users/ndykyy/Desktop/uls/src/mx_sort_by_size.c
+/Users/ozahirnyi/uls/src/mx_sort_by_size.c
 uls.h
-/Users/ndykyy/Desktop/uls/src/uls.h
+/Users/ozahirnyi/uls/src/uls.h
 
-/Users/ndykyy/Desktop/uls/src/mx_sort_by_time.c
+/Users/ozahirnyi/uls/src/mx_sort_by_time.c
 uls.h
-/Users/ndykyy/Desktop/uls/src/uls.h
+/Users/ozahirnyi/uls/src/uls.h
 
-/Users/ndykyy/Desktop/uls/src/mx_sort_for_columns.c
+/Users/ozahirnyi/uls/src/mx_sort_for_columns.c
 uls.h
-/Users/ndykyy/Desktop/uls/src/uls.h
+/Users/ozahirnyi/uls/src/uls.h
 
-/Users/ndykyy/Desktop/uls/src/mx_strjoin_for_path.c
+/Users/ozahirnyi/uls/src/mx_strjoin_for_path.c
 uls.h
-/Users/ndykyy/Desktop/uls/src/uls.h
+/Users/ozahirnyi/uls/src/uls.h
 
-/Users/ndykyy/Desktop/uls/src/mx_vivod_total.c
+/Users/ozahirnyi/uls/src/mx_vivod_total.c
 uls.h
-/Users/ndykyy/Desktop/uls/src/uls.h
+/Users/ozahirnyi/uls/src/uls.h
 

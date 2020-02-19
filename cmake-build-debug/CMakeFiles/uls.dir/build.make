@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Users/ndykyy/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /Users/ozahirnyi/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /Users/ndykyy/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /Users/ozahirnyi/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ndykyy/Desktop/uls
+CMAKE_SOURCE_DIR = /Users/ozahirnyi/uls
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ndykyy/Desktop/uls/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/ozahirnyi/uls/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/uls.dir/depend.make
@@ -57,1440 +57,496 @@ include CMakeFiles/uls.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/uls.dir/flags.make
 
-CMakeFiles/uls.dir/libmx/src/mx_arrlen.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_arrlen.c.o: ../libmx/src/mx_arrlen.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/uls.dir/libmx/src/mx_arrlen.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_arrlen.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_arrlen.c
-
-CMakeFiles/uls.dir/libmx/src/mx_arrlen.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_arrlen.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_arrlen.c > CMakeFiles/uls.dir/libmx/src/mx_arrlen.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_arrlen.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_arrlen.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_arrlen.c -o CMakeFiles/uls.dir/libmx/src/mx_arrlen.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_atoi.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_atoi.c.o: ../libmx/src/mx_atoi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/uls.dir/libmx/src/mx_atoi.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_atoi.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_atoi.c
-
-CMakeFiles/uls.dir/libmx/src/mx_atoi.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_atoi.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_atoi.c > CMakeFiles/uls.dir/libmx/src/mx_atoi.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_atoi.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_atoi.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_atoi.c -o CMakeFiles/uls.dir/libmx/src/mx_atoi.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_binary_search.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_binary_search.c.o: ../libmx/src/mx_binary_search.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/uls.dir/libmx/src/mx_binary_search.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_binary_search.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_binary_search.c
-
-CMakeFiles/uls.dir/libmx/src/mx_binary_search.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_binary_search.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_binary_search.c > CMakeFiles/uls.dir/libmx/src/mx_binary_search.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_binary_search.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_binary_search.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_binary_search.c -o CMakeFiles/uls.dir/libmx/src/mx_binary_search.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_bubble_sort.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_bubble_sort.c.o: ../libmx/src/mx_bubble_sort.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/uls.dir/libmx/src/mx_bubble_sort.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_bubble_sort.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_bubble_sort.c
-
-CMakeFiles/uls.dir/libmx/src/mx_bubble_sort.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_bubble_sort.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_bubble_sort.c > CMakeFiles/uls.dir/libmx/src/mx_bubble_sort.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_bubble_sort.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_bubble_sort.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_bubble_sort.c -o CMakeFiles/uls.dir/libmx/src/mx_bubble_sort.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_count_substr.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_count_substr.c.o: ../libmx/src/mx_count_substr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/uls.dir/libmx/src/mx_count_substr.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_count_substr.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_count_substr.c
-
-CMakeFiles/uls.dir/libmx/src/mx_count_substr.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_count_substr.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_count_substr.c > CMakeFiles/uls.dir/libmx/src/mx_count_substr.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_count_substr.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_count_substr.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_count_substr.c -o CMakeFiles/uls.dir/libmx/src/mx_count_substr.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_count_words.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_count_words.c.o: ../libmx/src/mx_count_words.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/uls.dir/libmx/src/mx_count_words.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_count_words.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_count_words.c
-
-CMakeFiles/uls.dir/libmx/src/mx_count_words.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_count_words.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_count_words.c > CMakeFiles/uls.dir/libmx/src/mx_count_words.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_count_words.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_count_words.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_count_words.c -o CMakeFiles/uls.dir/libmx/src/mx_count_words.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_create_node.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_create_node.c.o: ../libmx/src/mx_create_node.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/uls.dir/libmx/src/mx_create_node.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_create_node.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_create_node.c
-
-CMakeFiles/uls.dir/libmx/src/mx_create_node.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_create_node.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_create_node.c > CMakeFiles/uls.dir/libmx/src/mx_create_node.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_create_node.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_create_node.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_create_node.c -o CMakeFiles/uls.dir/libmx/src/mx_create_node.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_del_extra_spaces.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_del_extra_spaces.c.o: ../libmx/src/mx_del_extra_spaces.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/uls.dir/libmx/src/mx_del_extra_spaces.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_del_extra_spaces.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_del_extra_spaces.c
-
-CMakeFiles/uls.dir/libmx/src/mx_del_extra_spaces.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_del_extra_spaces.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_del_extra_spaces.c > CMakeFiles/uls.dir/libmx/src/mx_del_extra_spaces.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_del_extra_spaces.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_del_extra_spaces.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_del_extra_spaces.c -o CMakeFiles/uls.dir/libmx/src/mx_del_extra_spaces.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_del_intarr.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_del_intarr.c.o: ../libmx/src/mx_del_intarr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/uls.dir/libmx/src/mx_del_intarr.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_del_intarr.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_del_intarr.c
-
-CMakeFiles/uls.dir/libmx/src/mx_del_intarr.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_del_intarr.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_del_intarr.c > CMakeFiles/uls.dir/libmx/src/mx_del_intarr.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_del_intarr.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_del_intarr.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_del_intarr.c -o CMakeFiles/uls.dir/libmx/src/mx_del_intarr.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_del_strarr.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_del_strarr.c.o: ../libmx/src/mx_del_strarr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/uls.dir/libmx/src/mx_del_strarr.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_del_strarr.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_del_strarr.c
-
-CMakeFiles/uls.dir/libmx/src/mx_del_strarr.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_del_strarr.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_del_strarr.c > CMakeFiles/uls.dir/libmx/src/mx_del_strarr.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_del_strarr.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_del_strarr.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_del_strarr.c -o CMakeFiles/uls.dir/libmx/src/mx_del_strarr.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_file_to_str.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_file_to_str.c.o: ../libmx/src/mx_file_to_str.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/uls.dir/libmx/src/mx_file_to_str.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_file_to_str.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_file_to_str.c
-
-CMakeFiles/uls.dir/libmx/src/mx_file_to_str.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_file_to_str.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_file_to_str.c > CMakeFiles/uls.dir/libmx/src/mx_file_to_str.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_file_to_str.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_file_to_str.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_file_to_str.c -o CMakeFiles/uls.dir/libmx/src/mx_file_to_str.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_foreach.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_foreach.c.o: ../libmx/src/mx_foreach.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/uls.dir/libmx/src/mx_foreach.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_foreach.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_foreach.c
-
-CMakeFiles/uls.dir/libmx/src/mx_foreach.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_foreach.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_foreach.c > CMakeFiles/uls.dir/libmx/src/mx_foreach.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_foreach.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_foreach.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_foreach.c -o CMakeFiles/uls.dir/libmx/src/mx_foreach.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_get_char_index.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_get_char_index.c.o: ../libmx/src/mx_get_char_index.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/uls.dir/libmx/src/mx_get_char_index.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_get_char_index.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_get_char_index.c
-
-CMakeFiles/uls.dir/libmx/src/mx_get_char_index.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_get_char_index.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_get_char_index.c > CMakeFiles/uls.dir/libmx/src/mx_get_char_index.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_get_char_index.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_get_char_index.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_get_char_index.c -o CMakeFiles/uls.dir/libmx/src/mx_get_char_index.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_get_substr_index.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_get_substr_index.c.o: ../libmx/src/mx_get_substr_index.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/uls.dir/libmx/src/mx_get_substr_index.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_get_substr_index.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_get_substr_index.c
-
-CMakeFiles/uls.dir/libmx/src/mx_get_substr_index.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_get_substr_index.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_get_substr_index.c > CMakeFiles/uls.dir/libmx/src/mx_get_substr_index.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_get_substr_index.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_get_substr_index.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_get_substr_index.c -o CMakeFiles/uls.dir/libmx/src/mx_get_substr_index.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_hex_to_nbr.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_hex_to_nbr.c.o: ../libmx/src/mx_hex_to_nbr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/uls.dir/libmx/src/mx_hex_to_nbr.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_hex_to_nbr.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_hex_to_nbr.c
-
-CMakeFiles/uls.dir/libmx/src/mx_hex_to_nbr.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_hex_to_nbr.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_hex_to_nbr.c > CMakeFiles/uls.dir/libmx/src/mx_hex_to_nbr.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_hex_to_nbr.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_hex_to_nbr.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_hex_to_nbr.c -o CMakeFiles/uls.dir/libmx/src/mx_hex_to_nbr.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_is_alpha.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_is_alpha.c.o: ../libmx/src/mx_is_alpha.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/uls.dir/libmx/src/mx_is_alpha.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_is_alpha.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_is_alpha.c
-
-CMakeFiles/uls.dir/libmx/src/mx_is_alpha.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_is_alpha.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_is_alpha.c > CMakeFiles/uls.dir/libmx/src/mx_is_alpha.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_is_alpha.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_is_alpha.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_is_alpha.c -o CMakeFiles/uls.dir/libmx/src/mx_is_alpha.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_is_space.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_is_space.c.o: ../libmx/src/mx_is_space.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/uls.dir/libmx/src/mx_is_space.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_is_space.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_is_space.c
-
-CMakeFiles/uls.dir/libmx/src/mx_is_space.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_is_space.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_is_space.c > CMakeFiles/uls.dir/libmx/src/mx_is_space.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_is_space.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_is_space.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_is_space.c -o CMakeFiles/uls.dir/libmx/src/mx_is_space.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_isdigit.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_isdigit.c.o: ../libmx/src/mx_isdigit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/uls.dir/libmx/src/mx_isdigit.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_isdigit.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_isdigit.c
-
-CMakeFiles/uls.dir/libmx/src/mx_isdigit.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_isdigit.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_isdigit.c > CMakeFiles/uls.dir/libmx/src/mx_isdigit.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_isdigit.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_isdigit.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_isdigit.c -o CMakeFiles/uls.dir/libmx/src/mx_isdigit.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_itoa.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_itoa.c.o: ../libmx/src/mx_itoa.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/uls.dir/libmx/src/mx_itoa.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_itoa.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_itoa.c
-
-CMakeFiles/uls.dir/libmx/src/mx_itoa.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_itoa.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_itoa.c > CMakeFiles/uls.dir/libmx/src/mx_itoa.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_itoa.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_itoa.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_itoa.c -o CMakeFiles/uls.dir/libmx/src/mx_itoa.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_list_size.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_list_size.c.o: ../libmx/src/mx_list_size.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/uls.dir/libmx/src/mx_list_size.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_list_size.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_list_size.c
-
-CMakeFiles/uls.dir/libmx/src/mx_list_size.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_list_size.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_list_size.c > CMakeFiles/uls.dir/libmx/src/mx_list_size.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_list_size.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_list_size.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_list_size.c -o CMakeFiles/uls.dir/libmx/src/mx_list_size.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_memccpy.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_memccpy.c.o: ../libmx/src/mx_memccpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/uls.dir/libmx/src/mx_memccpy.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_memccpy.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_memccpy.c
-
-CMakeFiles/uls.dir/libmx/src/mx_memccpy.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_memccpy.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_memccpy.c > CMakeFiles/uls.dir/libmx/src/mx_memccpy.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_memccpy.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_memccpy.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_memccpy.c -o CMakeFiles/uls.dir/libmx/src/mx_memccpy.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_memchr.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_memchr.c.o: ../libmx/src/mx_memchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/uls.dir/libmx/src/mx_memchr.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_memchr.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_memchr.c
-
-CMakeFiles/uls.dir/libmx/src/mx_memchr.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_memchr.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_memchr.c > CMakeFiles/uls.dir/libmx/src/mx_memchr.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_memchr.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_memchr.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_memchr.c -o CMakeFiles/uls.dir/libmx/src/mx_memchr.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_memcmp.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_memcmp.c.o: ../libmx/src/mx_memcmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/uls.dir/libmx/src/mx_memcmp.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_memcmp.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_memcmp.c
-
-CMakeFiles/uls.dir/libmx/src/mx_memcmp.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_memcmp.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_memcmp.c > CMakeFiles/uls.dir/libmx/src/mx_memcmp.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_memcmp.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_memcmp.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_memcmp.c -o CMakeFiles/uls.dir/libmx/src/mx_memcmp.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_memcpy.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_memcpy.c.o: ../libmx/src/mx_memcpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/uls.dir/libmx/src/mx_memcpy.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_memcpy.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_memcpy.c
-
-CMakeFiles/uls.dir/libmx/src/mx_memcpy.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_memcpy.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_memcpy.c > CMakeFiles/uls.dir/libmx/src/mx_memcpy.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_memcpy.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_memcpy.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_memcpy.c -o CMakeFiles/uls.dir/libmx/src/mx_memcpy.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_memmem.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_memmem.c.o: ../libmx/src/mx_memmem.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/uls.dir/libmx/src/mx_memmem.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_memmem.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_memmem.c
-
-CMakeFiles/uls.dir/libmx/src/mx_memmem.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_memmem.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_memmem.c > CMakeFiles/uls.dir/libmx/src/mx_memmem.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_memmem.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_memmem.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_memmem.c -o CMakeFiles/uls.dir/libmx/src/mx_memmem.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_memmove.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_memmove.c.o: ../libmx/src/mx_memmove.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/uls.dir/libmx/src/mx_memmove.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_memmove.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_memmove.c
-
-CMakeFiles/uls.dir/libmx/src/mx_memmove.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_memmove.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_memmove.c > CMakeFiles/uls.dir/libmx/src/mx_memmove.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_memmove.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_memmove.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_memmove.c -o CMakeFiles/uls.dir/libmx/src/mx_memmove.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_memrchr.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_memrchr.c.o: ../libmx/src/mx_memrchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/uls.dir/libmx/src/mx_memrchr.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_memrchr.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_memrchr.c
-
-CMakeFiles/uls.dir/libmx/src/mx_memrchr.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_memrchr.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_memrchr.c > CMakeFiles/uls.dir/libmx/src/mx_memrchr.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_memrchr.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_memrchr.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_memrchr.c -o CMakeFiles/uls.dir/libmx/src/mx_memrchr.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_memset.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_memset.c.o: ../libmx/src/mx_memset.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/uls.dir/libmx/src/mx_memset.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_memset.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_memset.c
-
-CMakeFiles/uls.dir/libmx/src/mx_memset.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_memset.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_memset.c > CMakeFiles/uls.dir/libmx/src/mx_memset.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_memset.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_memset.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_memset.c -o CMakeFiles/uls.dir/libmx/src/mx_memset.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_nbr_to_hex.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_nbr_to_hex.c.o: ../libmx/src/mx_nbr_to_hex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/uls.dir/libmx/src/mx_nbr_to_hex.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_nbr_to_hex.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_nbr_to_hex.c
-
-CMakeFiles/uls.dir/libmx/src/mx_nbr_to_hex.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_nbr_to_hex.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_nbr_to_hex.c > CMakeFiles/uls.dir/libmx/src/mx_nbr_to_hex.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_nbr_to_hex.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_nbr_to_hex.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_nbr_to_hex.c -o CMakeFiles/uls.dir/libmx/src/mx_nbr_to_hex.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_pop_back.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_pop_back.c.o: ../libmx/src/mx_pop_back.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/uls.dir/libmx/src/mx_pop_back.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_pop_back.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_pop_back.c
-
-CMakeFiles/uls.dir/libmx/src/mx_pop_back.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_pop_back.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_pop_back.c > CMakeFiles/uls.dir/libmx/src/mx_pop_back.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_pop_back.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_pop_back.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_pop_back.c -o CMakeFiles/uls.dir/libmx/src/mx_pop_back.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_pop_front.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_pop_front.c.o: ../libmx/src/mx_pop_front.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/uls.dir/libmx/src/mx_pop_front.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_pop_front.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_pop_front.c
-
-CMakeFiles/uls.dir/libmx/src/mx_pop_front.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_pop_front.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_pop_front.c > CMakeFiles/uls.dir/libmx/src/mx_pop_front.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_pop_front.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_pop_front.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_pop_front.c -o CMakeFiles/uls.dir/libmx/src/mx_pop_front.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_pow.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_pow.c.o: ../libmx/src/mx_pow.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/uls.dir/libmx/src/mx_pow.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_pow.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_pow.c
-
-CMakeFiles/uls.dir/libmx/src/mx_pow.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_pow.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_pow.c > CMakeFiles/uls.dir/libmx/src/mx_pow.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_pow.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_pow.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_pow.c -o CMakeFiles/uls.dir/libmx/src/mx_pow.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_print_strarr.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_print_strarr.c.o: ../libmx/src/mx_print_strarr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/uls.dir/libmx/src/mx_print_strarr.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_print_strarr.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_print_strarr.c
-
-CMakeFiles/uls.dir/libmx/src/mx_print_strarr.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_print_strarr.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_print_strarr.c > CMakeFiles/uls.dir/libmx/src/mx_print_strarr.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_print_strarr.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_print_strarr.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_print_strarr.c -o CMakeFiles/uls.dir/libmx/src/mx_print_strarr.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_print_unicode.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_print_unicode.c.o: ../libmx/src/mx_print_unicode.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/uls.dir/libmx/src/mx_print_unicode.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_print_unicode.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_print_unicode.c
-
-CMakeFiles/uls.dir/libmx/src/mx_print_unicode.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_print_unicode.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_print_unicode.c > CMakeFiles/uls.dir/libmx/src/mx_print_unicode.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_print_unicode.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_print_unicode.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_print_unicode.c -o CMakeFiles/uls.dir/libmx/src/mx_print_unicode.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_printchar.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_printchar.c.o: ../libmx/src/mx_printchar.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/uls.dir/libmx/src/mx_printchar.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_printchar.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_printchar.c
-
-CMakeFiles/uls.dir/libmx/src/mx_printchar.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_printchar.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_printchar.c > CMakeFiles/uls.dir/libmx/src/mx_printchar.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_printchar.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_printchar.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_printchar.c -o CMakeFiles/uls.dir/libmx/src/mx_printchar.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_printerr.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_printerr.c.o: ../libmx/src/mx_printerr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/uls.dir/libmx/src/mx_printerr.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_printerr.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_printerr.c
-
-CMakeFiles/uls.dir/libmx/src/mx_printerr.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_printerr.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_printerr.c > CMakeFiles/uls.dir/libmx/src/mx_printerr.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_printerr.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_printerr.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_printerr.c -o CMakeFiles/uls.dir/libmx/src/mx_printerr.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_printint.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_printint.c.o: ../libmx/src/mx_printint.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/uls.dir/libmx/src/mx_printint.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_printint.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_printint.c
-
-CMakeFiles/uls.dir/libmx/src/mx_printint.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_printint.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_printint.c > CMakeFiles/uls.dir/libmx/src/mx_printint.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_printint.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_printint.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_printint.c -o CMakeFiles/uls.dir/libmx/src/mx_printint.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_printstr.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_printstr.c.o: ../libmx/src/mx_printstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/uls.dir/libmx/src/mx_printstr.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_printstr.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_printstr.c
-
-CMakeFiles/uls.dir/libmx/src/mx_printstr.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_printstr.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_printstr.c > CMakeFiles/uls.dir/libmx/src/mx_printstr.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_printstr.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_printstr.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_printstr.c -o CMakeFiles/uls.dir/libmx/src/mx_printstr.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_push_back.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_push_back.c.o: ../libmx/src/mx_push_back.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/uls.dir/libmx/src/mx_push_back.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_push_back.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_push_back.c
-
-CMakeFiles/uls.dir/libmx/src/mx_push_back.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_push_back.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_push_back.c > CMakeFiles/uls.dir/libmx/src/mx_push_back.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_push_back.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_push_back.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_push_back.c -o CMakeFiles/uls.dir/libmx/src/mx_push_back.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_push_front.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_push_front.c.o: ../libmx/src/mx_push_front.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/uls.dir/libmx/src/mx_push_front.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_push_front.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_push_front.c
-
-CMakeFiles/uls.dir/libmx/src/mx_push_front.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_push_front.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_push_front.c > CMakeFiles/uls.dir/libmx/src/mx_push_front.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_push_front.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_push_front.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_push_front.c -o CMakeFiles/uls.dir/libmx/src/mx_push_front.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_realloc.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_realloc.c.o: ../libmx/src/mx_realloc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/uls.dir/libmx/src/mx_realloc.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_realloc.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_realloc.c
-
-CMakeFiles/uls.dir/libmx/src/mx_realloc.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_realloc.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_realloc.c > CMakeFiles/uls.dir/libmx/src/mx_realloc.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_realloc.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_realloc.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_realloc.c -o CMakeFiles/uls.dir/libmx/src/mx_realloc.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_replace_substr.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_replace_substr.c.o: ../libmx/src/mx_replace_substr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/uls.dir/libmx/src/mx_replace_substr.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_replace_substr.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_replace_substr.c
-
-CMakeFiles/uls.dir/libmx/src/mx_replace_substr.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_replace_substr.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_replace_substr.c > CMakeFiles/uls.dir/libmx/src/mx_replace_substr.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_replace_substr.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_replace_substr.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_replace_substr.c -o CMakeFiles/uls.dir/libmx/src/mx_replace_substr.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_skip_substr_index.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_skip_substr_index.c.o: ../libmx/src/mx_skip_substr_index.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/uls.dir/libmx/src/mx_skip_substr_index.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_skip_substr_index.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_skip_substr_index.c
-
-CMakeFiles/uls.dir/libmx/src/mx_skip_substr_index.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_skip_substr_index.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_skip_substr_index.c > CMakeFiles/uls.dir/libmx/src/mx_skip_substr_index.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_skip_substr_index.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_skip_substr_index.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_skip_substr_index.c -o CMakeFiles/uls.dir/libmx/src/mx_skip_substr_index.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_sort_list.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_sort_list.c.o: ../libmx/src/mx_sort_list.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/uls.dir/libmx/src/mx_sort_list.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_sort_list.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_sort_list.c
-
-CMakeFiles/uls.dir/libmx/src/mx_sort_list.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_sort_list.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_sort_list.c > CMakeFiles/uls.dir/libmx/src/mx_sort_list.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_sort_list.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_sort_list.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_sort_list.c -o CMakeFiles/uls.dir/libmx/src/mx_sort_list.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_sqrt.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_sqrt.c.o: ../libmx/src/mx_sqrt.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/uls.dir/libmx/src/mx_sqrt.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_sqrt.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_sqrt.c
-
-CMakeFiles/uls.dir/libmx/src/mx_sqrt.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_sqrt.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_sqrt.c > CMakeFiles/uls.dir/libmx/src/mx_sqrt.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_sqrt.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_sqrt.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_sqrt.c -o CMakeFiles/uls.dir/libmx/src/mx_sqrt.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_str_reverse.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_str_reverse.c.o: ../libmx/src/mx_str_reverse.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/uls.dir/libmx/src/mx_str_reverse.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_str_reverse.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_str_reverse.c
-
-CMakeFiles/uls.dir/libmx/src/mx_str_reverse.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_str_reverse.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_str_reverse.c > CMakeFiles/uls.dir/libmx/src/mx_str_reverse.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_str_reverse.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_str_reverse.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_str_reverse.c -o CMakeFiles/uls.dir/libmx/src/mx_str_reverse.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_strcat.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_strcat.c.o: ../libmx/src/mx_strcat.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/uls.dir/libmx/src/mx_strcat.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_strcat.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_strcat.c
-
-CMakeFiles/uls.dir/libmx/src/mx_strcat.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_strcat.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_strcat.c > CMakeFiles/uls.dir/libmx/src/mx_strcat.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_strcat.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_strcat.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_strcat.c -o CMakeFiles/uls.dir/libmx/src/mx_strcat.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_strcmp.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_strcmp.c.o: ../libmx/src/mx_strcmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/uls.dir/libmx/src/mx_strcmp.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_strcmp.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_strcmp.c
-
-CMakeFiles/uls.dir/libmx/src/mx_strcmp.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_strcmp.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_strcmp.c > CMakeFiles/uls.dir/libmx/src/mx_strcmp.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_strcmp.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_strcmp.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_strcmp.c -o CMakeFiles/uls.dir/libmx/src/mx_strcmp.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_strcpy.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_strcpy.c.o: ../libmx/src/mx_strcpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/uls.dir/libmx/src/mx_strcpy.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_strcpy.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_strcpy.c
-
-CMakeFiles/uls.dir/libmx/src/mx_strcpy.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_strcpy.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_strcpy.c > CMakeFiles/uls.dir/libmx/src/mx_strcpy.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_strcpy.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_strcpy.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_strcpy.c -o CMakeFiles/uls.dir/libmx/src/mx_strcpy.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_strdel.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_strdel.c.o: ../libmx/src/mx_strdel.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/uls.dir/libmx/src/mx_strdel.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_strdel.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_strdel.c
-
-CMakeFiles/uls.dir/libmx/src/mx_strdel.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_strdel.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_strdel.c > CMakeFiles/uls.dir/libmx/src/mx_strdel.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_strdel.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_strdel.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_strdel.c -o CMakeFiles/uls.dir/libmx/src/mx_strdel.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_strdup.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_strdup.c.o: ../libmx/src/mx_strdup.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/uls.dir/libmx/src/mx_strdup.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_strdup.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_strdup.c
-
-CMakeFiles/uls.dir/libmx/src/mx_strdup.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_strdup.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_strdup.c > CMakeFiles/uls.dir/libmx/src/mx_strdup.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_strdup.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_strdup.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_strdup.c -o CMakeFiles/uls.dir/libmx/src/mx_strdup.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_strjoin.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_strjoin.c.o: ../libmx/src/mx_strjoin.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/uls.dir/libmx/src/mx_strjoin.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_strjoin.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_strjoin.c
-
-CMakeFiles/uls.dir/libmx/src/mx_strjoin.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_strjoin.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_strjoin.c > CMakeFiles/uls.dir/libmx/src/mx_strjoin.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_strjoin.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_strjoin.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_strjoin.c -o CMakeFiles/uls.dir/libmx/src/mx_strjoin.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_strlen.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_strlen.c.o: ../libmx/src/mx_strlen.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/uls.dir/libmx/src/mx_strlen.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_strlen.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_strlen.c
-
-CMakeFiles/uls.dir/libmx/src/mx_strlen.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_strlen.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_strlen.c > CMakeFiles/uls.dir/libmx/src/mx_strlen.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_strlen.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_strlen.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_strlen.c -o CMakeFiles/uls.dir/libmx/src/mx_strlen.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_strncmp.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_strncmp.c.o: ../libmx/src/mx_strncmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/uls.dir/libmx/src/mx_strncmp.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_strncmp.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_strncmp.c
-
-CMakeFiles/uls.dir/libmx/src/mx_strncmp.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_strncmp.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_strncmp.c > CMakeFiles/uls.dir/libmx/src/mx_strncmp.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_strncmp.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_strncmp.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_strncmp.c -o CMakeFiles/uls.dir/libmx/src/mx_strncmp.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_strncpy.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_strncpy.c.o: ../libmx/src/mx_strncpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/uls.dir/libmx/src/mx_strncpy.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_strncpy.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_strncpy.c
-
-CMakeFiles/uls.dir/libmx/src/mx_strncpy.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_strncpy.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_strncpy.c > CMakeFiles/uls.dir/libmx/src/mx_strncpy.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_strncpy.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_strncpy.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_strncpy.c -o CMakeFiles/uls.dir/libmx/src/mx_strncpy.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_strndup.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_strndup.c.o: ../libmx/src/mx_strndup.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/uls.dir/libmx/src/mx_strndup.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_strndup.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_strndup.c
-
-CMakeFiles/uls.dir/libmx/src/mx_strndup.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_strndup.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_strndup.c > CMakeFiles/uls.dir/libmx/src/mx_strndup.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_strndup.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_strndup.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_strndup.c -o CMakeFiles/uls.dir/libmx/src/mx_strndup.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_strnew.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_strnew.c.o: ../libmx/src/mx_strnew.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/uls.dir/libmx/src/mx_strnew.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_strnew.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_strnew.c
-
-CMakeFiles/uls.dir/libmx/src/mx_strnew.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_strnew.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_strnew.c > CMakeFiles/uls.dir/libmx/src/mx_strnew.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_strnew.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_strnew.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_strnew.c -o CMakeFiles/uls.dir/libmx/src/mx_strnew.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_strsplit.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_strsplit.c.o: ../libmx/src/mx_strsplit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/uls.dir/libmx/src/mx_strsplit.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_strsplit.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_strsplit.c
-
-CMakeFiles/uls.dir/libmx/src/mx_strsplit.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_strsplit.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_strsplit.c > CMakeFiles/uls.dir/libmx/src/mx_strsplit.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_strsplit.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_strsplit.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_strsplit.c -o CMakeFiles/uls.dir/libmx/src/mx_strsplit.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_strstr.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_strstr.c.o: ../libmx/src/mx_strstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/uls.dir/libmx/src/mx_strstr.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_strstr.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_strstr.c
-
-CMakeFiles/uls.dir/libmx/src/mx_strstr.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_strstr.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_strstr.c > CMakeFiles/uls.dir/libmx/src/mx_strstr.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_strstr.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_strstr.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_strstr.c -o CMakeFiles/uls.dir/libmx/src/mx_strstr.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_strtrim.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_strtrim.c.o: ../libmx/src/mx_strtrim.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/uls.dir/libmx/src/mx_strtrim.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_strtrim.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_strtrim.c
-
-CMakeFiles/uls.dir/libmx/src/mx_strtrim.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_strtrim.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_strtrim.c > CMakeFiles/uls.dir/libmx/src/mx_strtrim.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_strtrim.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_strtrim.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_strtrim.c -o CMakeFiles/uls.dir/libmx/src/mx_strtrim.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_swap_char.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_swap_char.c.o: ../libmx/src/mx_swap_char.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/uls.dir/libmx/src/mx_swap_char.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_swap_char.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_swap_char.c
-
-CMakeFiles/uls.dir/libmx/src/mx_swap_char.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_swap_char.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_swap_char.c > CMakeFiles/uls.dir/libmx/src/mx_swap_char.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_swap_char.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_swap_char.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_swap_char.c -o CMakeFiles/uls.dir/libmx/src/mx_swap_char.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_ultra_del_extra_spaces.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_ultra_del_extra_spaces.c.o: ../libmx/src/mx_ultra_del_extra_spaces.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/uls.dir/libmx/src/mx_ultra_del_extra_spaces.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_ultra_del_extra_spaces.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_ultra_del_extra_spaces.c
-
-CMakeFiles/uls.dir/libmx/src/mx_ultra_del_extra_spaces.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_ultra_del_extra_spaces.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_ultra_del_extra_spaces.c > CMakeFiles/uls.dir/libmx/src/mx_ultra_del_extra_spaces.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_ultra_del_extra_spaces.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_ultra_del_extra_spaces.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_ultra_del_extra_spaces.c -o CMakeFiles/uls.dir/libmx/src/mx_ultra_del_extra_spaces.c.s
-
-CMakeFiles/uls.dir/libmx/src/mx_ultra_strtrim.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/libmx/src/mx_ultra_strtrim.c.o: ../libmx/src/mx_ultra_strtrim.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/uls.dir/libmx/src/mx_ultra_strtrim.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/libmx/src/mx_ultra_strtrim.c.o   -c /Users/ndykyy/Desktop/uls/libmx/src/mx_ultra_strtrim.c
-
-CMakeFiles/uls.dir/libmx/src/mx_ultra_strtrim.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/libmx/src/mx_ultra_strtrim.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/libmx/src/mx_ultra_strtrim.c > CMakeFiles/uls.dir/libmx/src/mx_ultra_strtrim.c.i
-
-CMakeFiles/uls.dir/libmx/src/mx_ultra_strtrim.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/libmx/src/mx_ultra_strtrim.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/libmx/src/mx_ultra_strtrim.c -o CMakeFiles/uls.dir/libmx/src/mx_ultra_strtrim.c.s
-
 CMakeFiles/uls.dir/src/main.c.o: CMakeFiles/uls.dir/flags.make
 CMakeFiles/uls.dir/src/main.c.o: ../src/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/uls.dir/src/main.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/main.c.o   -c /Users/ndykyy/Desktop/uls/src/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/uls.dir/src/main.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/main.c.o   -c /Users/ozahirnyi/uls/src/main.c
 
 CMakeFiles/uls.dir/src/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/main.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/src/main.c > CMakeFiles/uls.dir/src/main.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ozahirnyi/uls/src/main.c > CMakeFiles/uls.dir/src/main.c.i
 
 CMakeFiles/uls.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/main.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/src/main.c -o CMakeFiles/uls.dir/src/main.c.s
-
-CMakeFiles/uls.dir/src/mx_change_argv.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/src/mx_change_argv.c.o: ../src/mx_change_argv.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/uls.dir/src/mx_change_argv.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_change_argv.c.o   -c /Users/ndykyy/Desktop/uls/src/mx_change_argv.c
-
-CMakeFiles/uls.dir/src/mx_change_argv.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/mx_change_argv.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/src/mx_change_argv.c > CMakeFiles/uls.dir/src/mx_change_argv.c.i
-
-CMakeFiles/uls.dir/src/mx_change_argv.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/mx_change_argv.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/src/mx_change_argv.c -o CMakeFiles/uls.dir/src/mx_change_argv.c.s
-
-CMakeFiles/uls.dir/src/mx_compare.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/src/mx_compare.c.o: ../src/mx_compare.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/uls.dir/src/mx_compare.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_compare.c.o   -c /Users/ndykyy/Desktop/uls/src/mx_compare.c
-
-CMakeFiles/uls.dir/src/mx_compare.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/mx_compare.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/src/mx_compare.c > CMakeFiles/uls.dir/src/mx_compare.c.i
-
-CMakeFiles/uls.dir/src/mx_compare.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/mx_compare.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/src/mx_compare.c -o CMakeFiles/uls.dir/src/mx_compare.c.s
-
-CMakeFiles/uls.dir/src/mx_dir_name_print.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/src/mx_dir_name_print.c.o: ../src/mx_dir_name_print.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/uls.dir/src/mx_dir_name_print.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_dir_name_print.c.o   -c /Users/ndykyy/Desktop/uls/src/mx_dir_name_print.c
-
-CMakeFiles/uls.dir/src/mx_dir_name_print.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/mx_dir_name_print.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/src/mx_dir_name_print.c > CMakeFiles/uls.dir/src/mx_dir_name_print.c.i
-
-CMakeFiles/uls.dir/src/mx_dir_name_print.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/mx_dir_name_print.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/src/mx_dir_name_print.c -o CMakeFiles/uls.dir/src/mx_dir_name_print.c.s
-
-CMakeFiles/uls.dir/src/mx_flag_d.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/src/mx_flag_d.c.o: ../src/mx_flag_d.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/uls.dir/src/mx_flag_d.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_flag_d.c.o   -c /Users/ndykyy/Desktop/uls/src/mx_flag_d.c
-
-CMakeFiles/uls.dir/src/mx_flag_d.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/mx_flag_d.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/src/mx_flag_d.c > CMakeFiles/uls.dir/src/mx_flag_d.c.i
-
-CMakeFiles/uls.dir/src/mx_flag_d.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/mx_flag_d.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/src/mx_flag_d.c -o CMakeFiles/uls.dir/src/mx_flag_d.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ozahirnyi/uls/src/main.c -o CMakeFiles/uls.dir/src/main.c.s
 
 CMakeFiles/uls.dir/src/mx_flag_l.c.o: CMakeFiles/uls.dir/flags.make
 CMakeFiles/uls.dir/src/mx_flag_l.c.o: ../src/mx_flag_l.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/uls.dir/src/mx_flag_l.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_flag_l.c.o   -c /Users/ndykyy/Desktop/uls/src/mx_flag_l.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/uls.dir/src/mx_flag_l.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_flag_l.c.o   -c /Users/ozahirnyi/uls/src/mx_flag_l.c
 
 CMakeFiles/uls.dir/src/mx_flag_l.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/mx_flag_l.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/src/mx_flag_l.c > CMakeFiles/uls.dir/src/mx_flag_l.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ozahirnyi/uls/src/mx_flag_l.c > CMakeFiles/uls.dir/src/mx_flag_l.c.i
 
 CMakeFiles/uls.dir/src/mx_flag_l.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/mx_flag_l.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/src/mx_flag_l.c -o CMakeFiles/uls.dir/src/mx_flag_l.c.s
-
-CMakeFiles/uls.dir/src/mx_flag_one.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/src/mx_flag_one.c.o: ../src/mx_flag_one.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/uls.dir/src/mx_flag_one.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_flag_one.c.o   -c /Users/ndykyy/Desktop/uls/src/mx_flag_one.c
-
-CMakeFiles/uls.dir/src/mx_flag_one.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/mx_flag_one.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/src/mx_flag_one.c > CMakeFiles/uls.dir/src/mx_flag_one.c.i
-
-CMakeFiles/uls.dir/src/mx_flag_one.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/mx_flag_one.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/src/mx_flag_one.c -o CMakeFiles/uls.dir/src/mx_flag_one.c.s
-
-CMakeFiles/uls.dir/src/mx_flags_trig.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/src/mx_flags_trig.c.o: ../src/mx_flags_trig.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/uls.dir/src/mx_flags_trig.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_flags_trig.c.o   -c /Users/ndykyy/Desktop/uls/src/mx_flags_trig.c
-
-CMakeFiles/uls.dir/src/mx_flags_trig.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/mx_flags_trig.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/src/mx_flags_trig.c > CMakeFiles/uls.dir/src/mx_flags_trig.c.i
-
-CMakeFiles/uls.dir/src/mx_flags_trig.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/mx_flags_trig.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/src/mx_flags_trig.c -o CMakeFiles/uls.dir/src/mx_flags_trig.c.s
-
-CMakeFiles/uls.dir/src/mx_is_ascii.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/src/mx_is_ascii.c.o: ../src/mx_is_ascii.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/uls.dir/src/mx_is_ascii.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_is_ascii.c.o   -c /Users/ndykyy/Desktop/uls/src/mx_is_ascii.c
-
-CMakeFiles/uls.dir/src/mx_is_ascii.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/mx_is_ascii.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/src/mx_is_ascii.c > CMakeFiles/uls.dir/src/mx_is_ascii.c.i
-
-CMakeFiles/uls.dir/src/mx_is_ascii.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/mx_is_ascii.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/src/mx_is_ascii.c -o CMakeFiles/uls.dir/src/mx_is_ascii.c.s
-
-CMakeFiles/uls.dir/src/mx_l_out_st_blocks.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/src/mx_l_out_st_blocks.c.o: ../src/mx_l_out_st_blocks.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/uls.dir/src/mx_l_out_st_blocks.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_l_out_st_blocks.c.o   -c /Users/ndykyy/Desktop/uls/src/mx_l_out_st_blocks.c
-
-CMakeFiles/uls.dir/src/mx_l_out_st_blocks.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/mx_l_out_st_blocks.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/src/mx_l_out_st_blocks.c > CMakeFiles/uls.dir/src/mx_l_out_st_blocks.c.i
-
-CMakeFiles/uls.dir/src/mx_l_out_st_blocks.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/mx_l_out_st_blocks.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/src/mx_l_out_st_blocks.c -o CMakeFiles/uls.dir/src/mx_l_out_st_blocks.c.s
-
-CMakeFiles/uls.dir/src/mx_l_out_st_dev.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/src/mx_l_out_st_dev.c.o: ../src/mx_l_out_st_dev.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/uls.dir/src/mx_l_out_st_dev.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_l_out_st_dev.c.o   -c /Users/ndykyy/Desktop/uls/src/mx_l_out_st_dev.c
-
-CMakeFiles/uls.dir/src/mx_l_out_st_dev.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/mx_l_out_st_dev.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/src/mx_l_out_st_dev.c > CMakeFiles/uls.dir/src/mx_l_out_st_dev.c.i
-
-CMakeFiles/uls.dir/src/mx_l_out_st_dev.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/mx_l_out_st_dev.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/src/mx_l_out_st_dev.c -o CMakeFiles/uls.dir/src/mx_l_out_st_dev.c.s
-
-CMakeFiles/uls.dir/src/mx_l_out_st_gid.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/src/mx_l_out_st_gid.c.o: ../src/mx_l_out_st_gid.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/uls.dir/src/mx_l_out_st_gid.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_l_out_st_gid.c.o   -c /Users/ndykyy/Desktop/uls/src/mx_l_out_st_gid.c
-
-CMakeFiles/uls.dir/src/mx_l_out_st_gid.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/mx_l_out_st_gid.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/src/mx_l_out_st_gid.c > CMakeFiles/uls.dir/src/mx_l_out_st_gid.c.i
-
-CMakeFiles/uls.dir/src/mx_l_out_st_gid.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/mx_l_out_st_gid.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/src/mx_l_out_st_gid.c -o CMakeFiles/uls.dir/src/mx_l_out_st_gid.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ozahirnyi/uls/src/mx_flag_l.c -o CMakeFiles/uls.dir/src/mx_flag_l.c.s
 
 CMakeFiles/uls.dir/src/mx_l_out_st_mode.c.o: CMakeFiles/uls.dir/flags.make
 CMakeFiles/uls.dir/src/mx_l_out_st_mode.c.o: ../src/mx_l_out_st_mode.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/uls.dir/src/mx_l_out_st_mode.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_l_out_st_mode.c.o   -c /Users/ndykyy/Desktop/uls/src/mx_l_out_st_mode.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/uls.dir/src/mx_l_out_st_mode.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_l_out_st_mode.c.o   -c /Users/ozahirnyi/uls/src/mx_l_out_st_mode.c
 
 CMakeFiles/uls.dir/src/mx_l_out_st_mode.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/mx_l_out_st_mode.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/src/mx_l_out_st_mode.c > CMakeFiles/uls.dir/src/mx_l_out_st_mode.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ozahirnyi/uls/src/mx_l_out_st_mode.c > CMakeFiles/uls.dir/src/mx_l_out_st_mode.c.i
 
 CMakeFiles/uls.dir/src/mx_l_out_st_mode.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/mx_l_out_st_mode.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/src/mx_l_out_st_mode.c -o CMakeFiles/uls.dir/src/mx_l_out_st_mode.c.s
-
-CMakeFiles/uls.dir/src/mx_l_out_st_mtime.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/src/mx_l_out_st_mtime.c.o: ../src/mx_l_out_st_mtime.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/uls.dir/src/mx_l_out_st_mtime.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_l_out_st_mtime.c.o   -c /Users/ndykyy/Desktop/uls/src/mx_l_out_st_mtime.c
-
-CMakeFiles/uls.dir/src/mx_l_out_st_mtime.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/mx_l_out_st_mtime.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/src/mx_l_out_st_mtime.c > CMakeFiles/uls.dir/src/mx_l_out_st_mtime.c.i
-
-CMakeFiles/uls.dir/src/mx_l_out_st_mtime.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/mx_l_out_st_mtime.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/src/mx_l_out_st_mtime.c -o CMakeFiles/uls.dir/src/mx_l_out_st_mtime.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ozahirnyi/uls/src/mx_l_out_st_mode.c -o CMakeFiles/uls.dir/src/mx_l_out_st_mode.c.s
 
 CMakeFiles/uls.dir/src/mx_l_out_st_nlink.c.o: CMakeFiles/uls.dir/flags.make
 CMakeFiles/uls.dir/src/mx_l_out_st_nlink.c.o: ../src/mx_l_out_st_nlink.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/uls.dir/src/mx_l_out_st_nlink.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_l_out_st_nlink.c.o   -c /Users/ndykyy/Desktop/uls/src/mx_l_out_st_nlink.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/uls.dir/src/mx_l_out_st_nlink.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_l_out_st_nlink.c.o   -c /Users/ozahirnyi/uls/src/mx_l_out_st_nlink.c
 
 CMakeFiles/uls.dir/src/mx_l_out_st_nlink.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/mx_l_out_st_nlink.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/src/mx_l_out_st_nlink.c > CMakeFiles/uls.dir/src/mx_l_out_st_nlink.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ozahirnyi/uls/src/mx_l_out_st_nlink.c > CMakeFiles/uls.dir/src/mx_l_out_st_nlink.c.i
 
 CMakeFiles/uls.dir/src/mx_l_out_st_nlink.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/mx_l_out_st_nlink.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/src/mx_l_out_st_nlink.c -o CMakeFiles/uls.dir/src/mx_l_out_st_nlink.c.s
-
-CMakeFiles/uls.dir/src/mx_l_out_st_size.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/src/mx_l_out_st_size.c.o: ../src/mx_l_out_st_size.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/uls.dir/src/mx_l_out_st_size.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_l_out_st_size.c.o   -c /Users/ndykyy/Desktop/uls/src/mx_l_out_st_size.c
-
-CMakeFiles/uls.dir/src/mx_l_out_st_size.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/mx_l_out_st_size.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/src/mx_l_out_st_size.c > CMakeFiles/uls.dir/src/mx_l_out_st_size.c.i
-
-CMakeFiles/uls.dir/src/mx_l_out_st_size.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/mx_l_out_st_size.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/src/mx_l_out_st_size.c -o CMakeFiles/uls.dir/src/mx_l_out_st_size.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ozahirnyi/uls/src/mx_l_out_st_nlink.c -o CMakeFiles/uls.dir/src/mx_l_out_st_nlink.c.s
 
 CMakeFiles/uls.dir/src/mx_l_out_st_uid.c.o: CMakeFiles/uls.dir/flags.make
 CMakeFiles/uls.dir/src/mx_l_out_st_uid.c.o: ../src/mx_l_out_st_uid.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/uls.dir/src/mx_l_out_st_uid.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_l_out_st_uid.c.o   -c /Users/ndykyy/Desktop/uls/src/mx_l_out_st_uid.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/uls.dir/src/mx_l_out_st_uid.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_l_out_st_uid.c.o   -c /Users/ozahirnyi/uls/src/mx_l_out_st_uid.c
 
 CMakeFiles/uls.dir/src/mx_l_out_st_uid.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/mx_l_out_st_uid.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/src/mx_l_out_st_uid.c > CMakeFiles/uls.dir/src/mx_l_out_st_uid.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ozahirnyi/uls/src/mx_l_out_st_uid.c > CMakeFiles/uls.dir/src/mx_l_out_st_uid.c.i
 
 CMakeFiles/uls.dir/src/mx_l_out_st_uid.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/mx_l_out_st_uid.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/src/mx_l_out_st_uid.c -o CMakeFiles/uls.dir/src/mx_l_out_st_uid.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ozahirnyi/uls/src/mx_l_out_st_uid.c -o CMakeFiles/uls.dir/src/mx_l_out_st_uid.c.s
 
-CMakeFiles/uls.dir/src/mx_len_int.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/src/mx_len_int.c.o: ../src/mx_len_int.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/uls.dir/src/mx_len_int.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_len_int.c.o   -c /Users/ndykyy/Desktop/uls/src/mx_len_int.c
+CMakeFiles/uls.dir/src/mx_l_out_st_gid.c.o: CMakeFiles/uls.dir/flags.make
+CMakeFiles/uls.dir/src/mx_l_out_st_gid.c.o: ../src/mx_l_out_st_gid.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/uls.dir/src/mx_l_out_st_gid.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_l_out_st_gid.c.o   -c /Users/ozahirnyi/uls/src/mx_l_out_st_gid.c
 
-CMakeFiles/uls.dir/src/mx_len_int.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/mx_len_int.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/src/mx_len_int.c > CMakeFiles/uls.dir/src/mx_len_int.c.i
+CMakeFiles/uls.dir/src/mx_l_out_st_gid.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/mx_l_out_st_gid.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ozahirnyi/uls/src/mx_l_out_st_gid.c > CMakeFiles/uls.dir/src/mx_l_out_st_gid.c.i
 
-CMakeFiles/uls.dir/src/mx_len_int.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/mx_len_int.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/src/mx_len_int.c -o CMakeFiles/uls.dir/src/mx_len_int.c.s
+CMakeFiles/uls.dir/src/mx_l_out_st_gid.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/mx_l_out_st_gid.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ozahirnyi/uls/src/mx_l_out_st_gid.c -o CMakeFiles/uls.dir/src/mx_l_out_st_gid.c.s
 
-CMakeFiles/uls.dir/src/mx_lines_count.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/src/mx_lines_count.c.o: ../src/mx_lines_count.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/uls.dir/src/mx_lines_count.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_lines_count.c.o   -c /Users/ndykyy/Desktop/uls/src/mx_lines_count.c
+CMakeFiles/uls.dir/src/mx_l_out_st_size.c.o: CMakeFiles/uls.dir/flags.make
+CMakeFiles/uls.dir/src/mx_l_out_st_size.c.o: ../src/mx_l_out_st_size.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/uls.dir/src/mx_l_out_st_size.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_l_out_st_size.c.o   -c /Users/ozahirnyi/uls/src/mx_l_out_st_size.c
 
-CMakeFiles/uls.dir/src/mx_lines_count.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/mx_lines_count.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/src/mx_lines_count.c > CMakeFiles/uls.dir/src/mx_lines_count.c.i
+CMakeFiles/uls.dir/src/mx_l_out_st_size.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/mx_l_out_st_size.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ozahirnyi/uls/src/mx_l_out_st_size.c > CMakeFiles/uls.dir/src/mx_l_out_st_size.c.i
 
-CMakeFiles/uls.dir/src/mx_lines_count.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/mx_lines_count.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/src/mx_lines_count.c -o CMakeFiles/uls.dir/src/mx_lines_count.c.s
+CMakeFiles/uls.dir/src/mx_l_out_st_size.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/mx_l_out_st_size.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ozahirnyi/uls/src/mx_l_out_st_size.c -o CMakeFiles/uls.dir/src/mx_l_out_st_size.c.s
 
-CMakeFiles/uls.dir/src/mx_list_swap.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/src/mx_list_swap.c.o: ../src/mx_list_swap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/uls.dir/src/mx_list_swap.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_list_swap.c.o   -c /Users/ndykyy/Desktop/uls/src/mx_list_swap.c
+CMakeFiles/uls.dir/src/mx_l_out_st_dev.c.o: CMakeFiles/uls.dir/flags.make
+CMakeFiles/uls.dir/src/mx_l_out_st_dev.c.o: ../src/mx_l_out_st_dev.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/uls.dir/src/mx_l_out_st_dev.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_l_out_st_dev.c.o   -c /Users/ozahirnyi/uls/src/mx_l_out_st_dev.c
 
-CMakeFiles/uls.dir/src/mx_list_swap.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/mx_list_swap.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/src/mx_list_swap.c > CMakeFiles/uls.dir/src/mx_list_swap.c.i
+CMakeFiles/uls.dir/src/mx_l_out_st_dev.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/mx_l_out_st_dev.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ozahirnyi/uls/src/mx_l_out_st_dev.c > CMakeFiles/uls.dir/src/mx_l_out_st_dev.c.i
 
-CMakeFiles/uls.dir/src/mx_list_swap.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/mx_list_swap.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/src/mx_list_swap.c -o CMakeFiles/uls.dir/src/mx_list_swap.c.s
+CMakeFiles/uls.dir/src/mx_l_out_st_dev.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/mx_l_out_st_dev.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ozahirnyi/uls/src/mx_l_out_st_dev.c -o CMakeFiles/uls.dir/src/mx_l_out_st_dev.c.s
 
-CMakeFiles/uls.dir/src/mx_longest_name.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/src/mx_longest_name.c.o: ../src/mx_longest_name.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/uls.dir/src/mx_longest_name.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_longest_name.c.o   -c /Users/ndykyy/Desktop/uls/src/mx_longest_name.c
+CMakeFiles/uls.dir/src/mx_l_out_st_mtime.c.o: CMakeFiles/uls.dir/flags.make
+CMakeFiles/uls.dir/src/mx_l_out_st_mtime.c.o: ../src/mx_l_out_st_mtime.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/uls.dir/src/mx_l_out_st_mtime.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_l_out_st_mtime.c.o   -c /Users/ozahirnyi/uls/src/mx_l_out_st_mtime.c
 
-CMakeFiles/uls.dir/src/mx_longest_name.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/mx_longest_name.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/src/mx_longest_name.c > CMakeFiles/uls.dir/src/mx_longest_name.c.i
+CMakeFiles/uls.dir/src/mx_l_out_st_mtime.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/mx_l_out_st_mtime.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ozahirnyi/uls/src/mx_l_out_st_mtime.c > CMakeFiles/uls.dir/src/mx_l_out_st_mtime.c.i
 
-CMakeFiles/uls.dir/src/mx_longest_name.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/mx_longest_name.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/src/mx_longest_name.c -o CMakeFiles/uls.dir/src/mx_longest_name.c.s
-
-CMakeFiles/uls.dir/src/mx_max_len_char.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/src/mx_max_len_char.c.o: ../src/mx_max_len_char.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/uls.dir/src/mx_max_len_char.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_max_len_char.c.o   -c /Users/ndykyy/Desktop/uls/src/mx_max_len_char.c
-
-CMakeFiles/uls.dir/src/mx_max_len_char.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/mx_max_len_char.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/src/mx_max_len_char.c > CMakeFiles/uls.dir/src/mx_max_len_char.c.i
-
-CMakeFiles/uls.dir/src/mx_max_len_char.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/mx_max_len_char.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/src/mx_max_len_char.c -o CMakeFiles/uls.dir/src/mx_max_len_char.c.s
-
-CMakeFiles/uls.dir/src/mx_max_len_int.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/src/mx_max_len_int.c.o: ../src/mx_max_len_int.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/uls.dir/src/mx_max_len_int.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_max_len_int.c.o   -c /Users/ndykyy/Desktop/uls/src/mx_max_len_int.c
-
-CMakeFiles/uls.dir/src/mx_max_len_int.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/mx_max_len_int.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/src/mx_max_len_int.c > CMakeFiles/uls.dir/src/mx_max_len_int.c.i
-
-CMakeFiles/uls.dir/src/mx_max_len_int.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/mx_max_len_int.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/src/mx_max_len_int.c -o CMakeFiles/uls.dir/src/mx_max_len_int.c.s
-
-CMakeFiles/uls.dir/src/mx_print_uls.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/src/mx_print_uls.c.o: ../src/mx_print_uls.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/uls.dir/src/mx_print_uls.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_print_uls.c.o   -c /Users/ndykyy/Desktop/uls/src/mx_print_uls.c
-
-CMakeFiles/uls.dir/src/mx_print_uls.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/mx_print_uls.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/src/mx_print_uls.c > CMakeFiles/uls.dir/src/mx_print_uls.c.i
-
-CMakeFiles/uls.dir/src/mx_print_uls.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/mx_print_uls.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/src/mx_print_uls.c -o CMakeFiles/uls.dir/src/mx_print_uls.c.s
-
-CMakeFiles/uls.dir/src/mx_read_directory.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/src/mx_read_directory.c.o: ../src/mx_read_directory.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/uls.dir/src/mx_read_directory.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_read_directory.c.o   -c /Users/ndykyy/Desktop/uls/src/mx_read_directory.c
-
-CMakeFiles/uls.dir/src/mx_read_directory.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/mx_read_directory.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/src/mx_read_directory.c > CMakeFiles/uls.dir/src/mx_read_directory.c.i
-
-CMakeFiles/uls.dir/src/mx_read_directory.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/mx_read_directory.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/src/mx_read_directory.c -o CMakeFiles/uls.dir/src/mx_read_directory.c.s
+CMakeFiles/uls.dir/src/mx_l_out_st_mtime.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/mx_l_out_st_mtime.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ozahirnyi/uls/src/mx_l_out_st_mtime.c -o CMakeFiles/uls.dir/src/mx_l_out_st_mtime.c.s
 
 CMakeFiles/uls.dir/src/mx_read_uls.c.o: CMakeFiles/uls.dir/flags.make
 CMakeFiles/uls.dir/src/mx_read_uls.c.o: ../src/mx_read_uls.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/uls.dir/src/mx_read_uls.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_read_uls.c.o   -c /Users/ndykyy/Desktop/uls/src/mx_read_uls.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/uls.dir/src/mx_read_uls.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_read_uls.c.o   -c /Users/ozahirnyi/uls/src/mx_read_uls.c
 
 CMakeFiles/uls.dir/src/mx_read_uls.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/mx_read_uls.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/src/mx_read_uls.c > CMakeFiles/uls.dir/src/mx_read_uls.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ozahirnyi/uls/src/mx_read_uls.c > CMakeFiles/uls.dir/src/mx_read_uls.c.i
 
 CMakeFiles/uls.dir/src/mx_read_uls.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/mx_read_uls.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/src/mx_read_uls.c -o CMakeFiles/uls.dir/src/mx_read_uls.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ozahirnyi/uls/src/mx_read_uls.c -o CMakeFiles/uls.dir/src/mx_read_uls.c.s
 
-CMakeFiles/uls.dir/src/mx_sort_by_size.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/src/mx_sort_by_size.c.o: ../src/mx_sort_by_size.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/uls.dir/src/mx_sort_by_size.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_sort_by_size.c.o   -c /Users/ndykyy/Desktop/uls/src/mx_sort_by_size.c
+CMakeFiles/uls.dir/src/mx_print_uls.c.o: CMakeFiles/uls.dir/flags.make
+CMakeFiles/uls.dir/src/mx_print_uls.c.o: ../src/mx_print_uls.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/uls.dir/src/mx_print_uls.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_print_uls.c.o   -c /Users/ozahirnyi/uls/src/mx_print_uls.c
 
-CMakeFiles/uls.dir/src/mx_sort_by_size.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/mx_sort_by_size.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/src/mx_sort_by_size.c > CMakeFiles/uls.dir/src/mx_sort_by_size.c.i
+CMakeFiles/uls.dir/src/mx_print_uls.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/mx_print_uls.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ozahirnyi/uls/src/mx_print_uls.c > CMakeFiles/uls.dir/src/mx_print_uls.c.i
 
-CMakeFiles/uls.dir/src/mx_sort_by_size.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/mx_sort_by_size.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/src/mx_sort_by_size.c -o CMakeFiles/uls.dir/src/mx_sort_by_size.c.s
+CMakeFiles/uls.dir/src/mx_print_uls.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/mx_print_uls.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ozahirnyi/uls/src/mx_print_uls.c -o CMakeFiles/uls.dir/src/mx_print_uls.c.s
 
-CMakeFiles/uls.dir/src/mx_sort_by_time.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/src/mx_sort_by_time.c.o: ../src/mx_sort_by_time.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/uls.dir/src/mx_sort_by_time.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_sort_by_time.c.o   -c /Users/ndykyy/Desktop/uls/src/mx_sort_by_time.c
+CMakeFiles/uls.dir/src/mx_longest_name.c.o: CMakeFiles/uls.dir/flags.make
+CMakeFiles/uls.dir/src/mx_longest_name.c.o: ../src/mx_longest_name.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/uls.dir/src/mx_longest_name.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_longest_name.c.o   -c /Users/ozahirnyi/uls/src/mx_longest_name.c
 
-CMakeFiles/uls.dir/src/mx_sort_by_time.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/mx_sort_by_time.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/src/mx_sort_by_time.c > CMakeFiles/uls.dir/src/mx_sort_by_time.c.i
+CMakeFiles/uls.dir/src/mx_longest_name.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/mx_longest_name.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ozahirnyi/uls/src/mx_longest_name.c > CMakeFiles/uls.dir/src/mx_longest_name.c.i
 
-CMakeFiles/uls.dir/src/mx_sort_by_time.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/mx_sort_by_time.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/src/mx_sort_by_time.c -o CMakeFiles/uls.dir/src/mx_sort_by_time.c.s
+CMakeFiles/uls.dir/src/mx_longest_name.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/mx_longest_name.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ozahirnyi/uls/src/mx_longest_name.c -o CMakeFiles/uls.dir/src/mx_longest_name.c.s
+
+CMakeFiles/uls.dir/src/mx_lines_count.c.o: CMakeFiles/uls.dir/flags.make
+CMakeFiles/uls.dir/src/mx_lines_count.c.o: ../src/mx_lines_count.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/uls.dir/src/mx_lines_count.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_lines_count.c.o   -c /Users/ozahirnyi/uls/src/mx_lines_count.c
+
+CMakeFiles/uls.dir/src/mx_lines_count.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/mx_lines_count.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ozahirnyi/uls/src/mx_lines_count.c > CMakeFiles/uls.dir/src/mx_lines_count.c.i
+
+CMakeFiles/uls.dir/src/mx_lines_count.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/mx_lines_count.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ozahirnyi/uls/src/mx_lines_count.c -o CMakeFiles/uls.dir/src/mx_lines_count.c.s
+
+CMakeFiles/uls.dir/src/mx_is_ascii.c.o: CMakeFiles/uls.dir/flags.make
+CMakeFiles/uls.dir/src/mx_is_ascii.c.o: ../src/mx_is_ascii.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/uls.dir/src/mx_is_ascii.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_is_ascii.c.o   -c /Users/ozahirnyi/uls/src/mx_is_ascii.c
+
+CMakeFiles/uls.dir/src/mx_is_ascii.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/mx_is_ascii.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ozahirnyi/uls/src/mx_is_ascii.c > CMakeFiles/uls.dir/src/mx_is_ascii.c.i
+
+CMakeFiles/uls.dir/src/mx_is_ascii.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/mx_is_ascii.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ozahirnyi/uls/src/mx_is_ascii.c -o CMakeFiles/uls.dir/src/mx_is_ascii.c.s
+
+CMakeFiles/uls.dir/src/mx_max_len_int.c.o: CMakeFiles/uls.dir/flags.make
+CMakeFiles/uls.dir/src/mx_max_len_int.c.o: ../src/mx_max_len_int.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/uls.dir/src/mx_max_len_int.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_max_len_int.c.o   -c /Users/ozahirnyi/uls/src/mx_max_len_int.c
+
+CMakeFiles/uls.dir/src/mx_max_len_int.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/mx_max_len_int.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ozahirnyi/uls/src/mx_max_len_int.c > CMakeFiles/uls.dir/src/mx_max_len_int.c.i
+
+CMakeFiles/uls.dir/src/mx_max_len_int.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/mx_max_len_int.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ozahirnyi/uls/src/mx_max_len_int.c -o CMakeFiles/uls.dir/src/mx_max_len_int.c.s
+
+CMakeFiles/uls.dir/src/mx_max_len_char.c.o: CMakeFiles/uls.dir/flags.make
+CMakeFiles/uls.dir/src/mx_max_len_char.c.o: ../src/mx_max_len_char.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/uls.dir/src/mx_max_len_char.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_max_len_char.c.o   -c /Users/ozahirnyi/uls/src/mx_max_len_char.c
+
+CMakeFiles/uls.dir/src/mx_max_len_char.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/mx_max_len_char.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ozahirnyi/uls/src/mx_max_len_char.c > CMakeFiles/uls.dir/src/mx_max_len_char.c.i
+
+CMakeFiles/uls.dir/src/mx_max_len_char.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/mx_max_len_char.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ozahirnyi/uls/src/mx_max_len_char.c -o CMakeFiles/uls.dir/src/mx_max_len_char.c.s
+
+CMakeFiles/uls.dir/src/mx_len_int.c.o: CMakeFiles/uls.dir/flags.make
+CMakeFiles/uls.dir/src/mx_len_int.c.o: ../src/mx_len_int.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/uls.dir/src/mx_len_int.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_len_int.c.o   -c /Users/ozahirnyi/uls/src/mx_len_int.c
+
+CMakeFiles/uls.dir/src/mx_len_int.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/mx_len_int.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ozahirnyi/uls/src/mx_len_int.c > CMakeFiles/uls.dir/src/mx_len_int.c.i
+
+CMakeFiles/uls.dir/src/mx_len_int.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/mx_len_int.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ozahirnyi/uls/src/mx_len_int.c -o CMakeFiles/uls.dir/src/mx_len_int.c.s
+
+CMakeFiles/uls.dir/src/mx_compare.c.o: CMakeFiles/uls.dir/flags.make
+CMakeFiles/uls.dir/src/mx_compare.c.o: ../src/mx_compare.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/uls.dir/src/mx_compare.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_compare.c.o   -c /Users/ozahirnyi/uls/src/mx_compare.c
+
+CMakeFiles/uls.dir/src/mx_compare.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/mx_compare.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ozahirnyi/uls/src/mx_compare.c > CMakeFiles/uls.dir/src/mx_compare.c.i
+
+CMakeFiles/uls.dir/src/mx_compare.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/mx_compare.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ozahirnyi/uls/src/mx_compare.c -o CMakeFiles/uls.dir/src/mx_compare.c.s
 
 CMakeFiles/uls.dir/src/mx_sort_for_columns.c.o: CMakeFiles/uls.dir/flags.make
 CMakeFiles/uls.dir/src/mx_sort_for_columns.c.o: ../src/mx_sort_for_columns.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/uls.dir/src/mx_sort_for_columns.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_sort_for_columns.c.o   -c /Users/ndykyy/Desktop/uls/src/mx_sort_for_columns.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/uls.dir/src/mx_sort_for_columns.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_sort_for_columns.c.o   -c /Users/ozahirnyi/uls/src/mx_sort_for_columns.c
 
 CMakeFiles/uls.dir/src/mx_sort_for_columns.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/mx_sort_for_columns.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/src/mx_sort_for_columns.c > CMakeFiles/uls.dir/src/mx_sort_for_columns.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ozahirnyi/uls/src/mx_sort_for_columns.c > CMakeFiles/uls.dir/src/mx_sort_for_columns.c.i
 
 CMakeFiles/uls.dir/src/mx_sort_for_columns.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/mx_sort_for_columns.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/src/mx_sort_for_columns.c -o CMakeFiles/uls.dir/src/mx_sort_for_columns.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ozahirnyi/uls/src/mx_sort_for_columns.c -o CMakeFiles/uls.dir/src/mx_sort_for_columns.c.s
 
 CMakeFiles/uls.dir/src/mx_strjoin_for_path.c.o: CMakeFiles/uls.dir/flags.make
 CMakeFiles/uls.dir/src/mx_strjoin_for_path.c.o: ../src/mx_strjoin_for_path.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/uls.dir/src/mx_strjoin_for_path.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_strjoin_for_path.c.o   -c /Users/ndykyy/Desktop/uls/src/mx_strjoin_for_path.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/uls.dir/src/mx_strjoin_for_path.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_strjoin_for_path.c.o   -c /Users/ozahirnyi/uls/src/mx_strjoin_for_path.c
 
 CMakeFiles/uls.dir/src/mx_strjoin_for_path.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/mx_strjoin_for_path.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/src/mx_strjoin_for_path.c > CMakeFiles/uls.dir/src/mx_strjoin_for_path.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ozahirnyi/uls/src/mx_strjoin_for_path.c > CMakeFiles/uls.dir/src/mx_strjoin_for_path.c.i
 
 CMakeFiles/uls.dir/src/mx_strjoin_for_path.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/mx_strjoin_for_path.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/src/mx_strjoin_for_path.c -o CMakeFiles/uls.dir/src/mx_strjoin_for_path.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ozahirnyi/uls/src/mx_strjoin_for_path.c -o CMakeFiles/uls.dir/src/mx_strjoin_for_path.c.s
+
+CMakeFiles/uls.dir/src/mx_flags_trig.c.o: CMakeFiles/uls.dir/flags.make
+CMakeFiles/uls.dir/src/mx_flags_trig.c.o: ../src/mx_flags_trig.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/uls.dir/src/mx_flags_trig.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_flags_trig.c.o   -c /Users/ozahirnyi/uls/src/mx_flags_trig.c
+
+CMakeFiles/uls.dir/src/mx_flags_trig.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/mx_flags_trig.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ozahirnyi/uls/src/mx_flags_trig.c > CMakeFiles/uls.dir/src/mx_flags_trig.c.i
+
+CMakeFiles/uls.dir/src/mx_flags_trig.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/mx_flags_trig.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ozahirnyi/uls/src/mx_flags_trig.c -o CMakeFiles/uls.dir/src/mx_flags_trig.c.s
 
 CMakeFiles/uls.dir/src/mx_vivod_total.c.o: CMakeFiles/uls.dir/flags.make
 CMakeFiles/uls.dir/src/mx_vivod_total.c.o: ../src/mx_vivod_total.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/uls.dir/src/mx_vivod_total.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_vivod_total.c.o   -c /Users/ndykyy/Desktop/uls/src/mx_vivod_total.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/uls.dir/src/mx_vivod_total.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_vivod_total.c.o   -c /Users/ozahirnyi/uls/src/mx_vivod_total.c
 
 CMakeFiles/uls.dir/src/mx_vivod_total.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/mx_vivod_total.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/src/mx_vivod_total.c > CMakeFiles/uls.dir/src/mx_vivod_total.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ozahirnyi/uls/src/mx_vivod_total.c > CMakeFiles/uls.dir/src/mx_vivod_total.c.i
 
 CMakeFiles/uls.dir/src/mx_vivod_total.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/mx_vivod_total.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/src/mx_vivod_total.c -o CMakeFiles/uls.dir/src/mx_vivod_total.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ozahirnyi/uls/src/mx_vivod_total.c -o CMakeFiles/uls.dir/src/mx_vivod_total.c.s
+
+CMakeFiles/uls.dir/src/mx_read_directory.c.o: CMakeFiles/uls.dir/flags.make
+CMakeFiles/uls.dir/src/mx_read_directory.c.o: ../src/mx_read_directory.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/uls.dir/src/mx_read_directory.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_read_directory.c.o   -c /Users/ozahirnyi/uls/src/mx_read_directory.c
+
+CMakeFiles/uls.dir/src/mx_read_directory.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/mx_read_directory.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ozahirnyi/uls/src/mx_read_directory.c > CMakeFiles/uls.dir/src/mx_read_directory.c.i
+
+CMakeFiles/uls.dir/src/mx_read_directory.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/mx_read_directory.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ozahirnyi/uls/src/mx_read_directory.c -o CMakeFiles/uls.dir/src/mx_read_directory.c.s
+
+CMakeFiles/uls.dir/src/mx_dir_name_print.c.o: CMakeFiles/uls.dir/flags.make
+CMakeFiles/uls.dir/src/mx_dir_name_print.c.o: ../src/mx_dir_name_print.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/uls.dir/src/mx_dir_name_print.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_dir_name_print.c.o   -c /Users/ozahirnyi/uls/src/mx_dir_name_print.c
+
+CMakeFiles/uls.dir/src/mx_dir_name_print.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/mx_dir_name_print.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ozahirnyi/uls/src/mx_dir_name_print.c > CMakeFiles/uls.dir/src/mx_dir_name_print.c.i
+
+CMakeFiles/uls.dir/src/mx_dir_name_print.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/mx_dir_name_print.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ozahirnyi/uls/src/mx_dir_name_print.c -o CMakeFiles/uls.dir/src/mx_dir_name_print.c.s
+
+CMakeFiles/uls.dir/src/mx_flag_one.c.o: CMakeFiles/uls.dir/flags.make
+CMakeFiles/uls.dir/src/mx_flag_one.c.o: ../src/mx_flag_one.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/uls.dir/src/mx_flag_one.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_flag_one.c.o   -c /Users/ozahirnyi/uls/src/mx_flag_one.c
+
+CMakeFiles/uls.dir/src/mx_flag_one.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/mx_flag_one.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ozahirnyi/uls/src/mx_flag_one.c > CMakeFiles/uls.dir/src/mx_flag_one.c.i
+
+CMakeFiles/uls.dir/src/mx_flag_one.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/mx_flag_one.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ozahirnyi/uls/src/mx_flag_one.c -o CMakeFiles/uls.dir/src/mx_flag_one.c.s
+
+CMakeFiles/uls.dir/src/mx_flag_d.c.o: CMakeFiles/uls.dir/flags.make
+CMakeFiles/uls.dir/src/mx_flag_d.c.o: ../src/mx_flag_d.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/uls.dir/src/mx_flag_d.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_flag_d.c.o   -c /Users/ozahirnyi/uls/src/mx_flag_d.c
+
+CMakeFiles/uls.dir/src/mx_flag_d.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/mx_flag_d.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ozahirnyi/uls/src/mx_flag_d.c > CMakeFiles/uls.dir/src/mx_flag_d.c.i
+
+CMakeFiles/uls.dir/src/mx_flag_d.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/mx_flag_d.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ozahirnyi/uls/src/mx_flag_d.c -o CMakeFiles/uls.dir/src/mx_flag_d.c.s
+
+CMakeFiles/uls.dir/src/mx_change_argv.c.o: CMakeFiles/uls.dir/flags.make
+CMakeFiles/uls.dir/src/mx_change_argv.c.o: ../src/mx_change_argv.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/uls.dir/src/mx_change_argv.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_change_argv.c.o   -c /Users/ozahirnyi/uls/src/mx_change_argv.c
+
+CMakeFiles/uls.dir/src/mx_change_argv.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/mx_change_argv.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ozahirnyi/uls/src/mx_change_argv.c > CMakeFiles/uls.dir/src/mx_change_argv.c.i
+
+CMakeFiles/uls.dir/src/mx_change_argv.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/mx_change_argv.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ozahirnyi/uls/src/mx_change_argv.c -o CMakeFiles/uls.dir/src/mx_change_argv.c.s
+
+CMakeFiles/uls.dir/src/mx_list_swap.c.o: CMakeFiles/uls.dir/flags.make
+CMakeFiles/uls.dir/src/mx_list_swap.c.o: ../src/mx_list_swap.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/uls.dir/src/mx_list_swap.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_list_swap.c.o   -c /Users/ozahirnyi/uls/src/mx_list_swap.c
+
+CMakeFiles/uls.dir/src/mx_list_swap.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/mx_list_swap.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ozahirnyi/uls/src/mx_list_swap.c > CMakeFiles/uls.dir/src/mx_list_swap.c.i
+
+CMakeFiles/uls.dir/src/mx_list_swap.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/mx_list_swap.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ozahirnyi/uls/src/mx_list_swap.c -o CMakeFiles/uls.dir/src/mx_list_swap.c.s
+
+CMakeFiles/uls.dir/src/mx_sort_by_time.c.o: CMakeFiles/uls.dir/flags.make
+CMakeFiles/uls.dir/src/mx_sort_by_time.c.o: ../src/mx_sort_by_time.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/uls.dir/src/mx_sort_by_time.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_sort_by_time.c.o   -c /Users/ozahirnyi/uls/src/mx_sort_by_time.c
+
+CMakeFiles/uls.dir/src/mx_sort_by_time.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/mx_sort_by_time.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ozahirnyi/uls/src/mx_sort_by_time.c > CMakeFiles/uls.dir/src/mx_sort_by_time.c.i
+
+CMakeFiles/uls.dir/src/mx_sort_by_time.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/mx_sort_by_time.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ozahirnyi/uls/src/mx_sort_by_time.c -o CMakeFiles/uls.dir/src/mx_sort_by_time.c.s
+
+CMakeFiles/uls.dir/src/mx_sort_by_size.c.o: CMakeFiles/uls.dir/flags.make
+CMakeFiles/uls.dir/src/mx_sort_by_size.c.o: ../src/mx_sort_by_size.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/uls.dir/src/mx_sort_by_size.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_sort_by_size.c.o   -c /Users/ozahirnyi/uls/src/mx_sort_by_size.c
+
+CMakeFiles/uls.dir/src/mx_sort_by_size.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/mx_sort_by_size.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ozahirnyi/uls/src/mx_sort_by_size.c > CMakeFiles/uls.dir/src/mx_sort_by_size.c.i
+
+CMakeFiles/uls.dir/src/mx_sort_by_size.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/mx_sort_by_size.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ozahirnyi/uls/src/mx_sort_by_size.c -o CMakeFiles/uls.dir/src/mx_sort_by_size.c.s
 
 CMakeFiles/uls.dir/src/mx_flags_obnulyator.c.o: CMakeFiles/uls.dir/flags.make
 CMakeFiles/uls.dir/src/mx_flags_obnulyator.c.o: ../src/mx_flags_obnulyator.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/uls.dir/src/mx_flags_obnulyator.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_flags_obnulyator.c.o   -c /Users/ndykyy/Desktop/uls/src/mx_flags_obnulyator.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/uls.dir/src/mx_flags_obnulyator.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_flags_obnulyator.c.o   -c /Users/ozahirnyi/uls/src/mx_flags_obnulyator.c
 
 CMakeFiles/uls.dir/src/mx_flags_obnulyator.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/mx_flags_obnulyator.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ndykyy/Desktop/uls/src/mx_flags_obnulyator.c > CMakeFiles/uls.dir/src/mx_flags_obnulyator.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ozahirnyi/uls/src/mx_flags_obnulyator.c > CMakeFiles/uls.dir/src/mx_flags_obnulyator.c.i
 
 CMakeFiles/uls.dir/src/mx_flags_obnulyator.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/mx_flags_obnulyator.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ndykyy/Desktop/uls/src/mx_flags_obnulyator.c -o CMakeFiles/uls.dir/src/mx_flags_obnulyator.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ozahirnyi/uls/src/mx_flags_obnulyator.c -o CMakeFiles/uls.dir/src/mx_flags_obnulyator.c.s
+
+CMakeFiles/uls.dir/src/mx_flag_p.c.o: CMakeFiles/uls.dir/flags.make
+CMakeFiles/uls.dir/src/mx_flag_p.c.o: ../src/mx_flag_p.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/uls.dir/src/mx_flag_p.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/mx_flag_p.c.o   -c /Users/ozahirnyi/uls/src/mx_flag_p.c
+
+CMakeFiles/uls.dir/src/mx_flag_p.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/mx_flag_p.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ozahirnyi/uls/src/mx_flag_p.c > CMakeFiles/uls.dir/src/mx_flag_p.c.i
+
+CMakeFiles/uls.dir/src/mx_flag_p.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/mx_flag_p.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ozahirnyi/uls/src/mx_flag_p.c -o CMakeFiles/uls.dir/src/mx_flag_p.c.s
 
 # Object files for target uls
 uls_OBJECTS = \
-"CMakeFiles/uls.dir/libmx/src/mx_arrlen.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_atoi.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_binary_search.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_bubble_sort.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_count_substr.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_count_words.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_create_node.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_del_extra_spaces.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_del_intarr.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_del_strarr.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_file_to_str.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_foreach.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_get_char_index.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_get_substr_index.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_hex_to_nbr.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_is_alpha.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_is_space.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_isdigit.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_itoa.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_list_size.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_memccpy.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_memchr.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_memcmp.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_memcpy.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_memmem.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_memmove.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_memrchr.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_memset.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_nbr_to_hex.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_pop_back.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_pop_front.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_pow.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_print_strarr.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_print_unicode.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_printchar.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_printerr.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_printint.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_printstr.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_push_back.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_push_front.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_realloc.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_replace_substr.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_skip_substr_index.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_sort_list.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_sqrt.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_str_reverse.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_strcat.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_strcmp.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_strcpy.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_strdel.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_strdup.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_strjoin.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_strlen.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_strncmp.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_strncpy.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_strndup.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_strnew.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_strsplit.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_strstr.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_strtrim.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_swap_char.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_ultra_del_extra_spaces.c.o" \
-"CMakeFiles/uls.dir/libmx/src/mx_ultra_strtrim.c.o" \
 "CMakeFiles/uls.dir/src/main.c.o" \
-"CMakeFiles/uls.dir/src/mx_change_argv.c.o" \
-"CMakeFiles/uls.dir/src/mx_compare.c.o" \
-"CMakeFiles/uls.dir/src/mx_dir_name_print.c.o" \
-"CMakeFiles/uls.dir/src/mx_flag_d.c.o" \
 "CMakeFiles/uls.dir/src/mx_flag_l.c.o" \
-"CMakeFiles/uls.dir/src/mx_flag_one.c.o" \
-"CMakeFiles/uls.dir/src/mx_flags_trig.c.o" \
-"CMakeFiles/uls.dir/src/mx_is_ascii.c.o" \
-"CMakeFiles/uls.dir/src/mx_l_out_st_blocks.c.o" \
-"CMakeFiles/uls.dir/src/mx_l_out_st_dev.c.o" \
-"CMakeFiles/uls.dir/src/mx_l_out_st_gid.c.o" \
 "CMakeFiles/uls.dir/src/mx_l_out_st_mode.c.o" \
-"CMakeFiles/uls.dir/src/mx_l_out_st_mtime.c.o" \
 "CMakeFiles/uls.dir/src/mx_l_out_st_nlink.c.o" \
-"CMakeFiles/uls.dir/src/mx_l_out_st_size.c.o" \
 "CMakeFiles/uls.dir/src/mx_l_out_st_uid.c.o" \
-"CMakeFiles/uls.dir/src/mx_len_int.c.o" \
-"CMakeFiles/uls.dir/src/mx_lines_count.c.o" \
-"CMakeFiles/uls.dir/src/mx_list_swap.c.o" \
-"CMakeFiles/uls.dir/src/mx_longest_name.c.o" \
-"CMakeFiles/uls.dir/src/mx_max_len_char.c.o" \
-"CMakeFiles/uls.dir/src/mx_max_len_int.c.o" \
-"CMakeFiles/uls.dir/src/mx_print_uls.c.o" \
-"CMakeFiles/uls.dir/src/mx_read_directory.c.o" \
+"CMakeFiles/uls.dir/src/mx_l_out_st_gid.c.o" \
+"CMakeFiles/uls.dir/src/mx_l_out_st_size.c.o" \
+"CMakeFiles/uls.dir/src/mx_l_out_st_dev.c.o" \
+"CMakeFiles/uls.dir/src/mx_l_out_st_mtime.c.o" \
 "CMakeFiles/uls.dir/src/mx_read_uls.c.o" \
-"CMakeFiles/uls.dir/src/mx_sort_by_size.c.o" \
-"CMakeFiles/uls.dir/src/mx_sort_by_time.c.o" \
+"CMakeFiles/uls.dir/src/mx_print_uls.c.o" \
+"CMakeFiles/uls.dir/src/mx_longest_name.c.o" \
+"CMakeFiles/uls.dir/src/mx_lines_count.c.o" \
+"CMakeFiles/uls.dir/src/mx_is_ascii.c.o" \
+"CMakeFiles/uls.dir/src/mx_max_len_int.c.o" \
+"CMakeFiles/uls.dir/src/mx_max_len_char.c.o" \
+"CMakeFiles/uls.dir/src/mx_len_int.c.o" \
+"CMakeFiles/uls.dir/src/mx_compare.c.o" \
 "CMakeFiles/uls.dir/src/mx_sort_for_columns.c.o" \
 "CMakeFiles/uls.dir/src/mx_strjoin_for_path.c.o" \
+"CMakeFiles/uls.dir/src/mx_flags_trig.c.o" \
 "CMakeFiles/uls.dir/src/mx_vivod_total.c.o" \
-"CMakeFiles/uls.dir/src/mx_flags_obnulyator.c.o"
+"CMakeFiles/uls.dir/src/mx_read_directory.c.o" \
+"CMakeFiles/uls.dir/src/mx_dir_name_print.c.o" \
+"CMakeFiles/uls.dir/src/mx_flag_one.c.o" \
+"CMakeFiles/uls.dir/src/mx_flag_d.c.o" \
+"CMakeFiles/uls.dir/src/mx_change_argv.c.o" \
+"CMakeFiles/uls.dir/src/mx_list_swap.c.o" \
+"CMakeFiles/uls.dir/src/mx_sort_by_time.c.o" \
+"CMakeFiles/uls.dir/src/mx_sort_by_size.c.o" \
+"CMakeFiles/uls.dir/src/mx_flags_obnulyator.c.o" \
+"CMakeFiles/uls.dir/src/mx_flag_p.c.o"
 
 # External object files for target uls
 uls_EXTERNAL_OBJECTS =
 
-uls: CMakeFiles/uls.dir/libmx/src/mx_arrlen.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_atoi.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_binary_search.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_bubble_sort.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_count_substr.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_count_words.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_create_node.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_del_extra_spaces.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_del_intarr.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_del_strarr.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_file_to_str.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_foreach.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_get_char_index.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_get_substr_index.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_hex_to_nbr.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_is_alpha.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_is_space.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_isdigit.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_itoa.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_list_size.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_memccpy.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_memchr.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_memcmp.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_memcpy.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_memmem.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_memmove.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_memrchr.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_memset.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_nbr_to_hex.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_pop_back.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_pop_front.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_pow.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_print_strarr.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_print_unicode.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_printchar.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_printerr.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_printint.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_printstr.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_push_back.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_push_front.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_realloc.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_replace_substr.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_skip_substr_index.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_sort_list.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_sqrt.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_str_reverse.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_strcat.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_strcmp.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_strcpy.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_strdel.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_strdup.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_strjoin.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_strlen.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_strncmp.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_strncpy.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_strndup.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_strnew.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_strsplit.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_strstr.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_strtrim.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_swap_char.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_ultra_del_extra_spaces.c.o
-uls: CMakeFiles/uls.dir/libmx/src/mx_ultra_strtrim.c.o
 uls: CMakeFiles/uls.dir/src/main.c.o
-uls: CMakeFiles/uls.dir/src/mx_change_argv.c.o
-uls: CMakeFiles/uls.dir/src/mx_compare.c.o
-uls: CMakeFiles/uls.dir/src/mx_dir_name_print.c.o
-uls: CMakeFiles/uls.dir/src/mx_flag_d.c.o
 uls: CMakeFiles/uls.dir/src/mx_flag_l.c.o
-uls: CMakeFiles/uls.dir/src/mx_flag_one.c.o
-uls: CMakeFiles/uls.dir/src/mx_flags_trig.c.o
-uls: CMakeFiles/uls.dir/src/mx_is_ascii.c.o
-uls: CMakeFiles/uls.dir/src/mx_l_out_st_blocks.c.o
-uls: CMakeFiles/uls.dir/src/mx_l_out_st_dev.c.o
-uls: CMakeFiles/uls.dir/src/mx_l_out_st_gid.c.o
 uls: CMakeFiles/uls.dir/src/mx_l_out_st_mode.c.o
-uls: CMakeFiles/uls.dir/src/mx_l_out_st_mtime.c.o
 uls: CMakeFiles/uls.dir/src/mx_l_out_st_nlink.c.o
-uls: CMakeFiles/uls.dir/src/mx_l_out_st_size.c.o
 uls: CMakeFiles/uls.dir/src/mx_l_out_st_uid.c.o
-uls: CMakeFiles/uls.dir/src/mx_len_int.c.o
-uls: CMakeFiles/uls.dir/src/mx_lines_count.c.o
-uls: CMakeFiles/uls.dir/src/mx_list_swap.c.o
-uls: CMakeFiles/uls.dir/src/mx_longest_name.c.o
-uls: CMakeFiles/uls.dir/src/mx_max_len_char.c.o
-uls: CMakeFiles/uls.dir/src/mx_max_len_int.c.o
-uls: CMakeFiles/uls.dir/src/mx_print_uls.c.o
-uls: CMakeFiles/uls.dir/src/mx_read_directory.c.o
+uls: CMakeFiles/uls.dir/src/mx_l_out_st_gid.c.o
+uls: CMakeFiles/uls.dir/src/mx_l_out_st_size.c.o
+uls: CMakeFiles/uls.dir/src/mx_l_out_st_dev.c.o
+uls: CMakeFiles/uls.dir/src/mx_l_out_st_mtime.c.o
 uls: CMakeFiles/uls.dir/src/mx_read_uls.c.o
-uls: CMakeFiles/uls.dir/src/mx_sort_by_size.c.o
-uls: CMakeFiles/uls.dir/src/mx_sort_by_time.c.o
+uls: CMakeFiles/uls.dir/src/mx_print_uls.c.o
+uls: CMakeFiles/uls.dir/src/mx_longest_name.c.o
+uls: CMakeFiles/uls.dir/src/mx_lines_count.c.o
+uls: CMakeFiles/uls.dir/src/mx_is_ascii.c.o
+uls: CMakeFiles/uls.dir/src/mx_max_len_int.c.o
+uls: CMakeFiles/uls.dir/src/mx_max_len_char.c.o
+uls: CMakeFiles/uls.dir/src/mx_len_int.c.o
+uls: CMakeFiles/uls.dir/src/mx_compare.c.o
 uls: CMakeFiles/uls.dir/src/mx_sort_for_columns.c.o
 uls: CMakeFiles/uls.dir/src/mx_strjoin_for_path.c.o
+uls: CMakeFiles/uls.dir/src/mx_flags_trig.c.o
 uls: CMakeFiles/uls.dir/src/mx_vivod_total.c.o
+uls: CMakeFiles/uls.dir/src/mx_read_directory.c.o
+uls: CMakeFiles/uls.dir/src/mx_dir_name_print.c.o
+uls: CMakeFiles/uls.dir/src/mx_flag_one.c.o
+uls: CMakeFiles/uls.dir/src/mx_flag_d.c.o
+uls: CMakeFiles/uls.dir/src/mx_change_argv.c.o
+uls: CMakeFiles/uls.dir/src/mx_list_swap.c.o
+uls: CMakeFiles/uls.dir/src/mx_sort_by_time.c.o
+uls: CMakeFiles/uls.dir/src/mx_sort_by_size.c.o
 uls: CMakeFiles/uls.dir/src/mx_flags_obnulyator.c.o
+uls: CMakeFiles/uls.dir/src/mx_flag_p.c.o
 uls: CMakeFiles/uls.dir/build.make
+uls: libmx.a
 uls: CMakeFiles/uls.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Linking C executable uls"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Linking C executable uls"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/uls.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -1503,6 +559,6 @@ CMakeFiles/uls.dir/clean:
 .PHONY : CMakeFiles/uls.dir/clean
 
 CMakeFiles/uls.dir/depend:
-	cd /Users/ndykyy/Desktop/uls/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/ndykyy/Desktop/uls /Users/ndykyy/Desktop/uls /Users/ndykyy/Desktop/uls/cmake-build-debug /Users/ndykyy/Desktop/uls/cmake-build-debug /Users/ndykyy/Desktop/uls/cmake-build-debug/CMakeFiles/uls.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/ozahirnyi/uls/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/ozahirnyi/uls /Users/ozahirnyi/uls /Users/ozahirnyi/uls/cmake-build-debug /Users/ozahirnyi/uls/cmake-build-debug /Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles/uls.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uls.dir/depend
 

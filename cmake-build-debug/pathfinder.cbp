@@ -126,6 +126,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_arrlen.c">
+			<Option target="mx"/>
+		</Unit>
 		<Unit filename="/Users/ozahirnyi/uls/libmx/src/mx_atoi.c">
 			<Option target="mx"/>
 		</Unit>
@@ -315,22 +318,97 @@
 		<Unit filename="/Users/ozahirnyi/uls/src/main.c">
 			<Option target="uls"/>
 		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/src/mx_change_argv.c">
+			<Option target="uls"/>
+		</Unit>
 		<Unit filename="/Users/ozahirnyi/uls/src/mx_compare.c">
+			<Option target="uls"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/src/mx_dir_name_print.c">
+			<Option target="uls"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/src/mx_flag_d.c">
+			<Option target="uls"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/src/mx_flag_l.c">
+			<Option target="uls"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/src/mx_flag_one.c">
+			<Option target="uls"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/src/mx_flag_p.c">
+			<Option target="uls"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/src/mx_flags_obnulyator.c">
+			<Option target="uls"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/src/mx_flags_trig.c">
+			<Option target="uls"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/src/mx_is_ascii.c">
+			<Option target="uls"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/src/mx_l_out_st_dev.c">
+			<Option target="uls"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/src/mx_l_out_st_gid.c">
+			<Option target="uls"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/src/mx_l_out_st_mode.c">
+			<Option target="uls"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/src/mx_l_out_st_mtime.c">
+			<Option target="uls"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/src/mx_l_out_st_nlink.c">
+			<Option target="uls"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/src/mx_l_out_st_size.c">
+			<Option target="uls"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/src/mx_l_out_st_uid.c">
+			<Option target="uls"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/src/mx_len_int.c">
 			<Option target="uls"/>
 		</Unit>
 		<Unit filename="/Users/ozahirnyi/uls/src/mx_lines_count.c">
 			<Option target="uls"/>
 		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/src/mx_list_swap.c">
+			<Option target="uls"/>
+		</Unit>
 		<Unit filename="/Users/ozahirnyi/uls/src/mx_longest_name.c">
+			<Option target="uls"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/src/mx_max_len_char.c">
+			<Option target="uls"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/src/mx_max_len_int.c">
 			<Option target="uls"/>
 		</Unit>
 		<Unit filename="/Users/ozahirnyi/uls/src/mx_print_uls.c">
 			<Option target="uls"/>
 		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/src/mx_read_directory.c">
+			<Option target="uls"/>
+		</Unit>
 		<Unit filename="/Users/ozahirnyi/uls/src/mx_read_uls.c">
 			<Option target="uls"/>
 		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/src/mx_sort_by_size.c">
+			<Option target="uls"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/src/mx_sort_by_time.c">
+			<Option target="uls"/>
+		</Unit>
 		<Unit filename="/Users/ozahirnyi/uls/src/mx_sort_for_columns.c">
+			<Option target="uls"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/src/mx_strjoin_for_path.c">
+			<Option target="uls"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/src/mx_vivod_total.c">
 			<Option target="uls"/>
 		</Unit>
 		<Unit filename="/Users/ozahirnyi/uls/CMakeLists.txt">

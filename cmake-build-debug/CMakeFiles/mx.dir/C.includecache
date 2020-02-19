@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/ndykyy/Desktop/uls/libmx/inc/libmx.h
+/Users/ozahirnyi/uls/libmx/inc/libmx.h
 unistd.h
 -
 wchar.h
@@ -18,7 +18,7 @@ fcntl.h
 stdbool.h
 -
 
-/Users/ndykyy/Desktop/uls/libmx/src/mx_strlen.c
+/Users/ozahirnyi/uls/libmx/src/mx_del_strarr.c
 ../inc/libmx.h
-/Users/ndykyy/Desktop/uls/libmx/inc/libmx.h
+/Users/ozahirnyi/uls/libmx/inc/libmx.h
 
