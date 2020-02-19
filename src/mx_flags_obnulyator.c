@@ -5,7 +5,6 @@ void mx_flags_obnulyator(s_flags *flags) {
     flags->a = 0;
     flags->A = 0;
     flags->o = 0;
-    flags->s = 0;
     flags->one = 0;
     flags->g = 0;
     flags->t = 0;

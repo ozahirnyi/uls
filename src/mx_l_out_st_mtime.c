@@ -42,7 +42,7 @@ static char *mx_l_change_date(char *date, long n, s_flags *fl) {
     char *new = NULL;
 
     if (!fl->T) {
-        if ((days_diff - n)/86400 >= 183) {
+        if ((days_diff - n)/86400 > 183) {
             new = part_1(len, date);
         }
         else {

@@ -123,18 +123,32 @@ uls/fast:
 	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/build
 .PHONY : uls/fast
 
-#=============================================================================
-# Target rules for targets named mx
+libmx/src/mx_arrlen.o: libmx/src/mx_arrlen.c.o
 
-# Build rule for target.
-mx: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 mx
-.PHONY : mx
+.PHONY : libmx/src/mx_arrlen.o
 
-# fast build rule for target.
-mx/fast:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/build
-.PHONY : mx/fast
+# target to build an object file
+libmx/src/mx_arrlen.c.o:
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_arrlen.c.o
+.PHONY : libmx/src/mx_arrlen.c.o
+
+libmx/src/mx_arrlen.i: libmx/src/mx_arrlen.c.i
+
+.PHONY : libmx/src/mx_arrlen.i
+
+# target to preprocess a source file
+libmx/src/mx_arrlen.c.i:
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_arrlen.c.i
+.PHONY : libmx/src/mx_arrlen.c.i
+
+libmx/src/mx_arrlen.s: libmx/src/mx_arrlen.c.s
+
+.PHONY : libmx/src/mx_arrlen.s
+
+# target to generate assembly for a file
+libmx/src/mx_arrlen.c.s:
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_arrlen.c.s
+.PHONY : libmx/src/mx_arrlen.c.s
 
 libmx/src/mx_atoi.o: libmx/src/mx_atoi.c.o
 
@@ -142,7 +156,7 @@ libmx/src/mx_atoi.o: libmx/src/mx_atoi.c.o
 
 # target to build an object file
 libmx/src/mx_atoi.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_atoi.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_atoi.c.o
 .PHONY : libmx/src/mx_atoi.c.o
 
 libmx/src/mx_atoi.i: libmx/src/mx_atoi.c.i
@@ -151,7 +165,7 @@ libmx/src/mx_atoi.i: libmx/src/mx_atoi.c.i
 
 # target to preprocess a source file
 libmx/src/mx_atoi.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_atoi.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_atoi.c.i
 .PHONY : libmx/src/mx_atoi.c.i
 
 libmx/src/mx_atoi.s: libmx/src/mx_atoi.c.s
@@ -160,7 +174,7 @@ libmx/src/mx_atoi.s: libmx/src/mx_atoi.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_atoi.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_atoi.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_atoi.c.s
 .PHONY : libmx/src/mx_atoi.c.s
 
 libmx/src/mx_binary_search.o: libmx/src/mx_binary_search.c.o
@@ -169,7 +183,7 @@ libmx/src/mx_binary_search.o: libmx/src/mx_binary_search.c.o
 
 # target to build an object file
 libmx/src/mx_binary_search.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_binary_search.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_binary_search.c.o
 .PHONY : libmx/src/mx_binary_search.c.o
 
 libmx/src/mx_binary_search.i: libmx/src/mx_binary_search.c.i
@@ -178,7 +192,7 @@ libmx/src/mx_binary_search.i: libmx/src/mx_binary_search.c.i
 
 # target to preprocess a source file
 libmx/src/mx_binary_search.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_binary_search.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_binary_search.c.i
 .PHONY : libmx/src/mx_binary_search.c.i
 
 libmx/src/mx_binary_search.s: libmx/src/mx_binary_search.c.s
@@ -187,7 +201,7 @@ libmx/src/mx_binary_search.s: libmx/src/mx_binary_search.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_binary_search.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_binary_search.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_binary_search.c.s
 .PHONY : libmx/src/mx_binary_search.c.s
 
 libmx/src/mx_bubble_sort.o: libmx/src/mx_bubble_sort.c.o
@@ -196,7 +210,7 @@ libmx/src/mx_bubble_sort.o: libmx/src/mx_bubble_sort.c.o
 
 # target to build an object file
 libmx/src/mx_bubble_sort.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_bubble_sort.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_bubble_sort.c.o
 .PHONY : libmx/src/mx_bubble_sort.c.o
 
 libmx/src/mx_bubble_sort.i: libmx/src/mx_bubble_sort.c.i
@@ -205,7 +219,7 @@ libmx/src/mx_bubble_sort.i: libmx/src/mx_bubble_sort.c.i
 
 # target to preprocess a source file
 libmx/src/mx_bubble_sort.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_bubble_sort.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_bubble_sort.c.i
 .PHONY : libmx/src/mx_bubble_sort.c.i
 
 libmx/src/mx_bubble_sort.s: libmx/src/mx_bubble_sort.c.s
@@ -214,7 +228,7 @@ libmx/src/mx_bubble_sort.s: libmx/src/mx_bubble_sort.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_bubble_sort.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_bubble_sort.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_bubble_sort.c.s
 .PHONY : libmx/src/mx_bubble_sort.c.s
 
 libmx/src/mx_count_substr.o: libmx/src/mx_count_substr.c.o
@@ -223,7 +237,7 @@ libmx/src/mx_count_substr.o: libmx/src/mx_count_substr.c.o
 
 # target to build an object file
 libmx/src/mx_count_substr.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_count_substr.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_count_substr.c.o
 .PHONY : libmx/src/mx_count_substr.c.o
 
 libmx/src/mx_count_substr.i: libmx/src/mx_count_substr.c.i
@@ -232,7 +246,7 @@ libmx/src/mx_count_substr.i: libmx/src/mx_count_substr.c.i
 
 # target to preprocess a source file
 libmx/src/mx_count_substr.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_count_substr.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_count_substr.c.i
 .PHONY : libmx/src/mx_count_substr.c.i
 
 libmx/src/mx_count_substr.s: libmx/src/mx_count_substr.c.s
@@ -241,7 +255,7 @@ libmx/src/mx_count_substr.s: libmx/src/mx_count_substr.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_count_substr.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_count_substr.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_count_substr.c.s
 .PHONY : libmx/src/mx_count_substr.c.s
 
 libmx/src/mx_count_words.o: libmx/src/mx_count_words.c.o
@@ -250,7 +264,7 @@ libmx/src/mx_count_words.o: libmx/src/mx_count_words.c.o
 
 # target to build an object file
 libmx/src/mx_count_words.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_count_words.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_count_words.c.o
 .PHONY : libmx/src/mx_count_words.c.o
 
 libmx/src/mx_count_words.i: libmx/src/mx_count_words.c.i
@@ -259,7 +273,7 @@ libmx/src/mx_count_words.i: libmx/src/mx_count_words.c.i
 
 # target to preprocess a source file
 libmx/src/mx_count_words.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_count_words.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_count_words.c.i
 .PHONY : libmx/src/mx_count_words.c.i
 
 libmx/src/mx_count_words.s: libmx/src/mx_count_words.c.s
@@ -268,7 +282,7 @@ libmx/src/mx_count_words.s: libmx/src/mx_count_words.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_count_words.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_count_words.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_count_words.c.s
 .PHONY : libmx/src/mx_count_words.c.s
 
 libmx/src/mx_create_node.o: libmx/src/mx_create_node.c.o
@@ -277,7 +291,7 @@ libmx/src/mx_create_node.o: libmx/src/mx_create_node.c.o
 
 # target to build an object file
 libmx/src/mx_create_node.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_create_node.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_create_node.c.o
 .PHONY : libmx/src/mx_create_node.c.o
 
 libmx/src/mx_create_node.i: libmx/src/mx_create_node.c.i
@@ -286,7 +300,7 @@ libmx/src/mx_create_node.i: libmx/src/mx_create_node.c.i
 
 # target to preprocess a source file
 libmx/src/mx_create_node.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_create_node.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_create_node.c.i
 .PHONY : libmx/src/mx_create_node.c.i
 
 libmx/src/mx_create_node.s: libmx/src/mx_create_node.c.s
@@ -295,7 +309,7 @@ libmx/src/mx_create_node.s: libmx/src/mx_create_node.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_create_node.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_create_node.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_create_node.c.s
 .PHONY : libmx/src/mx_create_node.c.s
 
 libmx/src/mx_del_extra_spaces.o: libmx/src/mx_del_extra_spaces.c.o
@@ -304,7 +318,7 @@ libmx/src/mx_del_extra_spaces.o: libmx/src/mx_del_extra_spaces.c.o
 
 # target to build an object file
 libmx/src/mx_del_extra_spaces.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_del_extra_spaces.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_del_extra_spaces.c.o
 .PHONY : libmx/src/mx_del_extra_spaces.c.o
 
 libmx/src/mx_del_extra_spaces.i: libmx/src/mx_del_extra_spaces.c.i
@@ -313,7 +327,7 @@ libmx/src/mx_del_extra_spaces.i: libmx/src/mx_del_extra_spaces.c.i
 
 # target to preprocess a source file
 libmx/src/mx_del_extra_spaces.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_del_extra_spaces.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_del_extra_spaces.c.i
 .PHONY : libmx/src/mx_del_extra_spaces.c.i
 
 libmx/src/mx_del_extra_spaces.s: libmx/src/mx_del_extra_spaces.c.s
@@ -322,7 +336,7 @@ libmx/src/mx_del_extra_spaces.s: libmx/src/mx_del_extra_spaces.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_del_extra_spaces.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_del_extra_spaces.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_del_extra_spaces.c.s
 .PHONY : libmx/src/mx_del_extra_spaces.c.s
 
 libmx/src/mx_del_intarr.o: libmx/src/mx_del_intarr.c.o
@@ -331,7 +345,7 @@ libmx/src/mx_del_intarr.o: libmx/src/mx_del_intarr.c.o
 
 # target to build an object file
 libmx/src/mx_del_intarr.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_del_intarr.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_del_intarr.c.o
 .PHONY : libmx/src/mx_del_intarr.c.o
 
 libmx/src/mx_del_intarr.i: libmx/src/mx_del_intarr.c.i
@@ -340,7 +354,7 @@ libmx/src/mx_del_intarr.i: libmx/src/mx_del_intarr.c.i
 
 # target to preprocess a source file
 libmx/src/mx_del_intarr.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_del_intarr.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_del_intarr.c.i
 .PHONY : libmx/src/mx_del_intarr.c.i
 
 libmx/src/mx_del_intarr.s: libmx/src/mx_del_intarr.c.s
@@ -349,7 +363,7 @@ libmx/src/mx_del_intarr.s: libmx/src/mx_del_intarr.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_del_intarr.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_del_intarr.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_del_intarr.c.s
 .PHONY : libmx/src/mx_del_intarr.c.s
 
 libmx/src/mx_del_strarr.o: libmx/src/mx_del_strarr.c.o
@@ -358,7 +372,7 @@ libmx/src/mx_del_strarr.o: libmx/src/mx_del_strarr.c.o
 
 # target to build an object file
 libmx/src/mx_del_strarr.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_del_strarr.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_del_strarr.c.o
 .PHONY : libmx/src/mx_del_strarr.c.o
 
 libmx/src/mx_del_strarr.i: libmx/src/mx_del_strarr.c.i
@@ -367,7 +381,7 @@ libmx/src/mx_del_strarr.i: libmx/src/mx_del_strarr.c.i
 
 # target to preprocess a source file
 libmx/src/mx_del_strarr.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_del_strarr.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_del_strarr.c.i
 .PHONY : libmx/src/mx_del_strarr.c.i
 
 libmx/src/mx_del_strarr.s: libmx/src/mx_del_strarr.c.s
@@ -376,7 +390,7 @@ libmx/src/mx_del_strarr.s: libmx/src/mx_del_strarr.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_del_strarr.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_del_strarr.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_del_strarr.c.s
 .PHONY : libmx/src/mx_del_strarr.c.s
 
 libmx/src/mx_file_to_str.o: libmx/src/mx_file_to_str.c.o
@@ -385,7 +399,7 @@ libmx/src/mx_file_to_str.o: libmx/src/mx_file_to_str.c.o
 
 # target to build an object file
 libmx/src/mx_file_to_str.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_file_to_str.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_file_to_str.c.o
 .PHONY : libmx/src/mx_file_to_str.c.o
 
 libmx/src/mx_file_to_str.i: libmx/src/mx_file_to_str.c.i
@@ -394,7 +408,7 @@ libmx/src/mx_file_to_str.i: libmx/src/mx_file_to_str.c.i
 
 # target to preprocess a source file
 libmx/src/mx_file_to_str.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_file_to_str.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_file_to_str.c.i
 .PHONY : libmx/src/mx_file_to_str.c.i
 
 libmx/src/mx_file_to_str.s: libmx/src/mx_file_to_str.c.s
@@ -403,7 +417,7 @@ libmx/src/mx_file_to_str.s: libmx/src/mx_file_to_str.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_file_to_str.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_file_to_str.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_file_to_str.c.s
 .PHONY : libmx/src/mx_file_to_str.c.s
 
 libmx/src/mx_foreach.o: libmx/src/mx_foreach.c.o
@@ -412,7 +426,7 @@ libmx/src/mx_foreach.o: libmx/src/mx_foreach.c.o
 
 # target to build an object file
 libmx/src/mx_foreach.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_foreach.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_foreach.c.o
 .PHONY : libmx/src/mx_foreach.c.o
 
 libmx/src/mx_foreach.i: libmx/src/mx_foreach.c.i
@@ -421,7 +435,7 @@ libmx/src/mx_foreach.i: libmx/src/mx_foreach.c.i
 
 # target to preprocess a source file
 libmx/src/mx_foreach.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_foreach.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_foreach.c.i
 .PHONY : libmx/src/mx_foreach.c.i
 
 libmx/src/mx_foreach.s: libmx/src/mx_foreach.c.s
@@ -430,7 +444,7 @@ libmx/src/mx_foreach.s: libmx/src/mx_foreach.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_foreach.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_foreach.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_foreach.c.s
 .PHONY : libmx/src/mx_foreach.c.s
 
 libmx/src/mx_get_char_index.o: libmx/src/mx_get_char_index.c.o
@@ -439,7 +453,7 @@ libmx/src/mx_get_char_index.o: libmx/src/mx_get_char_index.c.o
 
 # target to build an object file
 libmx/src/mx_get_char_index.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_get_char_index.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_get_char_index.c.o
 .PHONY : libmx/src/mx_get_char_index.c.o
 
 libmx/src/mx_get_char_index.i: libmx/src/mx_get_char_index.c.i
@@ -448,7 +462,7 @@ libmx/src/mx_get_char_index.i: libmx/src/mx_get_char_index.c.i
 
 # target to preprocess a source file
 libmx/src/mx_get_char_index.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_get_char_index.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_get_char_index.c.i
 .PHONY : libmx/src/mx_get_char_index.c.i
 
 libmx/src/mx_get_char_index.s: libmx/src/mx_get_char_index.c.s
@@ -457,7 +471,7 @@ libmx/src/mx_get_char_index.s: libmx/src/mx_get_char_index.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_get_char_index.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_get_char_index.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_get_char_index.c.s
 .PHONY : libmx/src/mx_get_char_index.c.s
 
 libmx/src/mx_get_substr_index.o: libmx/src/mx_get_substr_index.c.o
@@ -466,7 +480,7 @@ libmx/src/mx_get_substr_index.o: libmx/src/mx_get_substr_index.c.o
 
 # target to build an object file
 libmx/src/mx_get_substr_index.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_get_substr_index.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_get_substr_index.c.o
 .PHONY : libmx/src/mx_get_substr_index.c.o
 
 libmx/src/mx_get_substr_index.i: libmx/src/mx_get_substr_index.c.i
@@ -475,7 +489,7 @@ libmx/src/mx_get_substr_index.i: libmx/src/mx_get_substr_index.c.i
 
 # target to preprocess a source file
 libmx/src/mx_get_substr_index.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_get_substr_index.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_get_substr_index.c.i
 .PHONY : libmx/src/mx_get_substr_index.c.i
 
 libmx/src/mx_get_substr_index.s: libmx/src/mx_get_substr_index.c.s
@@ -484,7 +498,7 @@ libmx/src/mx_get_substr_index.s: libmx/src/mx_get_substr_index.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_get_substr_index.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_get_substr_index.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_get_substr_index.c.s
 .PHONY : libmx/src/mx_get_substr_index.c.s
 
 libmx/src/mx_hex_to_nbr.o: libmx/src/mx_hex_to_nbr.c.o
@@ -493,7 +507,7 @@ libmx/src/mx_hex_to_nbr.o: libmx/src/mx_hex_to_nbr.c.o
 
 # target to build an object file
 libmx/src/mx_hex_to_nbr.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_hex_to_nbr.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_hex_to_nbr.c.o
 .PHONY : libmx/src/mx_hex_to_nbr.c.o
 
 libmx/src/mx_hex_to_nbr.i: libmx/src/mx_hex_to_nbr.c.i
@@ -502,7 +516,7 @@ libmx/src/mx_hex_to_nbr.i: libmx/src/mx_hex_to_nbr.c.i
 
 # target to preprocess a source file
 libmx/src/mx_hex_to_nbr.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_hex_to_nbr.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_hex_to_nbr.c.i
 .PHONY : libmx/src/mx_hex_to_nbr.c.i
 
 libmx/src/mx_hex_to_nbr.s: libmx/src/mx_hex_to_nbr.c.s
@@ -511,7 +525,7 @@ libmx/src/mx_hex_to_nbr.s: libmx/src/mx_hex_to_nbr.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_hex_to_nbr.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_hex_to_nbr.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_hex_to_nbr.c.s
 .PHONY : libmx/src/mx_hex_to_nbr.c.s
 
 libmx/src/mx_is_alpha.o: libmx/src/mx_is_alpha.c.o
@@ -520,7 +534,7 @@ libmx/src/mx_is_alpha.o: libmx/src/mx_is_alpha.c.o
 
 # target to build an object file
 libmx/src/mx_is_alpha.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_is_alpha.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_is_alpha.c.o
 .PHONY : libmx/src/mx_is_alpha.c.o
 
 libmx/src/mx_is_alpha.i: libmx/src/mx_is_alpha.c.i
@@ -529,7 +543,7 @@ libmx/src/mx_is_alpha.i: libmx/src/mx_is_alpha.c.i
 
 # target to preprocess a source file
 libmx/src/mx_is_alpha.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_is_alpha.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_is_alpha.c.i
 .PHONY : libmx/src/mx_is_alpha.c.i
 
 libmx/src/mx_is_alpha.s: libmx/src/mx_is_alpha.c.s
@@ -538,7 +552,7 @@ libmx/src/mx_is_alpha.s: libmx/src/mx_is_alpha.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_is_alpha.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_is_alpha.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_is_alpha.c.s
 .PHONY : libmx/src/mx_is_alpha.c.s
 
 libmx/src/mx_is_space.o: libmx/src/mx_is_space.c.o
@@ -547,7 +561,7 @@ libmx/src/mx_is_space.o: libmx/src/mx_is_space.c.o
 
 # target to build an object file
 libmx/src/mx_is_space.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_is_space.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_is_space.c.o
 .PHONY : libmx/src/mx_is_space.c.o
 
 libmx/src/mx_is_space.i: libmx/src/mx_is_space.c.i
@@ -556,7 +570,7 @@ libmx/src/mx_is_space.i: libmx/src/mx_is_space.c.i
 
 # target to preprocess a source file
 libmx/src/mx_is_space.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_is_space.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_is_space.c.i
 .PHONY : libmx/src/mx_is_space.c.i
 
 libmx/src/mx_is_space.s: libmx/src/mx_is_space.c.s
@@ -565,7 +579,7 @@ libmx/src/mx_is_space.s: libmx/src/mx_is_space.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_is_space.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_is_space.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_is_space.c.s
 .PHONY : libmx/src/mx_is_space.c.s
 
 libmx/src/mx_isdigit.o: libmx/src/mx_isdigit.c.o
@@ -574,7 +588,7 @@ libmx/src/mx_isdigit.o: libmx/src/mx_isdigit.c.o
 
 # target to build an object file
 libmx/src/mx_isdigit.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_isdigit.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_isdigit.c.o
 .PHONY : libmx/src/mx_isdigit.c.o
 
 libmx/src/mx_isdigit.i: libmx/src/mx_isdigit.c.i
@@ -583,7 +597,7 @@ libmx/src/mx_isdigit.i: libmx/src/mx_isdigit.c.i
 
 # target to preprocess a source file
 libmx/src/mx_isdigit.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_isdigit.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_isdigit.c.i
 .PHONY : libmx/src/mx_isdigit.c.i
 
 libmx/src/mx_isdigit.s: libmx/src/mx_isdigit.c.s
@@ -592,7 +606,7 @@ libmx/src/mx_isdigit.s: libmx/src/mx_isdigit.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_isdigit.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_isdigit.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_isdigit.c.s
 .PHONY : libmx/src/mx_isdigit.c.s
 
 libmx/src/mx_itoa.o: libmx/src/mx_itoa.c.o
@@ -601,7 +615,7 @@ libmx/src/mx_itoa.o: libmx/src/mx_itoa.c.o
 
 # target to build an object file
 libmx/src/mx_itoa.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_itoa.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_itoa.c.o
 .PHONY : libmx/src/mx_itoa.c.o
 
 libmx/src/mx_itoa.i: libmx/src/mx_itoa.c.i
@@ -610,7 +624,7 @@ libmx/src/mx_itoa.i: libmx/src/mx_itoa.c.i
 
 # target to preprocess a source file
 libmx/src/mx_itoa.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_itoa.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_itoa.c.i
 .PHONY : libmx/src/mx_itoa.c.i
 
 libmx/src/mx_itoa.s: libmx/src/mx_itoa.c.s
@@ -619,7 +633,7 @@ libmx/src/mx_itoa.s: libmx/src/mx_itoa.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_itoa.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_itoa.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_itoa.c.s
 .PHONY : libmx/src/mx_itoa.c.s
 
 libmx/src/mx_list_size.o: libmx/src/mx_list_size.c.o
@@ -628,7 +642,7 @@ libmx/src/mx_list_size.o: libmx/src/mx_list_size.c.o
 
 # target to build an object file
 libmx/src/mx_list_size.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_list_size.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_list_size.c.o
 .PHONY : libmx/src/mx_list_size.c.o
 
 libmx/src/mx_list_size.i: libmx/src/mx_list_size.c.i
@@ -637,7 +651,7 @@ libmx/src/mx_list_size.i: libmx/src/mx_list_size.c.i
 
 # target to preprocess a source file
 libmx/src/mx_list_size.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_list_size.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_list_size.c.i
 .PHONY : libmx/src/mx_list_size.c.i
 
 libmx/src/mx_list_size.s: libmx/src/mx_list_size.c.s
@@ -646,7 +660,7 @@ libmx/src/mx_list_size.s: libmx/src/mx_list_size.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_list_size.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_list_size.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_list_size.c.s
 .PHONY : libmx/src/mx_list_size.c.s
 
 libmx/src/mx_memccpy.o: libmx/src/mx_memccpy.c.o
@@ -655,7 +669,7 @@ libmx/src/mx_memccpy.o: libmx/src/mx_memccpy.c.o
 
 # target to build an object file
 libmx/src/mx_memccpy.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_memccpy.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_memccpy.c.o
 .PHONY : libmx/src/mx_memccpy.c.o
 
 libmx/src/mx_memccpy.i: libmx/src/mx_memccpy.c.i
@@ -664,7 +678,7 @@ libmx/src/mx_memccpy.i: libmx/src/mx_memccpy.c.i
 
 # target to preprocess a source file
 libmx/src/mx_memccpy.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_memccpy.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_memccpy.c.i
 .PHONY : libmx/src/mx_memccpy.c.i
 
 libmx/src/mx_memccpy.s: libmx/src/mx_memccpy.c.s
@@ -673,7 +687,7 @@ libmx/src/mx_memccpy.s: libmx/src/mx_memccpy.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_memccpy.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_memccpy.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_memccpy.c.s
 .PHONY : libmx/src/mx_memccpy.c.s
 
 libmx/src/mx_memchr.o: libmx/src/mx_memchr.c.o
@@ -682,7 +696,7 @@ libmx/src/mx_memchr.o: libmx/src/mx_memchr.c.o
 
 # target to build an object file
 libmx/src/mx_memchr.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_memchr.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_memchr.c.o
 .PHONY : libmx/src/mx_memchr.c.o
 
 libmx/src/mx_memchr.i: libmx/src/mx_memchr.c.i
@@ -691,7 +705,7 @@ libmx/src/mx_memchr.i: libmx/src/mx_memchr.c.i
 
 # target to preprocess a source file
 libmx/src/mx_memchr.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_memchr.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_memchr.c.i
 .PHONY : libmx/src/mx_memchr.c.i
 
 libmx/src/mx_memchr.s: libmx/src/mx_memchr.c.s
@@ -700,7 +714,7 @@ libmx/src/mx_memchr.s: libmx/src/mx_memchr.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_memchr.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_memchr.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_memchr.c.s
 .PHONY : libmx/src/mx_memchr.c.s
 
 libmx/src/mx_memcmp.o: libmx/src/mx_memcmp.c.o
@@ -709,7 +723,7 @@ libmx/src/mx_memcmp.o: libmx/src/mx_memcmp.c.o
 
 # target to build an object file
 libmx/src/mx_memcmp.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_memcmp.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_memcmp.c.o
 .PHONY : libmx/src/mx_memcmp.c.o
 
 libmx/src/mx_memcmp.i: libmx/src/mx_memcmp.c.i
@@ -718,7 +732,7 @@ libmx/src/mx_memcmp.i: libmx/src/mx_memcmp.c.i
 
 # target to preprocess a source file
 libmx/src/mx_memcmp.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_memcmp.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_memcmp.c.i
 .PHONY : libmx/src/mx_memcmp.c.i
 
 libmx/src/mx_memcmp.s: libmx/src/mx_memcmp.c.s
@@ -727,7 +741,7 @@ libmx/src/mx_memcmp.s: libmx/src/mx_memcmp.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_memcmp.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_memcmp.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_memcmp.c.s
 .PHONY : libmx/src/mx_memcmp.c.s
 
 libmx/src/mx_memcpy.o: libmx/src/mx_memcpy.c.o
@@ -736,7 +750,7 @@ libmx/src/mx_memcpy.o: libmx/src/mx_memcpy.c.o
 
 # target to build an object file
 libmx/src/mx_memcpy.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_memcpy.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_memcpy.c.o
 .PHONY : libmx/src/mx_memcpy.c.o
 
 libmx/src/mx_memcpy.i: libmx/src/mx_memcpy.c.i
@@ -745,7 +759,7 @@ libmx/src/mx_memcpy.i: libmx/src/mx_memcpy.c.i
 
 # target to preprocess a source file
 libmx/src/mx_memcpy.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_memcpy.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_memcpy.c.i
 .PHONY : libmx/src/mx_memcpy.c.i
 
 libmx/src/mx_memcpy.s: libmx/src/mx_memcpy.c.s
@@ -754,7 +768,7 @@ libmx/src/mx_memcpy.s: libmx/src/mx_memcpy.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_memcpy.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_memcpy.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_memcpy.c.s
 .PHONY : libmx/src/mx_memcpy.c.s
 
 libmx/src/mx_memmem.o: libmx/src/mx_memmem.c.o
@@ -763,7 +777,7 @@ libmx/src/mx_memmem.o: libmx/src/mx_memmem.c.o
 
 # target to build an object file
 libmx/src/mx_memmem.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_memmem.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_memmem.c.o
 .PHONY : libmx/src/mx_memmem.c.o
 
 libmx/src/mx_memmem.i: libmx/src/mx_memmem.c.i
@@ -772,7 +786,7 @@ libmx/src/mx_memmem.i: libmx/src/mx_memmem.c.i
 
 # target to preprocess a source file
 libmx/src/mx_memmem.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_memmem.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_memmem.c.i
 .PHONY : libmx/src/mx_memmem.c.i
 
 libmx/src/mx_memmem.s: libmx/src/mx_memmem.c.s
@@ -781,7 +795,7 @@ libmx/src/mx_memmem.s: libmx/src/mx_memmem.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_memmem.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_memmem.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_memmem.c.s
 .PHONY : libmx/src/mx_memmem.c.s
 
 libmx/src/mx_memmove.o: libmx/src/mx_memmove.c.o
@@ -790,7 +804,7 @@ libmx/src/mx_memmove.o: libmx/src/mx_memmove.c.o
 
 # target to build an object file
 libmx/src/mx_memmove.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_memmove.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_memmove.c.o
 .PHONY : libmx/src/mx_memmove.c.o
 
 libmx/src/mx_memmove.i: libmx/src/mx_memmove.c.i
@@ -799,7 +813,7 @@ libmx/src/mx_memmove.i: libmx/src/mx_memmove.c.i
 
 # target to preprocess a source file
 libmx/src/mx_memmove.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_memmove.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_memmove.c.i
 .PHONY : libmx/src/mx_memmove.c.i
 
 libmx/src/mx_memmove.s: libmx/src/mx_memmove.c.s
@@ -808,7 +822,7 @@ libmx/src/mx_memmove.s: libmx/src/mx_memmove.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_memmove.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_memmove.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_memmove.c.s
 .PHONY : libmx/src/mx_memmove.c.s
 
 libmx/src/mx_memrchr.o: libmx/src/mx_memrchr.c.o
@@ -817,7 +831,7 @@ libmx/src/mx_memrchr.o: libmx/src/mx_memrchr.c.o
 
 # target to build an object file
 libmx/src/mx_memrchr.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_memrchr.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_memrchr.c.o
 .PHONY : libmx/src/mx_memrchr.c.o
 
 libmx/src/mx_memrchr.i: libmx/src/mx_memrchr.c.i
@@ -826,7 +840,7 @@ libmx/src/mx_memrchr.i: libmx/src/mx_memrchr.c.i
 
 # target to preprocess a source file
 libmx/src/mx_memrchr.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_memrchr.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_memrchr.c.i
 .PHONY : libmx/src/mx_memrchr.c.i
 
 libmx/src/mx_memrchr.s: libmx/src/mx_memrchr.c.s
@@ -835,7 +849,7 @@ libmx/src/mx_memrchr.s: libmx/src/mx_memrchr.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_memrchr.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_memrchr.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_memrchr.c.s
 .PHONY : libmx/src/mx_memrchr.c.s
 
 libmx/src/mx_memset.o: libmx/src/mx_memset.c.o
@@ -844,7 +858,7 @@ libmx/src/mx_memset.o: libmx/src/mx_memset.c.o
 
 # target to build an object file
 libmx/src/mx_memset.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_memset.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_memset.c.o
 .PHONY : libmx/src/mx_memset.c.o
 
 libmx/src/mx_memset.i: libmx/src/mx_memset.c.i
@@ -853,7 +867,7 @@ libmx/src/mx_memset.i: libmx/src/mx_memset.c.i
 
 # target to preprocess a source file
 libmx/src/mx_memset.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_memset.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_memset.c.i
 .PHONY : libmx/src/mx_memset.c.i
 
 libmx/src/mx_memset.s: libmx/src/mx_memset.c.s
@@ -862,7 +876,7 @@ libmx/src/mx_memset.s: libmx/src/mx_memset.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_memset.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_memset.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_memset.c.s
 .PHONY : libmx/src/mx_memset.c.s
 
 libmx/src/mx_nbr_to_hex.o: libmx/src/mx_nbr_to_hex.c.o
@@ -871,7 +885,7 @@ libmx/src/mx_nbr_to_hex.o: libmx/src/mx_nbr_to_hex.c.o
 
 # target to build an object file
 libmx/src/mx_nbr_to_hex.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_nbr_to_hex.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_nbr_to_hex.c.o
 .PHONY : libmx/src/mx_nbr_to_hex.c.o
 
 libmx/src/mx_nbr_to_hex.i: libmx/src/mx_nbr_to_hex.c.i
@@ -880,7 +894,7 @@ libmx/src/mx_nbr_to_hex.i: libmx/src/mx_nbr_to_hex.c.i
 
 # target to preprocess a source file
 libmx/src/mx_nbr_to_hex.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_nbr_to_hex.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_nbr_to_hex.c.i
 .PHONY : libmx/src/mx_nbr_to_hex.c.i
 
 libmx/src/mx_nbr_to_hex.s: libmx/src/mx_nbr_to_hex.c.s
@@ -889,7 +903,7 @@ libmx/src/mx_nbr_to_hex.s: libmx/src/mx_nbr_to_hex.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_nbr_to_hex.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_nbr_to_hex.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_nbr_to_hex.c.s
 .PHONY : libmx/src/mx_nbr_to_hex.c.s
 
 libmx/src/mx_pop_back.o: libmx/src/mx_pop_back.c.o
@@ -898,7 +912,7 @@ libmx/src/mx_pop_back.o: libmx/src/mx_pop_back.c.o
 
 # target to build an object file
 libmx/src/mx_pop_back.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_pop_back.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_pop_back.c.o
 .PHONY : libmx/src/mx_pop_back.c.o
 
 libmx/src/mx_pop_back.i: libmx/src/mx_pop_back.c.i
@@ -907,7 +921,7 @@ libmx/src/mx_pop_back.i: libmx/src/mx_pop_back.c.i
 
 # target to preprocess a source file
 libmx/src/mx_pop_back.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_pop_back.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_pop_back.c.i
 .PHONY : libmx/src/mx_pop_back.c.i
 
 libmx/src/mx_pop_back.s: libmx/src/mx_pop_back.c.s
@@ -916,7 +930,7 @@ libmx/src/mx_pop_back.s: libmx/src/mx_pop_back.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_pop_back.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_pop_back.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_pop_back.c.s
 .PHONY : libmx/src/mx_pop_back.c.s
 
 libmx/src/mx_pop_front.o: libmx/src/mx_pop_front.c.o
@@ -925,7 +939,7 @@ libmx/src/mx_pop_front.o: libmx/src/mx_pop_front.c.o
 
 # target to build an object file
 libmx/src/mx_pop_front.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_pop_front.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_pop_front.c.o
 .PHONY : libmx/src/mx_pop_front.c.o
 
 libmx/src/mx_pop_front.i: libmx/src/mx_pop_front.c.i
@@ -934,7 +948,7 @@ libmx/src/mx_pop_front.i: libmx/src/mx_pop_front.c.i
 
 # target to preprocess a source file
 libmx/src/mx_pop_front.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_pop_front.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_pop_front.c.i
 .PHONY : libmx/src/mx_pop_front.c.i
 
 libmx/src/mx_pop_front.s: libmx/src/mx_pop_front.c.s
@@ -943,7 +957,7 @@ libmx/src/mx_pop_front.s: libmx/src/mx_pop_front.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_pop_front.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_pop_front.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_pop_front.c.s
 .PHONY : libmx/src/mx_pop_front.c.s
 
 libmx/src/mx_pow.o: libmx/src/mx_pow.c.o
@@ -952,7 +966,7 @@ libmx/src/mx_pow.o: libmx/src/mx_pow.c.o
 
 # target to build an object file
 libmx/src/mx_pow.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_pow.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_pow.c.o
 .PHONY : libmx/src/mx_pow.c.o
 
 libmx/src/mx_pow.i: libmx/src/mx_pow.c.i
@@ -961,7 +975,7 @@ libmx/src/mx_pow.i: libmx/src/mx_pow.c.i
 
 # target to preprocess a source file
 libmx/src/mx_pow.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_pow.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_pow.c.i
 .PHONY : libmx/src/mx_pow.c.i
 
 libmx/src/mx_pow.s: libmx/src/mx_pow.c.s
@@ -970,7 +984,7 @@ libmx/src/mx_pow.s: libmx/src/mx_pow.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_pow.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_pow.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_pow.c.s
 .PHONY : libmx/src/mx_pow.c.s
 
 libmx/src/mx_print_strarr.o: libmx/src/mx_print_strarr.c.o
@@ -979,7 +993,7 @@ libmx/src/mx_print_strarr.o: libmx/src/mx_print_strarr.c.o
 
 # target to build an object file
 libmx/src/mx_print_strarr.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_print_strarr.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_print_strarr.c.o
 .PHONY : libmx/src/mx_print_strarr.c.o
 
 libmx/src/mx_print_strarr.i: libmx/src/mx_print_strarr.c.i
@@ -988,7 +1002,7 @@ libmx/src/mx_print_strarr.i: libmx/src/mx_print_strarr.c.i
 
 # target to preprocess a source file
 libmx/src/mx_print_strarr.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_print_strarr.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_print_strarr.c.i
 .PHONY : libmx/src/mx_print_strarr.c.i
 
 libmx/src/mx_print_strarr.s: libmx/src/mx_print_strarr.c.s
@@ -997,7 +1011,7 @@ libmx/src/mx_print_strarr.s: libmx/src/mx_print_strarr.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_print_strarr.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_print_strarr.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_print_strarr.c.s
 .PHONY : libmx/src/mx_print_strarr.c.s
 
 libmx/src/mx_print_unicode.o: libmx/src/mx_print_unicode.c.o
@@ -1006,7 +1020,7 @@ libmx/src/mx_print_unicode.o: libmx/src/mx_print_unicode.c.o
 
 # target to build an object file
 libmx/src/mx_print_unicode.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_print_unicode.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_print_unicode.c.o
 .PHONY : libmx/src/mx_print_unicode.c.o
 
 libmx/src/mx_print_unicode.i: libmx/src/mx_print_unicode.c.i
@@ -1015,7 +1029,7 @@ libmx/src/mx_print_unicode.i: libmx/src/mx_print_unicode.c.i
 
 # target to preprocess a source file
 libmx/src/mx_print_unicode.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_print_unicode.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_print_unicode.c.i
 .PHONY : libmx/src/mx_print_unicode.c.i
 
 libmx/src/mx_print_unicode.s: libmx/src/mx_print_unicode.c.s
@@ -1024,7 +1038,7 @@ libmx/src/mx_print_unicode.s: libmx/src/mx_print_unicode.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_print_unicode.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_print_unicode.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_print_unicode.c.s
 .PHONY : libmx/src/mx_print_unicode.c.s
 
 libmx/src/mx_printchar.o: libmx/src/mx_printchar.c.o
@@ -1033,7 +1047,7 @@ libmx/src/mx_printchar.o: libmx/src/mx_printchar.c.o
 
 # target to build an object file
 libmx/src/mx_printchar.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_printchar.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_printchar.c.o
 .PHONY : libmx/src/mx_printchar.c.o
 
 libmx/src/mx_printchar.i: libmx/src/mx_printchar.c.i
@@ -1042,7 +1056,7 @@ libmx/src/mx_printchar.i: libmx/src/mx_printchar.c.i
 
 # target to preprocess a source file
 libmx/src/mx_printchar.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_printchar.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_printchar.c.i
 .PHONY : libmx/src/mx_printchar.c.i
 
 libmx/src/mx_printchar.s: libmx/src/mx_printchar.c.s
@@ -1051,7 +1065,7 @@ libmx/src/mx_printchar.s: libmx/src/mx_printchar.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_printchar.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_printchar.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_printchar.c.s
 .PHONY : libmx/src/mx_printchar.c.s
 
 libmx/src/mx_printerr.o: libmx/src/mx_printerr.c.o
@@ -1060,7 +1074,7 @@ libmx/src/mx_printerr.o: libmx/src/mx_printerr.c.o
 
 # target to build an object file
 libmx/src/mx_printerr.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_printerr.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_printerr.c.o
 .PHONY : libmx/src/mx_printerr.c.o
 
 libmx/src/mx_printerr.i: libmx/src/mx_printerr.c.i
@@ -1069,7 +1083,7 @@ libmx/src/mx_printerr.i: libmx/src/mx_printerr.c.i
 
 # target to preprocess a source file
 libmx/src/mx_printerr.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_printerr.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_printerr.c.i
 .PHONY : libmx/src/mx_printerr.c.i
 
 libmx/src/mx_printerr.s: libmx/src/mx_printerr.c.s
@@ -1078,7 +1092,7 @@ libmx/src/mx_printerr.s: libmx/src/mx_printerr.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_printerr.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_printerr.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_printerr.c.s
 .PHONY : libmx/src/mx_printerr.c.s
 
 libmx/src/mx_printint.o: libmx/src/mx_printint.c.o
@@ -1087,7 +1101,7 @@ libmx/src/mx_printint.o: libmx/src/mx_printint.c.o
 
 # target to build an object file
 libmx/src/mx_printint.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_printint.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_printint.c.o
 .PHONY : libmx/src/mx_printint.c.o
 
 libmx/src/mx_printint.i: libmx/src/mx_printint.c.i
@@ -1096,7 +1110,7 @@ libmx/src/mx_printint.i: libmx/src/mx_printint.c.i
 
 # target to preprocess a source file
 libmx/src/mx_printint.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_printint.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_printint.c.i
 .PHONY : libmx/src/mx_printint.c.i
 
 libmx/src/mx_printint.s: libmx/src/mx_printint.c.s
@@ -1105,7 +1119,7 @@ libmx/src/mx_printint.s: libmx/src/mx_printint.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_printint.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_printint.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_printint.c.s
 .PHONY : libmx/src/mx_printint.c.s
 
 libmx/src/mx_printstr.o: libmx/src/mx_printstr.c.o
@@ -1114,7 +1128,7 @@ libmx/src/mx_printstr.o: libmx/src/mx_printstr.c.o
 
 # target to build an object file
 libmx/src/mx_printstr.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_printstr.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_printstr.c.o
 .PHONY : libmx/src/mx_printstr.c.o
 
 libmx/src/mx_printstr.i: libmx/src/mx_printstr.c.i
@@ -1123,7 +1137,7 @@ libmx/src/mx_printstr.i: libmx/src/mx_printstr.c.i
 
 # target to preprocess a source file
 libmx/src/mx_printstr.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_printstr.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_printstr.c.i
 .PHONY : libmx/src/mx_printstr.c.i
 
 libmx/src/mx_printstr.s: libmx/src/mx_printstr.c.s
@@ -1132,7 +1146,7 @@ libmx/src/mx_printstr.s: libmx/src/mx_printstr.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_printstr.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_printstr.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_printstr.c.s
 .PHONY : libmx/src/mx_printstr.c.s
 
 libmx/src/mx_push_back.o: libmx/src/mx_push_back.c.o
@@ -1141,7 +1155,7 @@ libmx/src/mx_push_back.o: libmx/src/mx_push_back.c.o
 
 # target to build an object file
 libmx/src/mx_push_back.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_push_back.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_push_back.c.o
 .PHONY : libmx/src/mx_push_back.c.o
 
 libmx/src/mx_push_back.i: libmx/src/mx_push_back.c.i
@@ -1150,7 +1164,7 @@ libmx/src/mx_push_back.i: libmx/src/mx_push_back.c.i
 
 # target to preprocess a source file
 libmx/src/mx_push_back.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_push_back.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_push_back.c.i
 .PHONY : libmx/src/mx_push_back.c.i
 
 libmx/src/mx_push_back.s: libmx/src/mx_push_back.c.s
@@ -1159,7 +1173,7 @@ libmx/src/mx_push_back.s: libmx/src/mx_push_back.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_push_back.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_push_back.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_push_back.c.s
 .PHONY : libmx/src/mx_push_back.c.s
 
 libmx/src/mx_push_front.o: libmx/src/mx_push_front.c.o
@@ -1168,7 +1182,7 @@ libmx/src/mx_push_front.o: libmx/src/mx_push_front.c.o
 
 # target to build an object file
 libmx/src/mx_push_front.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_push_front.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_push_front.c.o
 .PHONY : libmx/src/mx_push_front.c.o
 
 libmx/src/mx_push_front.i: libmx/src/mx_push_front.c.i
@@ -1177,7 +1191,7 @@ libmx/src/mx_push_front.i: libmx/src/mx_push_front.c.i
 
 # target to preprocess a source file
 libmx/src/mx_push_front.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_push_front.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_push_front.c.i
 .PHONY : libmx/src/mx_push_front.c.i
 
 libmx/src/mx_push_front.s: libmx/src/mx_push_front.c.s
@@ -1186,7 +1200,7 @@ libmx/src/mx_push_front.s: libmx/src/mx_push_front.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_push_front.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_push_front.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_push_front.c.s
 .PHONY : libmx/src/mx_push_front.c.s
 
 libmx/src/mx_realloc.o: libmx/src/mx_realloc.c.o
@@ -1195,7 +1209,7 @@ libmx/src/mx_realloc.o: libmx/src/mx_realloc.c.o
 
 # target to build an object file
 libmx/src/mx_realloc.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_realloc.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_realloc.c.o
 .PHONY : libmx/src/mx_realloc.c.o
 
 libmx/src/mx_realloc.i: libmx/src/mx_realloc.c.i
@@ -1204,7 +1218,7 @@ libmx/src/mx_realloc.i: libmx/src/mx_realloc.c.i
 
 # target to preprocess a source file
 libmx/src/mx_realloc.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_realloc.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_realloc.c.i
 .PHONY : libmx/src/mx_realloc.c.i
 
 libmx/src/mx_realloc.s: libmx/src/mx_realloc.c.s
@@ -1213,7 +1227,7 @@ libmx/src/mx_realloc.s: libmx/src/mx_realloc.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_realloc.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_realloc.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_realloc.c.s
 .PHONY : libmx/src/mx_realloc.c.s
 
 libmx/src/mx_replace_substr.o: libmx/src/mx_replace_substr.c.o
@@ -1222,7 +1236,7 @@ libmx/src/mx_replace_substr.o: libmx/src/mx_replace_substr.c.o
 
 # target to build an object file
 libmx/src/mx_replace_substr.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_replace_substr.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_replace_substr.c.o
 .PHONY : libmx/src/mx_replace_substr.c.o
 
 libmx/src/mx_replace_substr.i: libmx/src/mx_replace_substr.c.i
@@ -1231,7 +1245,7 @@ libmx/src/mx_replace_substr.i: libmx/src/mx_replace_substr.c.i
 
 # target to preprocess a source file
 libmx/src/mx_replace_substr.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_replace_substr.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_replace_substr.c.i
 .PHONY : libmx/src/mx_replace_substr.c.i
 
 libmx/src/mx_replace_substr.s: libmx/src/mx_replace_substr.c.s
@@ -1240,7 +1254,7 @@ libmx/src/mx_replace_substr.s: libmx/src/mx_replace_substr.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_replace_substr.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_replace_substr.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_replace_substr.c.s
 .PHONY : libmx/src/mx_replace_substr.c.s
 
 libmx/src/mx_skip_substr_index.o: libmx/src/mx_skip_substr_index.c.o
@@ -1249,7 +1263,7 @@ libmx/src/mx_skip_substr_index.o: libmx/src/mx_skip_substr_index.c.o
 
 # target to build an object file
 libmx/src/mx_skip_substr_index.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_skip_substr_index.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_skip_substr_index.c.o
 .PHONY : libmx/src/mx_skip_substr_index.c.o
 
 libmx/src/mx_skip_substr_index.i: libmx/src/mx_skip_substr_index.c.i
@@ -1258,7 +1272,7 @@ libmx/src/mx_skip_substr_index.i: libmx/src/mx_skip_substr_index.c.i
 
 # target to preprocess a source file
 libmx/src/mx_skip_substr_index.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_skip_substr_index.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_skip_substr_index.c.i
 .PHONY : libmx/src/mx_skip_substr_index.c.i
 
 libmx/src/mx_skip_substr_index.s: libmx/src/mx_skip_substr_index.c.s
@@ -1267,7 +1281,7 @@ libmx/src/mx_skip_substr_index.s: libmx/src/mx_skip_substr_index.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_skip_substr_index.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_skip_substr_index.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_skip_substr_index.c.s
 .PHONY : libmx/src/mx_skip_substr_index.c.s
 
 libmx/src/mx_sort_list.o: libmx/src/mx_sort_list.c.o
@@ -1276,7 +1290,7 @@ libmx/src/mx_sort_list.o: libmx/src/mx_sort_list.c.o
 
 # target to build an object file
 libmx/src/mx_sort_list.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_sort_list.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_sort_list.c.o
 .PHONY : libmx/src/mx_sort_list.c.o
 
 libmx/src/mx_sort_list.i: libmx/src/mx_sort_list.c.i
@@ -1285,7 +1299,7 @@ libmx/src/mx_sort_list.i: libmx/src/mx_sort_list.c.i
 
 # target to preprocess a source file
 libmx/src/mx_sort_list.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_sort_list.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_sort_list.c.i
 .PHONY : libmx/src/mx_sort_list.c.i
 
 libmx/src/mx_sort_list.s: libmx/src/mx_sort_list.c.s
@@ -1294,7 +1308,7 @@ libmx/src/mx_sort_list.s: libmx/src/mx_sort_list.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_sort_list.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_sort_list.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_sort_list.c.s
 .PHONY : libmx/src/mx_sort_list.c.s
 
 libmx/src/mx_sqrt.o: libmx/src/mx_sqrt.c.o
@@ -1303,7 +1317,7 @@ libmx/src/mx_sqrt.o: libmx/src/mx_sqrt.c.o
 
 # target to build an object file
 libmx/src/mx_sqrt.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_sqrt.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_sqrt.c.o
 .PHONY : libmx/src/mx_sqrt.c.o
 
 libmx/src/mx_sqrt.i: libmx/src/mx_sqrt.c.i
@@ -1312,7 +1326,7 @@ libmx/src/mx_sqrt.i: libmx/src/mx_sqrt.c.i
 
 # target to preprocess a source file
 libmx/src/mx_sqrt.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_sqrt.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_sqrt.c.i
 .PHONY : libmx/src/mx_sqrt.c.i
 
 libmx/src/mx_sqrt.s: libmx/src/mx_sqrt.c.s
@@ -1321,7 +1335,7 @@ libmx/src/mx_sqrt.s: libmx/src/mx_sqrt.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_sqrt.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_sqrt.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_sqrt.c.s
 .PHONY : libmx/src/mx_sqrt.c.s
 
 libmx/src/mx_str_reverse.o: libmx/src/mx_str_reverse.c.o
@@ -1330,7 +1344,7 @@ libmx/src/mx_str_reverse.o: libmx/src/mx_str_reverse.c.o
 
 # target to build an object file
 libmx/src/mx_str_reverse.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_str_reverse.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_str_reverse.c.o
 .PHONY : libmx/src/mx_str_reverse.c.o
 
 libmx/src/mx_str_reverse.i: libmx/src/mx_str_reverse.c.i
@@ -1339,7 +1353,7 @@ libmx/src/mx_str_reverse.i: libmx/src/mx_str_reverse.c.i
 
 # target to preprocess a source file
 libmx/src/mx_str_reverse.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_str_reverse.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_str_reverse.c.i
 .PHONY : libmx/src/mx_str_reverse.c.i
 
 libmx/src/mx_str_reverse.s: libmx/src/mx_str_reverse.c.s
@@ -1348,7 +1362,7 @@ libmx/src/mx_str_reverse.s: libmx/src/mx_str_reverse.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_str_reverse.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_str_reverse.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_str_reverse.c.s
 .PHONY : libmx/src/mx_str_reverse.c.s
 
 libmx/src/mx_strcat.o: libmx/src/mx_strcat.c.o
@@ -1357,7 +1371,7 @@ libmx/src/mx_strcat.o: libmx/src/mx_strcat.c.o
 
 # target to build an object file
 libmx/src/mx_strcat.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_strcat.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_strcat.c.o
 .PHONY : libmx/src/mx_strcat.c.o
 
 libmx/src/mx_strcat.i: libmx/src/mx_strcat.c.i
@@ -1366,7 +1380,7 @@ libmx/src/mx_strcat.i: libmx/src/mx_strcat.c.i
 
 # target to preprocess a source file
 libmx/src/mx_strcat.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_strcat.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_strcat.c.i
 .PHONY : libmx/src/mx_strcat.c.i
 
 libmx/src/mx_strcat.s: libmx/src/mx_strcat.c.s
@@ -1375,7 +1389,7 @@ libmx/src/mx_strcat.s: libmx/src/mx_strcat.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_strcat.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_strcat.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_strcat.c.s
 .PHONY : libmx/src/mx_strcat.c.s
 
 libmx/src/mx_strcmp.o: libmx/src/mx_strcmp.c.o
@@ -1384,7 +1398,7 @@ libmx/src/mx_strcmp.o: libmx/src/mx_strcmp.c.o
 
 # target to build an object file
 libmx/src/mx_strcmp.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_strcmp.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_strcmp.c.o
 .PHONY : libmx/src/mx_strcmp.c.o
 
 libmx/src/mx_strcmp.i: libmx/src/mx_strcmp.c.i
@@ -1393,7 +1407,7 @@ libmx/src/mx_strcmp.i: libmx/src/mx_strcmp.c.i
 
 # target to preprocess a source file
 libmx/src/mx_strcmp.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_strcmp.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_strcmp.c.i
 .PHONY : libmx/src/mx_strcmp.c.i
 
 libmx/src/mx_strcmp.s: libmx/src/mx_strcmp.c.s
@@ -1402,7 +1416,7 @@ libmx/src/mx_strcmp.s: libmx/src/mx_strcmp.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_strcmp.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_strcmp.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_strcmp.c.s
 .PHONY : libmx/src/mx_strcmp.c.s
 
 libmx/src/mx_strcpy.o: libmx/src/mx_strcpy.c.o
@@ -1411,7 +1425,7 @@ libmx/src/mx_strcpy.o: libmx/src/mx_strcpy.c.o
 
 # target to build an object file
 libmx/src/mx_strcpy.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_strcpy.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_strcpy.c.o
 .PHONY : libmx/src/mx_strcpy.c.o
 
 libmx/src/mx_strcpy.i: libmx/src/mx_strcpy.c.i
@@ -1420,7 +1434,7 @@ libmx/src/mx_strcpy.i: libmx/src/mx_strcpy.c.i
 
 # target to preprocess a source file
 libmx/src/mx_strcpy.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_strcpy.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_strcpy.c.i
 .PHONY : libmx/src/mx_strcpy.c.i
 
 libmx/src/mx_strcpy.s: libmx/src/mx_strcpy.c.s
@@ -1429,7 +1443,7 @@ libmx/src/mx_strcpy.s: libmx/src/mx_strcpy.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_strcpy.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_strcpy.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_strcpy.c.s
 .PHONY : libmx/src/mx_strcpy.c.s
 
 libmx/src/mx_strdel.o: libmx/src/mx_strdel.c.o
@@ -1438,7 +1452,7 @@ libmx/src/mx_strdel.o: libmx/src/mx_strdel.c.o
 
 # target to build an object file
 libmx/src/mx_strdel.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_strdel.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_strdel.c.o
 .PHONY : libmx/src/mx_strdel.c.o
 
 libmx/src/mx_strdel.i: libmx/src/mx_strdel.c.i
@@ -1447,7 +1461,7 @@ libmx/src/mx_strdel.i: libmx/src/mx_strdel.c.i
 
 # target to preprocess a source file
 libmx/src/mx_strdel.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_strdel.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_strdel.c.i
 .PHONY : libmx/src/mx_strdel.c.i
 
 libmx/src/mx_strdel.s: libmx/src/mx_strdel.c.s
@@ -1456,7 +1470,7 @@ libmx/src/mx_strdel.s: libmx/src/mx_strdel.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_strdel.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_strdel.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_strdel.c.s
 .PHONY : libmx/src/mx_strdel.c.s
 
 libmx/src/mx_strdup.o: libmx/src/mx_strdup.c.o
@@ -1465,7 +1479,7 @@ libmx/src/mx_strdup.o: libmx/src/mx_strdup.c.o
 
 # target to build an object file
 libmx/src/mx_strdup.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_strdup.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_strdup.c.o
 .PHONY : libmx/src/mx_strdup.c.o
 
 libmx/src/mx_strdup.i: libmx/src/mx_strdup.c.i
@@ -1474,7 +1488,7 @@ libmx/src/mx_strdup.i: libmx/src/mx_strdup.c.i
 
 # target to preprocess a source file
 libmx/src/mx_strdup.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_strdup.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_strdup.c.i
 .PHONY : libmx/src/mx_strdup.c.i
 
 libmx/src/mx_strdup.s: libmx/src/mx_strdup.c.s
@@ -1483,7 +1497,7 @@ libmx/src/mx_strdup.s: libmx/src/mx_strdup.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_strdup.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_strdup.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_strdup.c.s
 .PHONY : libmx/src/mx_strdup.c.s
 
 libmx/src/mx_strjoin.o: libmx/src/mx_strjoin.c.o
@@ -1492,7 +1506,7 @@ libmx/src/mx_strjoin.o: libmx/src/mx_strjoin.c.o
 
 # target to build an object file
 libmx/src/mx_strjoin.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_strjoin.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_strjoin.c.o
 .PHONY : libmx/src/mx_strjoin.c.o
 
 libmx/src/mx_strjoin.i: libmx/src/mx_strjoin.c.i
@@ -1501,7 +1515,7 @@ libmx/src/mx_strjoin.i: libmx/src/mx_strjoin.c.i
 
 # target to preprocess a source file
 libmx/src/mx_strjoin.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_strjoin.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_strjoin.c.i
 .PHONY : libmx/src/mx_strjoin.c.i
 
 libmx/src/mx_strjoin.s: libmx/src/mx_strjoin.c.s
@@ -1510,7 +1524,7 @@ libmx/src/mx_strjoin.s: libmx/src/mx_strjoin.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_strjoin.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_strjoin.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_strjoin.c.s
 .PHONY : libmx/src/mx_strjoin.c.s
 
 libmx/src/mx_strlen.o: libmx/src/mx_strlen.c.o
@@ -1519,7 +1533,7 @@ libmx/src/mx_strlen.o: libmx/src/mx_strlen.c.o
 
 # target to build an object file
 libmx/src/mx_strlen.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_strlen.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_strlen.c.o
 .PHONY : libmx/src/mx_strlen.c.o
 
 libmx/src/mx_strlen.i: libmx/src/mx_strlen.c.i
@@ -1528,7 +1542,7 @@ libmx/src/mx_strlen.i: libmx/src/mx_strlen.c.i
 
 # target to preprocess a source file
 libmx/src/mx_strlen.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_strlen.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_strlen.c.i
 .PHONY : libmx/src/mx_strlen.c.i
 
 libmx/src/mx_strlen.s: libmx/src/mx_strlen.c.s
@@ -1537,7 +1551,7 @@ libmx/src/mx_strlen.s: libmx/src/mx_strlen.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_strlen.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_strlen.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_strlen.c.s
 .PHONY : libmx/src/mx_strlen.c.s
 
 libmx/src/mx_strncmp.o: libmx/src/mx_strncmp.c.o
@@ -1546,7 +1560,7 @@ libmx/src/mx_strncmp.o: libmx/src/mx_strncmp.c.o
 
 # target to build an object file
 libmx/src/mx_strncmp.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_strncmp.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_strncmp.c.o
 .PHONY : libmx/src/mx_strncmp.c.o
 
 libmx/src/mx_strncmp.i: libmx/src/mx_strncmp.c.i
@@ -1555,7 +1569,7 @@ libmx/src/mx_strncmp.i: libmx/src/mx_strncmp.c.i
 
 # target to preprocess a source file
 libmx/src/mx_strncmp.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_strncmp.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_strncmp.c.i
 .PHONY : libmx/src/mx_strncmp.c.i
 
 libmx/src/mx_strncmp.s: libmx/src/mx_strncmp.c.s
@@ -1564,7 +1578,7 @@ libmx/src/mx_strncmp.s: libmx/src/mx_strncmp.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_strncmp.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_strncmp.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_strncmp.c.s
 .PHONY : libmx/src/mx_strncmp.c.s
 
 libmx/src/mx_strncpy.o: libmx/src/mx_strncpy.c.o
@@ -1573,7 +1587,7 @@ libmx/src/mx_strncpy.o: libmx/src/mx_strncpy.c.o
 
 # target to build an object file
 libmx/src/mx_strncpy.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_strncpy.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_strncpy.c.o
 .PHONY : libmx/src/mx_strncpy.c.o
 
 libmx/src/mx_strncpy.i: libmx/src/mx_strncpy.c.i
@@ -1582,7 +1596,7 @@ libmx/src/mx_strncpy.i: libmx/src/mx_strncpy.c.i
 
 # target to preprocess a source file
 libmx/src/mx_strncpy.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_strncpy.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_strncpy.c.i
 .PHONY : libmx/src/mx_strncpy.c.i
 
 libmx/src/mx_strncpy.s: libmx/src/mx_strncpy.c.s
@@ -1591,7 +1605,7 @@ libmx/src/mx_strncpy.s: libmx/src/mx_strncpy.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_strncpy.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_strncpy.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_strncpy.c.s
 .PHONY : libmx/src/mx_strncpy.c.s
 
 libmx/src/mx_strndup.o: libmx/src/mx_strndup.c.o
@@ -1600,7 +1614,7 @@ libmx/src/mx_strndup.o: libmx/src/mx_strndup.c.o
 
 # target to build an object file
 libmx/src/mx_strndup.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_strndup.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_strndup.c.o
 .PHONY : libmx/src/mx_strndup.c.o
 
 libmx/src/mx_strndup.i: libmx/src/mx_strndup.c.i
@@ -1609,7 +1623,7 @@ libmx/src/mx_strndup.i: libmx/src/mx_strndup.c.i
 
 # target to preprocess a source file
 libmx/src/mx_strndup.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_strndup.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_strndup.c.i
 .PHONY : libmx/src/mx_strndup.c.i
 
 libmx/src/mx_strndup.s: libmx/src/mx_strndup.c.s
@@ -1618,7 +1632,7 @@ libmx/src/mx_strndup.s: libmx/src/mx_strndup.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_strndup.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_strndup.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_strndup.c.s
 .PHONY : libmx/src/mx_strndup.c.s
 
 libmx/src/mx_strnew.o: libmx/src/mx_strnew.c.o
@@ -1627,7 +1641,7 @@ libmx/src/mx_strnew.o: libmx/src/mx_strnew.c.o
 
 # target to build an object file
 libmx/src/mx_strnew.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_strnew.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_strnew.c.o
 .PHONY : libmx/src/mx_strnew.c.o
 
 libmx/src/mx_strnew.i: libmx/src/mx_strnew.c.i
@@ -1636,7 +1650,7 @@ libmx/src/mx_strnew.i: libmx/src/mx_strnew.c.i
 
 # target to preprocess a source file
 libmx/src/mx_strnew.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_strnew.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_strnew.c.i
 .PHONY : libmx/src/mx_strnew.c.i
 
 libmx/src/mx_strnew.s: libmx/src/mx_strnew.c.s
@@ -1645,7 +1659,7 @@ libmx/src/mx_strnew.s: libmx/src/mx_strnew.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_strnew.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_strnew.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_strnew.c.s
 .PHONY : libmx/src/mx_strnew.c.s
 
 libmx/src/mx_strsplit.o: libmx/src/mx_strsplit.c.o
@@ -1654,7 +1668,7 @@ libmx/src/mx_strsplit.o: libmx/src/mx_strsplit.c.o
 
 # target to build an object file
 libmx/src/mx_strsplit.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_strsplit.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_strsplit.c.o
 .PHONY : libmx/src/mx_strsplit.c.o
 
 libmx/src/mx_strsplit.i: libmx/src/mx_strsplit.c.i
@@ -1663,7 +1677,7 @@ libmx/src/mx_strsplit.i: libmx/src/mx_strsplit.c.i
 
 # target to preprocess a source file
 libmx/src/mx_strsplit.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_strsplit.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_strsplit.c.i
 .PHONY : libmx/src/mx_strsplit.c.i
 
 libmx/src/mx_strsplit.s: libmx/src/mx_strsplit.c.s
@@ -1672,7 +1686,7 @@ libmx/src/mx_strsplit.s: libmx/src/mx_strsplit.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_strsplit.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_strsplit.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_strsplit.c.s
 .PHONY : libmx/src/mx_strsplit.c.s
 
 libmx/src/mx_strstr.o: libmx/src/mx_strstr.c.o
@@ -1681,7 +1695,7 @@ libmx/src/mx_strstr.o: libmx/src/mx_strstr.c.o
 
 # target to build an object file
 libmx/src/mx_strstr.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_strstr.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_strstr.c.o
 .PHONY : libmx/src/mx_strstr.c.o
 
 libmx/src/mx_strstr.i: libmx/src/mx_strstr.c.i
@@ -1690,7 +1704,7 @@ libmx/src/mx_strstr.i: libmx/src/mx_strstr.c.i
 
 # target to preprocess a source file
 libmx/src/mx_strstr.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_strstr.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_strstr.c.i
 .PHONY : libmx/src/mx_strstr.c.i
 
 libmx/src/mx_strstr.s: libmx/src/mx_strstr.c.s
@@ -1699,7 +1713,7 @@ libmx/src/mx_strstr.s: libmx/src/mx_strstr.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_strstr.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_strstr.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_strstr.c.s
 .PHONY : libmx/src/mx_strstr.c.s
 
 libmx/src/mx_strtrim.o: libmx/src/mx_strtrim.c.o
@@ -1708,7 +1722,7 @@ libmx/src/mx_strtrim.o: libmx/src/mx_strtrim.c.o
 
 # target to build an object file
 libmx/src/mx_strtrim.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_strtrim.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_strtrim.c.o
 .PHONY : libmx/src/mx_strtrim.c.o
 
 libmx/src/mx_strtrim.i: libmx/src/mx_strtrim.c.i
@@ -1717,7 +1731,7 @@ libmx/src/mx_strtrim.i: libmx/src/mx_strtrim.c.i
 
 # target to preprocess a source file
 libmx/src/mx_strtrim.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_strtrim.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_strtrim.c.i
 .PHONY : libmx/src/mx_strtrim.c.i
 
 libmx/src/mx_strtrim.s: libmx/src/mx_strtrim.c.s
@@ -1726,7 +1740,7 @@ libmx/src/mx_strtrim.s: libmx/src/mx_strtrim.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_strtrim.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_strtrim.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_strtrim.c.s
 .PHONY : libmx/src/mx_strtrim.c.s
 
 libmx/src/mx_swap_char.o: libmx/src/mx_swap_char.c.o
@@ -1735,7 +1749,7 @@ libmx/src/mx_swap_char.o: libmx/src/mx_swap_char.c.o
 
 # target to build an object file
 libmx/src/mx_swap_char.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_swap_char.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_swap_char.c.o
 .PHONY : libmx/src/mx_swap_char.c.o
 
 libmx/src/mx_swap_char.i: libmx/src/mx_swap_char.c.i
@@ -1744,7 +1758,7 @@ libmx/src/mx_swap_char.i: libmx/src/mx_swap_char.c.i
 
 # target to preprocess a source file
 libmx/src/mx_swap_char.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_swap_char.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_swap_char.c.i
 .PHONY : libmx/src/mx_swap_char.c.i
 
 libmx/src/mx_swap_char.s: libmx/src/mx_swap_char.c.s
@@ -1753,7 +1767,7 @@ libmx/src/mx_swap_char.s: libmx/src/mx_swap_char.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_swap_char.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_swap_char.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_swap_char.c.s
 .PHONY : libmx/src/mx_swap_char.c.s
 
 libmx/src/mx_ultra_del_extra_spaces.o: libmx/src/mx_ultra_del_extra_spaces.c.o
@@ -1762,7 +1776,7 @@ libmx/src/mx_ultra_del_extra_spaces.o: libmx/src/mx_ultra_del_extra_spaces.c.o
 
 # target to build an object file
 libmx/src/mx_ultra_del_extra_spaces.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_ultra_del_extra_spaces.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_ultra_del_extra_spaces.c.o
 .PHONY : libmx/src/mx_ultra_del_extra_spaces.c.o
 
 libmx/src/mx_ultra_del_extra_spaces.i: libmx/src/mx_ultra_del_extra_spaces.c.i
@@ -1771,7 +1785,7 @@ libmx/src/mx_ultra_del_extra_spaces.i: libmx/src/mx_ultra_del_extra_spaces.c.i
 
 # target to preprocess a source file
 libmx/src/mx_ultra_del_extra_spaces.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_ultra_del_extra_spaces.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_ultra_del_extra_spaces.c.i
 .PHONY : libmx/src/mx_ultra_del_extra_spaces.c.i
 
 libmx/src/mx_ultra_del_extra_spaces.s: libmx/src/mx_ultra_del_extra_spaces.c.s
@@ -1780,7 +1794,7 @@ libmx/src/mx_ultra_del_extra_spaces.s: libmx/src/mx_ultra_del_extra_spaces.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_ultra_del_extra_spaces.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_ultra_del_extra_spaces.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_ultra_del_extra_spaces.c.s
 .PHONY : libmx/src/mx_ultra_del_extra_spaces.c.s
 
 libmx/src/mx_ultra_strtrim.o: libmx/src/mx_ultra_strtrim.c.o
@@ -1789,7 +1803,7 @@ libmx/src/mx_ultra_strtrim.o: libmx/src/mx_ultra_strtrim.c.o
 
 # target to build an object file
 libmx/src/mx_ultra_strtrim.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_ultra_strtrim.c.o
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_ultra_strtrim.c.o
 .PHONY : libmx/src/mx_ultra_strtrim.c.o
 
 libmx/src/mx_ultra_strtrim.i: libmx/src/mx_ultra_strtrim.c.i
@@ -1798,7 +1812,7 @@ libmx/src/mx_ultra_strtrim.i: libmx/src/mx_ultra_strtrim.c.i
 
 # target to preprocess a source file
 libmx/src/mx_ultra_strtrim.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_ultra_strtrim.c.i
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_ultra_strtrim.c.i
 .PHONY : libmx/src/mx_ultra_strtrim.c.i
 
 libmx/src/mx_ultra_strtrim.s: libmx/src/mx_ultra_strtrim.c.s
@@ -1807,7 +1821,7 @@ libmx/src/mx_ultra_strtrim.s: libmx/src/mx_ultra_strtrim.c.s
 
 # target to generate assembly for a file
 libmx/src/mx_ultra_strtrim.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_ultra_strtrim.c.s
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/libmx/src/mx_ultra_strtrim.c.s
 .PHONY : libmx/src/mx_ultra_strtrim.c.s
 
 src/main.o: src/main.c.o
@@ -1837,32 +1851,32 @@ src/main.c.s:
 	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/main.c.s
 .PHONY : src/main.c.s
 
-src/mx_check_for_flags.o: src/mx_check_for_flags.c.o
+src/mx_change_argv.o: src/mx_change_argv.c.o
 
-.PHONY : src/mx_check_for_flags.o
+.PHONY : src/mx_change_argv.o
 
 # target to build an object file
-src/mx_check_for_flags.c.o:
-	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/mx_check_for_flags.c.o
-.PHONY : src/mx_check_for_flags.c.o
+src/mx_change_argv.c.o:
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/mx_change_argv.c.o
+.PHONY : src/mx_change_argv.c.o
 
-src/mx_check_for_flags.i: src/mx_check_for_flags.c.i
+src/mx_change_argv.i: src/mx_change_argv.c.i
 
-.PHONY : src/mx_check_for_flags.i
+.PHONY : src/mx_change_argv.i
 
 # target to preprocess a source file
-src/mx_check_for_flags.c.i:
-	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/mx_check_for_flags.c.i
-.PHONY : src/mx_check_for_flags.c.i
+src/mx_change_argv.c.i:
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/mx_change_argv.c.i
+.PHONY : src/mx_change_argv.c.i
 
-src/mx_check_for_flags.s: src/mx_check_for_flags.c.s
+src/mx_change_argv.s: src/mx_change_argv.c.s
 
-.PHONY : src/mx_check_for_flags.s
+.PHONY : src/mx_change_argv.s
 
 # target to generate assembly for a file
-src/mx_check_for_flags.c.s:
-	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/mx_check_for_flags.c.s
-.PHONY : src/mx_check_for_flags.c.s
+src/mx_change_argv.c.s:
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/mx_change_argv.c.s
+.PHONY : src/mx_change_argv.c.s
 
 src/mx_compare.o: src/mx_compare.c.o
 
@@ -1891,6 +1905,60 @@ src/mx_compare.c.s:
 	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/mx_compare.c.s
 .PHONY : src/mx_compare.c.s
 
+src/mx_dir_name_print.o: src/mx_dir_name_print.c.o
+
+.PHONY : src/mx_dir_name_print.o
+
+# target to build an object file
+src/mx_dir_name_print.c.o:
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/mx_dir_name_print.c.o
+.PHONY : src/mx_dir_name_print.c.o
+
+src/mx_dir_name_print.i: src/mx_dir_name_print.c.i
+
+.PHONY : src/mx_dir_name_print.i
+
+# target to preprocess a source file
+src/mx_dir_name_print.c.i:
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/mx_dir_name_print.c.i
+.PHONY : src/mx_dir_name_print.c.i
+
+src/mx_dir_name_print.s: src/mx_dir_name_print.c.s
+
+.PHONY : src/mx_dir_name_print.s
+
+# target to generate assembly for a file
+src/mx_dir_name_print.c.s:
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/mx_dir_name_print.c.s
+.PHONY : src/mx_dir_name_print.c.s
+
+src/mx_flag_d.o: src/mx_flag_d.c.o
+
+.PHONY : src/mx_flag_d.o
+
+# target to build an object file
+src/mx_flag_d.c.o:
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/mx_flag_d.c.o
+.PHONY : src/mx_flag_d.c.o
+
+src/mx_flag_d.i: src/mx_flag_d.c.i
+
+.PHONY : src/mx_flag_d.i
+
+# target to preprocess a source file
+src/mx_flag_d.c.i:
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/mx_flag_d.c.i
+.PHONY : src/mx_flag_d.c.i
+
+src/mx_flag_d.s: src/mx_flag_d.c.s
+
+.PHONY : src/mx_flag_d.s
+
+# target to generate assembly for a file
+src/mx_flag_d.c.s:
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/mx_flag_d.c.s
+.PHONY : src/mx_flag_d.c.s
+
 src/mx_flag_l.o: src/mx_flag_l.c.o
 
 .PHONY : src/mx_flag_l.o
@@ -1918,6 +1986,87 @@ src/mx_flag_l.c.s:
 	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/mx_flag_l.c.s
 .PHONY : src/mx_flag_l.c.s
 
+src/mx_flag_one.o: src/mx_flag_one.c.o
+
+.PHONY : src/mx_flag_one.o
+
+# target to build an object file
+src/mx_flag_one.c.o:
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/mx_flag_one.c.o
+.PHONY : src/mx_flag_one.c.o
+
+src/mx_flag_one.i: src/mx_flag_one.c.i
+
+.PHONY : src/mx_flag_one.i
+
+# target to preprocess a source file
+src/mx_flag_one.c.i:
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/mx_flag_one.c.i
+.PHONY : src/mx_flag_one.c.i
+
+src/mx_flag_one.s: src/mx_flag_one.c.s
+
+.PHONY : src/mx_flag_one.s
+
+# target to generate assembly for a file
+src/mx_flag_one.c.s:
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/mx_flag_one.c.s
+.PHONY : src/mx_flag_one.c.s
+
+src/mx_flags_obnulyator.o: src/mx_flags_obnulyator.c.o
+
+.PHONY : src/mx_flags_obnulyator.o
+
+# target to build an object file
+src/mx_flags_obnulyator.c.o:
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/mx_flags_obnulyator.c.o
+.PHONY : src/mx_flags_obnulyator.c.o
+
+src/mx_flags_obnulyator.i: src/mx_flags_obnulyator.c.i
+
+.PHONY : src/mx_flags_obnulyator.i
+
+# target to preprocess a source file
+src/mx_flags_obnulyator.c.i:
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/mx_flags_obnulyator.c.i
+.PHONY : src/mx_flags_obnulyator.c.i
+
+src/mx_flags_obnulyator.s: src/mx_flags_obnulyator.c.s
+
+.PHONY : src/mx_flags_obnulyator.s
+
+# target to generate assembly for a file
+src/mx_flags_obnulyator.c.s:
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/mx_flags_obnulyator.c.s
+.PHONY : src/mx_flags_obnulyator.c.s
+
+src/mx_flags_trig.o: src/mx_flags_trig.c.o
+
+.PHONY : src/mx_flags_trig.o
+
+# target to build an object file
+src/mx_flags_trig.c.o:
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/mx_flags_trig.c.o
+.PHONY : src/mx_flags_trig.c.o
+
+src/mx_flags_trig.i: src/mx_flags_trig.c.i
+
+.PHONY : src/mx_flags_trig.i
+
+# target to preprocess a source file
+src/mx_flags_trig.c.i:
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/mx_flags_trig.c.i
+.PHONY : src/mx_flags_trig.c.i
+
+src/mx_flags_trig.s: src/mx_flags_trig.c.s
+
+.PHONY : src/mx_flags_trig.s
+
+# target to generate assembly for a file
+src/mx_flags_trig.c.s:
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/mx_flags_trig.c.s
+.PHONY : src/mx_flags_trig.c.s
+
 src/mx_is_ascii.o: src/mx_is_ascii.c.o
 
 .PHONY : src/mx_is_ascii.o
@@ -1944,6 +2093,33 @@ src/mx_is_ascii.s: src/mx_is_ascii.c.s
 src/mx_is_ascii.c.s:
 	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/mx_is_ascii.c.s
 .PHONY : src/mx_is_ascii.c.s
+
+src/mx_l_out_st_blocks.o: src/mx_l_out_st_blocks.c.o
+
+.PHONY : src/mx_l_out_st_blocks.o
+
+# target to build an object file
+src/mx_l_out_st_blocks.c.o:
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/mx_l_out_st_blocks.c.o
+.PHONY : src/mx_l_out_st_blocks.c.o
+
+src/mx_l_out_st_blocks.i: src/mx_l_out_st_blocks.c.i
+
+.PHONY : src/mx_l_out_st_blocks.i
+
+# target to preprocess a source file
+src/mx_l_out_st_blocks.c.i:
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/mx_l_out_st_blocks.c.i
+.PHONY : src/mx_l_out_st_blocks.c.i
+
+src/mx_l_out_st_blocks.s: src/mx_l_out_st_blocks.c.s
+
+.PHONY : src/mx_l_out_st_blocks.s
+
+# target to generate assembly for a file
+src/mx_l_out_st_blocks.c.s:
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/mx_l_out_st_blocks.c.s
+.PHONY : src/mx_l_out_st_blocks.c.s
 
 src/mx_l_out_st_dev.o: src/mx_l_out_st_dev.c.o
 
@@ -2188,6 +2364,33 @@ src/mx_lines_count.c.s:
 	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/mx_lines_count.c.s
 .PHONY : src/mx_lines_count.c.s
 
+src/mx_list_swap.o: src/mx_list_swap.c.o
+
+.PHONY : src/mx_list_swap.o
+
+# target to build an object file
+src/mx_list_swap.c.o:
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/mx_list_swap.c.o
+.PHONY : src/mx_list_swap.c.o
+
+src/mx_list_swap.i: src/mx_list_swap.c.i
+
+.PHONY : src/mx_list_swap.i
+
+# target to preprocess a source file
+src/mx_list_swap.c.i:
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/mx_list_swap.c.i
+.PHONY : src/mx_list_swap.c.i
+
+src/mx_list_swap.s: src/mx_list_swap.c.s
+
+.PHONY : src/mx_list_swap.s
+
+# target to generate assembly for a file
+src/mx_list_swap.c.s:
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/mx_list_swap.c.s
+.PHONY : src/mx_list_swap.c.s
+
 src/mx_longest_name.o: src/mx_longest_name.c.o
 
 .PHONY : src/mx_longest_name.o
@@ -2296,6 +2499,33 @@ src/mx_print_uls.c.s:
 	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/mx_print_uls.c.s
 .PHONY : src/mx_print_uls.c.s
 
+src/mx_read_directory.o: src/mx_read_directory.c.o
+
+.PHONY : src/mx_read_directory.o
+
+# target to build an object file
+src/mx_read_directory.c.o:
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/mx_read_directory.c.o
+.PHONY : src/mx_read_directory.c.o
+
+src/mx_read_directory.i: src/mx_read_directory.c.i
+
+.PHONY : src/mx_read_directory.i
+
+# target to preprocess a source file
+src/mx_read_directory.c.i:
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/mx_read_directory.c.i
+.PHONY : src/mx_read_directory.c.i
+
+src/mx_read_directory.s: src/mx_read_directory.c.s
+
+.PHONY : src/mx_read_directory.s
+
+# target to generate assembly for a file
+src/mx_read_directory.c.s:
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/mx_read_directory.c.s
+.PHONY : src/mx_read_directory.c.s
+
 src/mx_read_uls.o: src/mx_read_uls.c.o
 
 .PHONY : src/mx_read_uls.o
@@ -2322,6 +2552,60 @@ src/mx_read_uls.s: src/mx_read_uls.c.s
 src/mx_read_uls.c.s:
 	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/mx_read_uls.c.s
 .PHONY : src/mx_read_uls.c.s
+
+src/mx_sort_by_size.o: src/mx_sort_by_size.c.o
+
+.PHONY : src/mx_sort_by_size.o
+
+# target to build an object file
+src/mx_sort_by_size.c.o:
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/mx_sort_by_size.c.o
+.PHONY : src/mx_sort_by_size.c.o
+
+src/mx_sort_by_size.i: src/mx_sort_by_size.c.i
+
+.PHONY : src/mx_sort_by_size.i
+
+# target to preprocess a source file
+src/mx_sort_by_size.c.i:
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/mx_sort_by_size.c.i
+.PHONY : src/mx_sort_by_size.c.i
+
+src/mx_sort_by_size.s: src/mx_sort_by_size.c.s
+
+.PHONY : src/mx_sort_by_size.s
+
+# target to generate assembly for a file
+src/mx_sort_by_size.c.s:
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/mx_sort_by_size.c.s
+.PHONY : src/mx_sort_by_size.c.s
+
+src/mx_sort_by_time.o: src/mx_sort_by_time.c.o
+
+.PHONY : src/mx_sort_by_time.o
+
+# target to build an object file
+src/mx_sort_by_time.c.o:
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/mx_sort_by_time.c.o
+.PHONY : src/mx_sort_by_time.c.o
+
+src/mx_sort_by_time.i: src/mx_sort_by_time.c.i
+
+.PHONY : src/mx_sort_by_time.i
+
+# target to preprocess a source file
+src/mx_sort_by_time.c.i:
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/mx_sort_by_time.c.i
+.PHONY : src/mx_sort_by_time.c.i
+
+src/mx_sort_by_time.s: src/mx_sort_by_time.c.s
+
+.PHONY : src/mx_sort_by_time.s
+
+# target to generate assembly for a file
+src/mx_sort_by_time.c.s:
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/mx_sort_by_time.c.s
+.PHONY : src/mx_sort_by_time.c.s
 
 src/mx_sort_for_columns.o: src/mx_sort_for_columns.c.o
 
@@ -2377,16 +2661,45 @@ src/mx_strjoin_for_path.c.s:
 	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/mx_strjoin_for_path.c.s
 .PHONY : src/mx_strjoin_for_path.c.s
 
+src/mx_vivod_total.o: src/mx_vivod_total.c.o
+
+.PHONY : src/mx_vivod_total.o
+
+# target to build an object file
+src/mx_vivod_total.c.o:
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/mx_vivod_total.c.o
+.PHONY : src/mx_vivod_total.c.o
+
+src/mx_vivod_total.i: src/mx_vivod_total.c.i
+
+.PHONY : src/mx_vivod_total.i
+
+# target to preprocess a source file
+src/mx_vivod_total.c.i:
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/mx_vivod_total.c.i
+.PHONY : src/mx_vivod_total.c.i
+
+src/mx_vivod_total.s: src/mx_vivod_total.c.s
+
+.PHONY : src/mx_vivod_total.s
+
+# target to generate assembly for a file
+src/mx_vivod_total.c.s:
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/mx_vivod_total.c.s
+.PHONY : src/mx_vivod_total.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... uls"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... mx"
+	@echo "... uls"
+	@echo "... libmx/src/mx_arrlen.o"
+	@echo "... libmx/src/mx_arrlen.i"
+	@echo "... libmx/src/mx_arrlen.s"
 	@echo "... libmx/src/mx_atoi.o"
 	@echo "... libmx/src/mx_atoi.i"
 	@echo "... libmx/src/mx_atoi.s"
@@ -2576,18 +2889,36 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/mx_check_for_flags.o"
-	@echo "... src/mx_check_for_flags.i"
-	@echo "... src/mx_check_for_flags.s"
+	@echo "... src/mx_change_argv.o"
+	@echo "... src/mx_change_argv.i"
+	@echo "... src/mx_change_argv.s"
 	@echo "... src/mx_compare.o"
 	@echo "... src/mx_compare.i"
 	@echo "... src/mx_compare.s"
+	@echo "... src/mx_dir_name_print.o"
+	@echo "... src/mx_dir_name_print.i"
+	@echo "... src/mx_dir_name_print.s"
+	@echo "... src/mx_flag_d.o"
+	@echo "... src/mx_flag_d.i"
+	@echo "... src/mx_flag_d.s"
 	@echo "... src/mx_flag_l.o"
 	@echo "... src/mx_flag_l.i"
 	@echo "... src/mx_flag_l.s"
+	@echo "... src/mx_flag_one.o"
+	@echo "... src/mx_flag_one.i"
+	@echo "... src/mx_flag_one.s"
+	@echo "... src/mx_flags_obnulyator.o"
+	@echo "... src/mx_flags_obnulyator.i"
+	@echo "... src/mx_flags_obnulyator.s"
+	@echo "... src/mx_flags_trig.o"
+	@echo "... src/mx_flags_trig.i"
+	@echo "... src/mx_flags_trig.s"
 	@echo "... src/mx_is_ascii.o"
 	@echo "... src/mx_is_ascii.i"
 	@echo "... src/mx_is_ascii.s"
+	@echo "... src/mx_l_out_st_blocks.o"
+	@echo "... src/mx_l_out_st_blocks.i"
+	@echo "... src/mx_l_out_st_blocks.s"
 	@echo "... src/mx_l_out_st_dev.o"
 	@echo "... src/mx_l_out_st_dev.i"
 	@echo "... src/mx_l_out_st_dev.s"
@@ -2615,6 +2946,9 @@ help:
 	@echo "... src/mx_lines_count.o"
 	@echo "... src/mx_lines_count.i"
 	@echo "... src/mx_lines_count.s"
+	@echo "... src/mx_list_swap.o"
+	@echo "... src/mx_list_swap.i"
+	@echo "... src/mx_list_swap.s"
 	@echo "... src/mx_longest_name.o"
 	@echo "... src/mx_longest_name.i"
 	@echo "... src/mx_longest_name.s"
@@ -2627,15 +2961,27 @@ help:
 	@echo "... src/mx_print_uls.o"
 	@echo "... src/mx_print_uls.i"
 	@echo "... src/mx_print_uls.s"
+	@echo "... src/mx_read_directory.o"
+	@echo "... src/mx_read_directory.i"
+	@echo "... src/mx_read_directory.s"
 	@echo "... src/mx_read_uls.o"
 	@echo "... src/mx_read_uls.i"
 	@echo "... src/mx_read_uls.s"
+	@echo "... src/mx_sort_by_size.o"
+	@echo "... src/mx_sort_by_size.i"
+	@echo "... src/mx_sort_by_size.s"
+	@echo "... src/mx_sort_by_time.o"
+	@echo "... src/mx_sort_by_time.i"
+	@echo "... src/mx_sort_by_time.s"
 	@echo "... src/mx_sort_for_columns.o"
 	@echo "... src/mx_sort_for_columns.i"
 	@echo "... src/mx_sort_for_columns.s"
 	@echo "... src/mx_strjoin_for_path.o"
 	@echo "... src/mx_strjoin_for_path.i"
 	@echo "... src/mx_strjoin_for_path.s"
+	@echo "... src/mx_vivod_total.o"
+	@echo "... src/mx_vivod_total.i"
+	@echo "... src/mx_vivod_total.s"
 .PHONY : help
 
 

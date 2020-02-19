@@ -59,18 +59,17 @@ typedef struct flags {
     bool a;//+
     bool A;//+
     bool o;//+
-    bool s;//+
     bool one;//+
     bool g;//+
     bool t;//+
     bool u;//+
-    bool U;//-
-    bool c;//-
+    bool U;//+
+    bool c;//+
     bool T;//+
+    bool p;//+
+    bool S;//+
     bool r;//-
-    bool p;//-
     bool f;//-
-    bool S;//+/-
     bool X;//triger na papku
 } s_flags;
 
@@ -105,5 +104,6 @@ void mx_list_swap(t_list *lst);
 void mx_sort_by_time(s_flags *fl, t_list *files, char *argv);
 void mx_sort_by_size(t_list *files, char *argv);
 void mx_flags_obnulyator(s_flags *flags);
+void mx_flag_p(t_list *files, s_flags *fl, char *argv);
 
 #endif

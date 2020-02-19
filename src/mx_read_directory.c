@@ -20,7 +20,7 @@ void mx_read_directory(char *source, t_list **files, s_flags *flags) {
     if ((lt.st_mode & S_IFMT) == S_IFDIR) {
         while ((lupa = readdir(directory)) != NULL) {
             if (trig_a(lupa->d_name, flags)) {
-                buf = mx_strdup(lupa->d_name);
+                    buf = mx_strdup(lupa->d_name);
                 mx_push_front(files, buf);
             }
         }

@@ -32,6 +32,7 @@ FILES = main \
 		mx_sort_by_time \
 		mx_sort_by_size \
 		mx_flags_obnulyator \
+		mx_flag_p \
 
 LIBMX_A = libmx/libmx.a
 
