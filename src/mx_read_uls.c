@@ -15,9 +15,9 @@ void mx_read_uls(char **source, s_flags *flags) {
                 mx_dir_name_print(i, source);
             if (flags->S)
                 mx_sort_by_size(files, source[i]);
-            else if (flags->t || flags->u)
+            else if (flags->t)
                mx_sort_by_time(flags, files, source[i]);
-            //if (flags->r)
+            // if (flags->r)
             //    mx_list_reverse(files);
             if (flags->one)
                 mx_flag_one(files);
@@ -36,10 +36,10 @@ void mx_read_uls(char **source, s_flags *flags) {
             mx_flag_p(files, flags, ".");
         if (flags->S)
             mx_sort_by_size(files, ".");
-        else if (flags->t || flags->u)
+        else if (flags->t)
             mx_sort_by_time(flags, files, ".");
-        //if (flags->r)
-        //    mx_list_reverse(files);
+        if (flags->r)
+           mx_list_reverse(files);
         if (flags->one)
             mx_flag_one(files);
         else if (flags->l || flags->o || flags->g)

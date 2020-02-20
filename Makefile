@@ -33,6 +33,8 @@ FILES = main \
 		mx_sort_by_size \
 		mx_flags_obnulyator \
 		mx_flag_p \
+		mx_list_reverse \
+		mx_check_for_slesh \
 
 LIBMX_A = libmx/libmx.a
 
