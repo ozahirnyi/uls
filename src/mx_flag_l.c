@@ -1,12 +1,12 @@
 #include "uls.h"
 
-static int *create_otstup(char *argv, t_list *names, s_flags *fl) {
+static int *create_otstup(char *argv, t_list *names) {
     int *otstup = (int *) malloc(sizeof(int) * 7);
 
-    if (!fl->X)
-        mx_change_argv(argv, mx_strlen(argv));
-    if (!fl->X && !mx_check_for_slesh(argv))
-        argv = ".";
+//    if (!fl->X)
+//        mx_change_argv(argv, mx_strlen(argv));
+//    if (!fl->X && !mx_check_for_slesh(argv))
+//        argv = ".";
     otstup[1] = mx_max_len_int(names, 1, argv);
     otstup[2] = mx_max_len_char(names, 1, argv);
     otstup[3] = mx_max_len_char(names, 2, argv);
@@ -66,7 +66,7 @@ void mx_flag_l(t_list *names, char *argv, s_flags *flags) {
     struct stat buf;
     char *full_path = NULL;
     t_list *p = names;
-    int *otstup = create_otstup(argv, names, flags);
+    int *otstup = create_otstup(argv, names);
 
     if (flags->X) {
         mx_vivod_total(names, argv);

@@ -18,7 +18,7 @@ fcntl.h
 stdbool.h
 -
 
-/Users/ozahirnyi/uls/libmx/src/mx_del_strarr.c
+/Users/ozahirnyi/uls/libmx/src/mx_pop_front.c
 ../inc/libmx.h
 /Users/ozahirnyi/uls/libmx/inc/libmx.h
 

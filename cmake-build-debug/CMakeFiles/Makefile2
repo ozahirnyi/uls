@@ -76,12 +76,12 @@ preinstall:
 CMakeFiles/uls.dir/all: CMakeFiles/mx.dir/all
 	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/depend
 	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles --progress-num=65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97 "Built target uls"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles --progress-num=65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99 "Built target uls"
 .PHONY : CMakeFiles/uls.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/uls.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles 97
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles 99
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/uls.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/uls.dir/rule

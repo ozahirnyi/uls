@@ -10,7 +10,7 @@ static bool trig_a(char *d_name, s_flags *flags) {
         return 0;
 }
 
-void mx_read_directory(char *source, t_list **files, s_flags *flags) {
+int mx_read_directory(char *source, t_list **files, s_flags *flags, int err) {
     DIR *directory = opendir(source);
     struct dirent *lupa = NULL;
     char *buf = NULL;
@@ -32,4 +32,5 @@ void mx_read_directory(char *source, t_list **files, s_flags *flags) {
         mx_push_front(files, buf);
         flags->X = 0;
     }
+    return err;
 }

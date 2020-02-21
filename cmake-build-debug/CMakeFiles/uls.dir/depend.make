@@ -9,6 +9,10 @@ CMakeFiles/uls.dir/src/mx_change_argv.c.o: ../inc/uls.h
 CMakeFiles/uls.dir/src/mx_change_argv.c.o: ../libmx/inc/libmx.h
 CMakeFiles/uls.dir/src/mx_change_argv.c.o: ../src/mx_change_argv.c
 
+CMakeFiles/uls.dir/src/mx_check_for_slesh.c.o: ../inc/uls.h
+CMakeFiles/uls.dir/src/mx_check_for_slesh.c.o: ../libmx/inc/libmx.h
+CMakeFiles/uls.dir/src/mx_check_for_slesh.c.o: ../src/mx_check_for_slesh.c
+
 CMakeFiles/uls.dir/src/mx_compare.c.o: ../inc/uls.h
 CMakeFiles/uls.dir/src/mx_compare.c.o: ../libmx/inc/libmx.h
 CMakeFiles/uls.dir/src/mx_compare.c.o: ../src/mx_compare.c
@@ -80,6 +84,10 @@ CMakeFiles/uls.dir/src/mx_len_int.c.o: ../src/mx_len_int.c
 CMakeFiles/uls.dir/src/mx_lines_count.c.o: ../inc/uls.h
 CMakeFiles/uls.dir/src/mx_lines_count.c.o: ../libmx/inc/libmx.h
 CMakeFiles/uls.dir/src/mx_lines_count.c.o: ../src/mx_lines_count.c
+
+CMakeFiles/uls.dir/src/mx_list_reverse.c.o: ../inc/uls.h
+CMakeFiles/uls.dir/src/mx_list_reverse.c.o: ../libmx/inc/libmx.h
+CMakeFiles/uls.dir/src/mx_list_reverse.c.o: ../src/mx_list_reverse.c
 
 CMakeFiles/uls.dir/src/mx_list_swap.c.o: ../inc/uls.h
 CMakeFiles/uls.dir/src/mx_list_swap.c.o: ../libmx/inc/libmx.h
