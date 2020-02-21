@@ -50,6 +50,8 @@ static bool mx_check_flag1(char f, s_flags *trig) {
 		trig->o = 1;
 	else if (f == '1')
 		trig->one = 1;
+	else if (f == 'S')
+		trig->S = 1;
 	else
 		return false;
 	return true;

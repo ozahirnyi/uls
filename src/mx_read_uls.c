@@ -19,7 +19,7 @@ static int work_with_flags(s_flags *flags, char *source, int i, int err) {
     mx_sort_list(files, &mx_compare);
     p_dir_name_S_t(files, flags, source, i);
      if (flags->r)
-        mx_list_reverse(files);
+        files = mx_list_reverse(files);
     if (flags->one)
         mx_flag_one(files);
     else if (flags->l || flags->o || flags->g)

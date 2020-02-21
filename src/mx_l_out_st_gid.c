@@ -18,7 +18,6 @@ void mx_l_out_st_gid(unsigned long n, int otstup, s_flags *fl) {
 				mx_printchar(' ');
 			}
 		}
-        mx_printint(n);
     }
     mx_printchar(' ');
     mx_printchar(' ');
