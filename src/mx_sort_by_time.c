@@ -14,20 +14,20 @@ void mx_sort_by_time(s_flags *fl, t_list *files, char *argv) {
             full_path2 = mx_strjoin_for_path(argv, p->next->data);
             lstat(full_path1, &buf1);
             lstat(full_path2, &buf2);
-            if (fl->t && !fl->u && !fl->c && !fl->U) {
-                if (buf1.st_mtime < buf2.st_mtime)
-                    mx_list_swap(p);
-            }
-            else if (fl->t && fl->u && !fl->c && !fl->U) {
+            if (fl->u) {
                 if (buf1.st_atime < buf2.st_atime)
                     mx_list_swap(p);
             }
-            else if (fl->t && !fl->u && fl->c && !fl->U) {
+            else if (fl->c) {
                 if (buf1.st_ctime < buf2.st_ctime)
                     mx_list_swap(p);
             }
-            else if (fl->t && !fl->u && !fl->c && fl->U) {
+            else if (fl->U) {
                 if (buf1.st_birthtime < buf2.st_birthtime)
+                    mx_list_swap(p);
+            }
+            else {
+                if (buf1.st_mtime < buf2.st_mtime)
                     mx_list_swap(p);
             }
             mx_strdel(&full_path1);

@@ -5,6 +5,8 @@ static int *create_otstup(char *argv, t_list *names, s_flags *fl) {
 
     if (!fl->X)
         mx_change_argv(argv, mx_strlen(argv));
+    if (!fl->X && !mx_check_for_slesh(argv))
+        argv = ".";
     otstup[1] = mx_max_len_int(names, 1, argv);
     otstup[2] = mx_max_len_char(names, 1, argv);
     otstup[3] = mx_max_len_char(names, 2, argv);
