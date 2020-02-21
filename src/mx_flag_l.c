@@ -1,12 +1,8 @@
 #include "uls.h"
 
-static int *create_otstup(char *argv, t_list *names, s_flags *fl) {
+static int *create_otstup(char *argv, t_list *names) {
     int *otstup = (int *) malloc(sizeof(int) * 7);
 
-    if (!fl->X)
-        mx_change_argv(argv, mx_strlen(argv));
-    if (!fl->X && !mx_check_for_slesh(argv))
-        argv = ".";
     otstup[1] = mx_max_len_int(names, 1, argv);
     otstup[2] = mx_max_len_char(names, 1, argv);
     otstup[3] = mx_max_len_char(names, 2, argv);
@@ -38,11 +34,14 @@ static void part_1_of_cycle(int *otstup, struct stat buf,
     if (!fl->g)
         mx_l_out_st_uid(buf.st_uid, otstup[2]);
     if (!fl->o)
-        mx_l_out_st_gid(buf.st_gid, otstup[3]);
+        mx_l_out_st_gid(buf.st_gid, otstup[3], fl);
     if ((buf.st_mode & S_IFMT) == S_IFBLK
         || (buf.st_mode & S_IFMT) == S_IFCHR) {
-        mx_l_out_st_dev(buf.st_rdev, otstup[5], otstup[6]);
-        otstup[0] = otstup[4] + 3;
+        if (!fl->X)
+            mx_l_out_st_dev(buf.st_rdev, otstup[5] + 1, otstup[6]);
+        else
+            mx_l_out_st_dev(buf.st_rdev, otstup[5], otstup[6]);
+        otstup[0] = otstup[4] + 7;
     }
     else
         mx_l_out_st_size(buf.st_size, otstup[0]);
@@ -52,7 +51,7 @@ static void part_2_of_cycle(struct stat buf, t_list *p,
                             char *full_path, s_flags *fl) {
     char *data = mx_strdup(p->data);
 
-    mx_l_out_st_mtime(buf.st_atime, buf.st_mtime, buf.st_ctime, buf.st_birthtime,  fl);
+    mx_l_out_st_mtime(buf.st_atime, buf.st_mtime, buf.st_ctime, buf.st_birthtime, fl);
     mx_is_ascii(data, mx_strlen(data));
     if ((buf.st_mode & S_IFLNK) == S_IFLNK)
         part_for_link(full_path, p->data);
@@ -66,7 +65,7 @@ void mx_flag_l(t_list *names, char *argv, s_flags *flags) {
     struct stat buf;
     char *full_path = NULL;
     t_list *p = names;
-    int *otstup = create_otstup(argv, names, flags);
+    int *otstup = create_otstup(argv, names);
 
     if (flags->X) {
         mx_vivod_total(names, argv);

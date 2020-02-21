@@ -21,7 +21,8 @@ static void out_minor(int len, int minor) {
         mx_printstr(minor_hex);
     }
     else {
-        for (i = 0; i < len - 2; i++) {
+        len = 3;
+        for (i = 0; i < len - mx_len_int(minor); i++) {
             mx_printchar(' ');
         }
         mx_printint(minor);
@@ -34,6 +35,7 @@ void mx_l_out_st_dev(unsigned int n, int otstup1, int otstup2) {
     int len2 = otstup2 - mx_len_int(MX_MINOR(n));
     int minor = MX_MINOR(n);
 
+    mx_printchar(' ');
     out_major(len1, MX_MAJOR(n));
     out_minor(len2, minor);
     mx_printchar(' ');
