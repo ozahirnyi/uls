@@ -5,7 +5,6 @@ void mx_pop_front(t_list **head) {
 
     if (head != NULL) {
         buf = (*head)->next;
-        free((*head)->data);
         free(*head);
         *head = buf;
     }

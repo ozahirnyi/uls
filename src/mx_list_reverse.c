@@ -1,12 +1,11 @@
 #include "uls.h"
 
-void mx_list_reverse(t_list *files) {
-	int len = mx_list_size(files);
-	//t_list *p = files;
+t_list *mx_list_reverse(t_list *files) {
+    t_list *res = NULL;
 
-	while (len > 0) {
-		// mx_push_back(&p, p->data);
-		// mx_pop_front(&p);
-		len--;
-	}
+    while (files) {
+        mx_push_front(&res, files->data);
+        mx_pop_front(&files);
+    }
+    return res;
 }
