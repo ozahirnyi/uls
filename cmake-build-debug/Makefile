@@ -1891,6 +1891,33 @@ src/mx_change_argv.c.s:
 	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/mx_change_argv.c.s
 .PHONY : src/mx_change_argv.c.s
 
+src/mx_check_for_slesh.o: src/mx_check_for_slesh.c.o
+
+.PHONY : src/mx_check_for_slesh.o
+
+# target to build an object file
+src/mx_check_for_slesh.c.o:
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/mx_check_for_slesh.c.o
+.PHONY : src/mx_check_for_slesh.c.o
+
+src/mx_check_for_slesh.i: src/mx_check_for_slesh.c.i
+
+.PHONY : src/mx_check_for_slesh.i
+
+# target to preprocess a source file
+src/mx_check_for_slesh.c.i:
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/mx_check_for_slesh.c.i
+.PHONY : src/mx_check_for_slesh.c.i
+
+src/mx_check_for_slesh.s: src/mx_check_for_slesh.c.s
+
+.PHONY : src/mx_check_for_slesh.s
+
+# target to generate assembly for a file
+src/mx_check_for_slesh.c.s:
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/mx_check_for_slesh.c.s
+.PHONY : src/mx_check_for_slesh.c.s
+
 src/mx_compare.o: src/mx_compare.c.o
 
 .PHONY : src/mx_compare.o
@@ -2376,6 +2403,33 @@ src/mx_lines_count.s: src/mx_lines_count.c.s
 src/mx_lines_count.c.s:
 	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/mx_lines_count.c.s
 .PHONY : src/mx_lines_count.c.s
+
+src/mx_list_reverse.o: src/mx_list_reverse.c.o
+
+.PHONY : src/mx_list_reverse.o
+
+# target to build an object file
+src/mx_list_reverse.c.o:
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/mx_list_reverse.c.o
+.PHONY : src/mx_list_reverse.c.o
+
+src/mx_list_reverse.i: src/mx_list_reverse.c.i
+
+.PHONY : src/mx_list_reverse.i
+
+# target to preprocess a source file
+src/mx_list_reverse.c.i:
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/mx_list_reverse.c.i
+.PHONY : src/mx_list_reverse.c.i
+
+src/mx_list_reverse.s: src/mx_list_reverse.c.s
+
+.PHONY : src/mx_list_reverse.s
+
+# target to generate assembly for a file
+src/mx_list_reverse.c.s:
+	$(MAKE) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/mx_list_reverse.c.s
+.PHONY : src/mx_list_reverse.c.s
 
 src/mx_list_swap.o: src/mx_list_swap.c.o
 
@@ -2906,6 +2960,9 @@ help:
 	@echo "... src/mx_change_argv.o"
 	@echo "... src/mx_change_argv.i"
 	@echo "... src/mx_change_argv.s"
+	@echo "... src/mx_check_for_slesh.o"
+	@echo "... src/mx_check_for_slesh.i"
+	@echo "... src/mx_check_for_slesh.s"
 	@echo "... src/mx_compare.o"
 	@echo "... src/mx_compare.i"
 	@echo "... src/mx_compare.s"
@@ -2960,6 +3017,9 @@ help:
 	@echo "... src/mx_lines_count.o"
 	@echo "... src/mx_lines_count.i"
 	@echo "... src/mx_lines_count.s"
+	@echo "... src/mx_list_reverse.o"
+	@echo "... src/mx_list_reverse.i"
+	@echo "... src/mx_list_reverse.s"
 	@echo "... src/mx_list_swap.o"
 	@echo "... src/mx_list_swap.i"
 	@echo "... src/mx_list_swap.s"

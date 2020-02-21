@@ -13,6 +13,7 @@ add_library(mx STATIC ${LIB_SRC})
 #include_directories(inc)
 
 add_executable(uls
+        src/mx_list_reverse.c
         src/main.c
         src/mx_flag_l.c
         src/mx_l_out_st_mode.c
@@ -44,6 +45,8 @@ add_executable(uls
         src/mx_sort_by_time.c
         src/mx_sort_by_size.c
         src/mx_flags_obnulyator.c
-        src/mx_flag_p.c)
+        src/mx_flag_p.c
+        src/mx_check_for_slesh.c
+        src/mx_list_reverse.c)
 
 target_link_libraries(uls mx)

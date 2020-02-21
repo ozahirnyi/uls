@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/ozahirnyi/uls/src/main.c" "/Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles/uls.dir/src/main.c.o"
   "/Users/ozahirnyi/uls/src/mx_change_argv.c" "/Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles/uls.dir/src/mx_change_argv.c.o"
+  "/Users/ozahirnyi/uls/src/mx_check_for_slesh.c" "/Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles/uls.dir/src/mx_check_for_slesh.c.o"
   "/Users/ozahirnyi/uls/src/mx_compare.c" "/Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles/uls.dir/src/mx_compare.c.o"
   "/Users/ozahirnyi/uls/src/mx_dir_name_print.c" "/Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles/uls.dir/src/mx_dir_name_print.c.o"
   "/Users/ozahirnyi/uls/src/mx_flag_d.c" "/Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles/uls.dir/src/mx_flag_d.c.o"
@@ -24,6 +25,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/ozahirnyi/uls/src/mx_l_out_st_uid.c" "/Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles/uls.dir/src/mx_l_out_st_uid.c.o"
   "/Users/ozahirnyi/uls/src/mx_len_int.c" "/Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles/uls.dir/src/mx_len_int.c.o"
   "/Users/ozahirnyi/uls/src/mx_lines_count.c" "/Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles/uls.dir/src/mx_lines_count.c.o"
+  "/Users/ozahirnyi/uls/src/mx_list_reverse.c" "/Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles/uls.dir/src/mx_list_reverse.c.o"
   "/Users/ozahirnyi/uls/src/mx_list_swap.c" "/Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles/uls.dir/src/mx_list_swap.c.o"
   "/Users/ozahirnyi/uls/src/mx_longest_name.c" "/Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles/uls.dir/src/mx_longest_name.c.o"
   "/Users/ozahirnyi/uls/src/mx_max_len_char.c" "/Users/ozahirnyi/uls/cmake-build-debug/CMakeFiles/uls.dir/src/mx_max_len_char.c.o"

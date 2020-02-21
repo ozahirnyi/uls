@@ -6,7 +6,7 @@ void mx_l_out_st_gid(unsigned long n, int otstup, s_flags *fl) {
 
 	gr = getgrgid(n);
 	if (gr != NULL) {
-		mx_printstr(gr->gr_name);
+        mx_printstr(gr->gr_name);
 		for (i = 0; i < otstup - mx_strlen(gr->gr_name); i++) {
 			mx_printchar(' ');
 		}
@@ -18,6 +18,7 @@ void mx_l_out_st_gid(unsigned long n, int otstup, s_flags *fl) {
 				mx_printchar(' ');
 			}
 		}
+        mx_printint(n);
     }
     mx_printchar(' ');
     mx_printchar(' ');

@@ -321,6 +321,9 @@
 		<Unit filename="/Users/ozahirnyi/uls/src/mx_change_argv.c">
 			<Option target="uls"/>
 		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/src/mx_check_for_slesh.c">
+			<Option target="uls"/>
+		</Unit>
 		<Unit filename="/Users/ozahirnyi/uls/src/mx_compare.c">
 			<Option target="uls"/>
 		</Unit>
@@ -373,6 +376,9 @@
 			<Option target="uls"/>
 		</Unit>
 		<Unit filename="/Users/ozahirnyi/uls/src/mx_lines_count.c">
+			<Option target="uls"/>
+		</Unit>
+		<Unit filename="/Users/ozahirnyi/uls/src/mx_list_reverse.c">
 			<Option target="uls"/>
 		</Unit>
 		<Unit filename="/Users/ozahirnyi/uls/src/mx_list_swap.c">

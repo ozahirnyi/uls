@@ -27,14 +27,12 @@ FILES = main \
 		mx_dir_name_print \
 		mx_flag_one \
 		mx_flag_d \
-		mx_change_argv \
 		mx_list_swap \
 		mx_sort_by_time \
 		mx_sort_by_size \
 		mx_flags_obnulyator \
 		mx_flag_p \
 		mx_list_reverse \
-		mx_check_for_slesh \
 
 LIBMX_A = libmx/libmx.a
 

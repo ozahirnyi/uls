@@ -1,8 +1,8 @@
 #ifndef ULS_H
 #define ULS_H
 
-//#include "libmx.h"
-#include "libmx/inc/libmx.h"
+#include "libmx.h"
+//#include "libmx/inc/libmx.h"
 #include <sys/stat.h>
 #include <time.h>
 #include <dirent.h>
@@ -73,12 +73,14 @@ typedef struct flags {
     bool X;//triger na papku
 } s_flags;
 
+t_list *mx_list_reverse(t_list *files);
 t_list *mx_sort_for_columns(s_print *info);
 bool mx_compare(void *a, void *b);
 int mx_longest_name(t_list *list);
+int mx_read_uls(char **source, s_flags *flags, int err);
 int mx_lines_count(int files_count, int *columns, int longest_name);
+int mx_read_directory(char *source, t_list **files, s_flags *flags, int err);
 void mx_print_uls(t_list **files, t_list *sorted_list);
-void mx_read_uls(char **source, s_flags *flags);
 void mx_flag_l(t_list *names, char *argv, s_flags *flags);
 void mx_l_out_st_blocks(unsigned long n, int otstup);
 void mx_l_out_st_mode(unsigned long n, char *name);
@@ -95,7 +97,6 @@ char *mx_strjoin_for_path(char *argv, char *data);
 int mx_len_int(unsigned long n);
 void mx_flags_trig(char f, s_flags *trig);
 void mx_vivod_total(t_list *names, char *argv);
-void mx_read_directory(char *source, t_list **files, s_flags *flags);
 void mx_dir_name_print(int i, char **source);
 void mx_flag_one(t_list *names);
 void mx_flag_d(char *source, t_list **files);
@@ -104,6 +105,5 @@ void mx_sort_by_time(s_flags *fl, t_list *files, char *argv);
 void mx_sort_by_size(t_list *files, char *argv);
 s_flags *mx_flags_obnulyator();
 void mx_flag_p(t_list *files, s_flags *fl, char *argv);
-void mx_list_reverse(t_list *files);
 
 #endif

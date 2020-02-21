@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/uls.dir/src/main.c.o"
   "CMakeFiles/uls.dir/src/mx_change_argv.c.o"
+  "CMakeFiles/uls.dir/src/mx_check_for_slesh.c.o"
   "CMakeFiles/uls.dir/src/mx_compare.c.o"
   "CMakeFiles/uls.dir/src/mx_dir_name_print.c.o"
   "CMakeFiles/uls.dir/src/mx_flag_d.c.o"
@@ -19,6 +20,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/uls.dir/src/mx_l_out_st_uid.c.o"
   "CMakeFiles/uls.dir/src/mx_len_int.c.o"
   "CMakeFiles/uls.dir/src/mx_lines_count.c.o"
+  "CMakeFiles/uls.dir/src/mx_list_reverse.c.o"
   "CMakeFiles/uls.dir/src/mx_list_swap.c.o"
   "CMakeFiles/uls.dir/src/mx_longest_name.c.o"
   "CMakeFiles/uls.dir/src/mx_max_len_char.c.o"

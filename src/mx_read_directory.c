@@ -24,7 +24,7 @@ static void mx_part_1(t_list **files, s_flags *flags, DIR *directory) {
     flags->X = 1;
 }
 
-void mx_read_directory(char *source, t_list **files, s_flags *flags) {
+int mx_read_directory(char *source, t_list **files, s_flags *flags, int err) {
     DIR *directory = opendir(source);
     char *buf = NULL;
     struct stat lt;
@@ -38,4 +38,5 @@ void mx_read_directory(char *source, t_list **files, s_flags *flags) {
         mx_push_front(files, buf);
         flags->X = 0;
     }
+    return err;
 }
