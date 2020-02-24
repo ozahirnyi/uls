@@ -71,6 +71,7 @@ typedef struct flags {
     bool r;//-
     bool f;//-
     bool X;//triger na papku
+    bool dir_print;//triger na papku
 } s_flags;
 
 t_list *mx_list_reverse(t_list *files);
@@ -90,14 +91,14 @@ void mx_l_out_st_gid(unsigned long n, int otstup, s_flags *fl);
 void mx_l_out_st_size(unsigned long n, int otstup);
 void mx_l_out_st_dev(unsigned int n, int otstup1, int otstup2);
 void mx_is_ascii(char *str, int len);
-void mx_l_out_st_mtime(long a, long m, long c, long b, s_flags *fl);
+void mx_l_out_st_mtime(long *amcb, s_flags *fl);
 int mx_max_len_int(t_list *names, int trig, char *argv);
 int mx_max_len_char(t_list *src, int trig, char *argv);
 char *mx_strjoin_for_path(char *argv, char *data);
 int mx_len_int(unsigned long n);
 void mx_flags_trig(char f, s_flags *trig);
 void mx_vivod_total(t_list *names, char *argv);
-void mx_dir_name_print(int i, char **source);
+void mx_dir_name_print(int i, char *source);
 void mx_flag_one(t_list *names);
 void mx_flag_d(char *source, t_list **files);
 void mx_list_swap(t_list *lst);
