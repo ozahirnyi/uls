@@ -1,4 +1,4 @@
-#include "uls.h"
+ #include "uls.h"
 
 static bool trig_a(char *d_name, s_flags *flags) {
     if (flags->a
@@ -10,7 +10,7 @@ static bool trig_a(char *d_name, s_flags *flags) {
         return 0;
 }
 
-static void mx_part_1(t_list **files, s_flags *flags, DIR *directory) {
+static void part_1(t_list **files, s_flags *flags, DIR *directory) {
     struct dirent *lupa = NULL;
     char *buf = NULL;
 
@@ -29,14 +29,21 @@ int mx_read_directory(char *source, t_list **files, s_flags *flags, int err) {
     char *buf = NULL;
     struct stat lt;
 
-    lstat(source, &lt);
-    if ((lt.st_mode & S_IFMT) == S_IFDIR) {
-        mx_part_1(files, flags, directory);
+    if (lstat(source, &lt) >= 0){
+        if ((lt.st_mode & S_IFMT) == S_IFDIR) {
+            part_1(files, flags, directory);
+        }
+        else {
+            buf = mx_strdup(source);
+            mx_push_front(files, buf);
+            flags->X = 0;
+        }
+        err = 0;
     }
     else {
-        buf = mx_strdup(source);
-        mx_push_front(files, buf);
-        flags->X = 0;
+        mx_printerr("./uls: ");
+        perror(source);
+        err = 1;
     }
     return err;
 }

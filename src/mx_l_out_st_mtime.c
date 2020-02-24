@@ -36,7 +36,7 @@ static char *part_2(int len, char *date) {
     return new;
 }
 
-static char *mx_l_change_date(char *date, long n, s_flags *fl) {
+static char *l_change_date(char *date, long n, s_flags *fl) {
     int len = mx_strlen(date);
     long dtime = time(NULL);
     char *new = NULL;
@@ -57,24 +57,28 @@ static char *mx_l_change_date(char *date, long n, s_flags *fl) {
     return new;
 }
 
-void mx_l_out_st_mtime(long a, long m, long c, long b, s_flags *fl) {
+static char *for_time(long n, s_flags *fl) {
+    char *date = NULL;
+
+    date = ctime(&n);
+    date = l_change_date(date, n, fl);
+    return date;
+}
+
+void mx_l_out_st_mtime(long *amcb, s_flags *fl) {
     char *date = NULL;
 
     if (!fl->c && !fl->U && !fl->u) {
-        date = ctime(&m);
-        date = mx_l_change_date(date, m, fl);
+        date = for_time(amcb[1], fl);
     }
     if (fl->u) {
-        date = ctime(&a);
-        date = mx_l_change_date(date, a, fl);
+        date = for_time(amcb[0], fl);
     }
     if (fl->U) {
-        date = ctime(&b);
-        date = mx_l_change_date(date, b, fl);
+        date = for_time(amcb[3], fl);
     }
     if (fl->c) {
-        date = ctime(&c);
-        date = mx_l_change_date(date, c, fl);
+        date = for_time(amcb[2], fl);
     }
     mx_printstr(date);
     mx_printchar(' ');

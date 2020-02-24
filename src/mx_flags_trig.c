@@ -1,6 +1,6 @@
 #include "uls.h"
 
-static bool mx_check_flag3(char f, s_flags *trig) {
+static bool check_flag3(char f, s_flags *trig) {
 	if (f == 'g')
 		trig->g = 1;
 	else if (f == 'T')
@@ -18,7 +18,7 @@ static bool mx_check_flag3(char f, s_flags *trig) {
 	return true;
 }
 
-static bool mx_check_flag2(char f, s_flags *trig) {
+static bool check_flag2(char f, s_flags *trig) {
 	if (f == 'U'){
 		trig->U = 1;
 		trig->c = 0;
@@ -39,7 +39,7 @@ static bool mx_check_flag2(char f, s_flags *trig) {
 	return true;
 }
 
-static bool mx_check_flag1(char f, s_flags *trig) {
+static bool check_flag1(char f, s_flags *trig) {
 	if (f == 'A')
 		trig->A = 1;
 	else if (f == 'a')
@@ -58,8 +58,8 @@ static bool mx_check_flag1(char f, s_flags *trig) {
 }
 
 void mx_flags_trig(char f, s_flags *trig) {
-	if (!mx_check_flag1(f, trig) && !mx_check_flag2(f, trig) 
-		&& !mx_check_flag3(f, trig)) {
+	if (!check_flag1(f, trig) && !check_flag2(f, trig) 
+		&& !check_flag3(f, trig)) {
         mx_printerr("usage: ls [-ATSUalo1gtucfpr] [file ...]\n");
         exit(1);
     }

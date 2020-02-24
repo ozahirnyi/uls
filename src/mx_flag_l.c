@@ -9,7 +9,6 @@ static int *create_otstup(char *argv, t_list *names) {
     otstup[4] = mx_max_len_int(names, 2, argv);
     otstup[5] = mx_max_len_int(names, 3, argv);
     otstup[6] = mx_max_len_int(names, 4, argv);
-    //otstup[7] = mx_max_len_int(names, 5, argv);
     otstup[0] = otstup[4];
     return otstup;
 }
@@ -27,8 +26,6 @@ static void part_for_link(char *path, char *data)  {
 
 static void part_1_of_cycle(int *otstup, struct stat buf,
                             char *full_path, s_flags *fl) {
-    //if (fl->s)
-    //    mx_l_out_st_blocks(buf.st_blocks, otstup[7]);
     mx_l_out_st_mode(buf.st_mode, full_path);
     mx_l_out_st_nlink(buf.st_nlink, otstup[1]);
     if (!fl->g)
@@ -50,8 +47,13 @@ static void part_1_of_cycle(int *otstup, struct stat buf,
 static void part_2_of_cycle(struct stat buf, t_list *p,
                             char *full_path, s_flags *fl) {
     char *data = mx_strdup(p->data);
+    long *amcb = (long *)malloc(sizeof(long) * 4);
 
-    mx_l_out_st_mtime(buf.st_atime, buf.st_mtime, buf.st_ctime, buf.st_birthtime, fl);
+    amcb[0] = buf.st_atime;
+    amcb[1] = buf.st_mtime;
+    amcb[2] = buf.st_ctime;
+    amcb[3] = buf.st_birthtime;
+    mx_l_out_st_mtime(amcb, fl);
     mx_is_ascii(data, mx_strlen(data));
     if ((buf.st_mode & S_IFLNK) == S_IFLNK)
         part_for_link(full_path, p->data);
@@ -59,29 +61,28 @@ static void part_2_of_cycle(struct stat buf, t_list *p,
         mx_printstr(data);
     mx_printchar('\n');
     mx_strdel(&data);
+    free(amcb);
 }
 
 void mx_flag_l(t_list *names, char *argv, s_flags *flags) {
     struct stat buf;
-    char *full_path = NULL;
-    t_list *p = names;
     int *otstup = create_otstup(argv, names);
 
     if (flags->X) {
         mx_vivod_total(names, argv);
-        while (p) {
-            full_path = mx_strjoin_for_path(argv, p->data);
+        while (names) {
+            char *full_path = mx_strjoin_for_path(argv, names->data);
             lstat(full_path, &buf);
             part_1_of_cycle(otstup, buf, full_path, flags);
-            part_2_of_cycle(buf, p, full_path, flags);
+            part_2_of_cycle(buf, names, full_path, flags);
             mx_strdel(&full_path);
-            p = p->next;
+            names = names->next;
         }
     }
     else {
         lstat(argv, &buf);
         part_1_of_cycle(otstup, buf, argv, flags);
-        part_2_of_cycle(buf, p, argv, flags);
+        part_2_of_cycle(buf, names, argv, flags);
     }
     free(otstup);
 }

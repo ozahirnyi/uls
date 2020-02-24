@@ -5,12 +5,12 @@ int mx_len_int(unsigned long n) {
     int temp = n;
 
     if (n != 0) {
-	    while (temp > 0){
-	        temp = temp/10;
-	        count++;
-	    }
-	}
-	else
-		count = 1;
+        while (temp > 0){
+            temp = temp/10;
+            count++;
+        }
+    }
+    else
+        count = 1;
     return count;
 }
