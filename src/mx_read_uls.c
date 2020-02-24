@@ -14,8 +14,9 @@ static void p_dir_name_S_t(t_list *files, s_flags *flags, char *source, int i) {
 static int work_with_flags(s_flags *flags, char *source, int i, int err) {
     t_list *sorted_list = NULL;
     t_list *files = NULL;
+    t_list *dirs = NULL;
 
-    mx_read_directory(source, &files, flags, err);
+    err = mx_read_directory(source, &files, flags, dirs);
     mx_sort_list(files, &mx_compare);
     p_dir_name_S_t(files, flags, source, i);
      if (flags->r)
