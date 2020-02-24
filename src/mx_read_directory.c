@@ -1,5 +1,20 @@
  #include "uls.h"
 
+//static char *path_for_error(char *str) {
+//    int max_len = mx_strlen(str) - 1;
+//    int temp_len = max_len;
+//    char *res = NULL;
+//
+//    while (str[temp_len - 1] != '/')
+//        temp_len--;
+//    res = mx_strnew(max_len - temp_len);
+//    for (int i = 0; str[temp_len]; temp_len++) {
+//        res[i] = str[temp_len];
+//        i++;
+//    }
+//    return res;
+//}
+
 static bool trig_a(char *d_name, s_flags *flags) {
     if (flags->a
         || (flags->A && (mx_strcmp(d_name, ".") && mx_strcmp(d_name, "..")))
@@ -24,10 +39,11 @@ static void part_1(t_list **files, s_flags *flags, DIR *directory) {
     flags->X = 1;
 }
 
-int mx_read_directory(char *source, t_list **files, s_flags *flags, int err) {
+int mx_read_directory(char *source, t_list **files, s_flags *flags, t_list *dirs) {
     DIR *directory = opendir(source);
     char *buf = NULL;
     struct stat lt;
+    int err = 0;
 
     if (lstat(source, &lt) >= 0){
         if ((lt.st_mode & S_IFMT) == S_IFDIR) {

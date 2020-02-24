@@ -44,6 +44,7 @@ void mx_print_uls(t_list **files, t_list *sorted_list) {
     while (sorted_list) {
         info->cast[0] = *(int *)sorted_list->data;
         printer(sorted_list, files, info);
+        free(sorted_list->data);
         mx_pop_front(&sorted_list);
     }
     free(info->columns);
