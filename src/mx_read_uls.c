@@ -19,8 +19,15 @@ static void work_with_flags(s_flags *flags, t_list *data, char *source, int i) {
         data = mx_list_reverse(data);
     if (flags->one)
         mx_flag_one(data);
-    else if (flags->l || flags->o || flags->g)
-        mx_flag_l(data, source, flags);
+    else if (flags->l || flags->o || flags->g) {
+        if (!flags->X)
+            while (data) {
+                mx_flag_l(data, data->data, flags);
+                data = data->next;
+            }
+        else
+            mx_flag_l(data, source, flags);
+    }
     else
         mx_print_uls(&data, sorted_list);
     while (data) {
@@ -33,8 +40,7 @@ static void list_creator(s_flags *flags, char *dirs, char **files, int i) {
     t_list *data = NULL;
 
     if (dirs) {
-        flags->Y = 0;
-        mx_read_directory(dirs, &data, flags);
+        mx_read_directory(dirs, &data, flags, 0);
         mx_sort_list(data, &mx_compare);
         work_with_flags(flags, data, dirs, i);
     }
@@ -43,7 +49,7 @@ static void list_creator(s_flags *flags, char *dirs, char **files, int i) {
         for (int i = 0; files[i]; i++)
             mx_push_front(&data, files[i]);
         mx_sort_list(data, &mx_compare);
-        work_with_flags(flags, data, NULL, i);
+        work_with_flags(flags, data, dirs, i);
     }
     if (files)
         mx_printchar('\n');
@@ -64,6 +70,6 @@ void mx_read_uls(char **files, char **dirs, s_flags *flags) {
         for (int i = 0; dirs[i]; i++)
             list_creator(flags, dirs[i], NULL, i);
     }
-    else if (dirs == NULL)
+    else if (dirs == NULL || !*dirs)
         list_creator(flags, ".", NULL, 0);
 }
