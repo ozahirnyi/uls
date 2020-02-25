@@ -78,7 +78,7 @@ t_list *mx_list_reverse(t_list *files);
 t_list *mx_sort_for_columns(s_print *info);
 bool mx_compare(void *a, void *b);
 int mx_longest_name(t_list *list);
-int mx_read_uls(char **source, s_flags *flags, int err);
+int mx_read_uls(char **files, char **dirs, s_flags *flags, int err);
 int mx_lines_count(int files_count, int *columns, int longest_name);
 int mx_read_directory(char *source, t_list **files, s_flags *flags, int err);
 void mx_print_uls(t_list **files, t_list *sorted_list);

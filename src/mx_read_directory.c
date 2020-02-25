@@ -39,27 +39,19 @@ static void part_1(t_list **files, s_flags *flags, DIR *directory) {
     flags->X = 1;
 }
 
-int mx_read_directory(char *source, t_list **files, s_flags *flags, t_list *dirs) {
+int mx_read_directory(char *source, t_list **files, s_flags *flags, int err) {
     DIR *directory = opendir(source);
     char *buf = NULL;
     struct stat lt;
-    int err = 0;
 
-    if (lstat(source, &lt) >= 0){
-        if ((lt.st_mode & S_IFMT) == S_IFDIR) {
-            part_1(files, flags, directory);
-        }
-        else {
-            buf = mx_strdup(source);
-            mx_push_front(files, buf);
-            flags->X = 0;
-        }
-        err = 0;
+    stat(source, &lt);
+    if ((lt.st_mode & S_IFMT) == S_IFDIR) {
+        part_1(files, flags, directory);
     }
     else {
-        mx_printerr("./uls: ");
-        perror(source);
-        err = 1;
+        buf = mx_strdup(source);
+        mx_push_front(files, buf);
+        flags->X = 0;
     }
     return err;
 }

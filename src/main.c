@@ -1,9 +1,34 @@
 #include "uls.h"
 
-static int parser(char **argv, int argc, s_flags *flags, int err) {
-    char **ways = NULL;
-    int index = 1;
+static char **ways_creator(char **argv, int argc, int index, char **files) {
     int i = 0;
+    int j = 0;
+    char **dirs = NULL;
+    struct stat lt;
+
+//    files = (char **)malloc(sizeof(char *) * argc - index + 1);
+    dirs = (char **)malloc(sizeof(char *) * argc - index + 1);
+    for (int q = 1; index < argc; index++) {
+        stat(argv[q], &lt);
+        if ((lt.st_mode & S_IFMT) == S_IFDIR) {
+            dirs[i] = mx_strdup(argv[q]);
+            i++;
+        }
+        else {
+            files[j] = mx_strdup(argv[q]);
+            j++;
+        }
+        q++;
+    }
+    files[j] = NULL;
+    dirs[i] = NULL;
+    return dirs;
+}
+
+static int parser(char **argv, int argc, s_flags *flags, int err) {
+    char **files = NULL;
+    char **dirs = NULL;
+    int index = 1;
 
     for (; argv[index] && argv[index][0] == '-' && argv[index][1]; index++) {
         if (argv[index][1] == '-' && !argv[index][2]) {
@@ -13,12 +38,19 @@ static int parser(char **argv, int argc, s_flags *flags, int err) {
         for (int q = 1; argv[index][q]; q++)
             mx_flags_trig(argv[index][q], flags);
     }
-    ways = (char **)malloc(sizeof(char *) * argc - index + 1);
-    for (; index < argc; index++, i++)
-        ways[i] = mx_strdup(argv[index]);
-    ways[i] = NULL;
-    mx_read_uls(ways, flags, err);
-    mx_del_strarr(&ways);
+    files = (char **)malloc(sizeof(char *) * argc - index + 1);
+    dirs = ways_creator(argv, argc, index, files);
+//    ways = (char **)malloc(sizeof(char *) * argc - index + 1);
+//    for (; index < argc; index++, i++)
+//        ways[i] = mx_strdup(argv[index]);
+//    ways[i] = NULL;
+//    printf("\n\n%s\n\n", dirs[0]);
+//    printf("\n\n%s\n\n", files[0]);
+    mx_read_uls(files, dirs, flags, err);
+//    if (files)
+//        mx_del_strarr(&files);
+//    if (dirs)
+//        mx_del_strarr(&dirs);
     return err;
 }
 
@@ -29,7 +61,7 @@ int main(int argc, char **argv) {
     if (argc > 1)
         parser(argv, argc, flags, err);
     else
-        mx_read_uls(NULL, flags, err);
+        mx_read_uls(NULL,NULL, flags, err);
     //printf("\n\n");
     //system("leaks -q uls");
     return err;
