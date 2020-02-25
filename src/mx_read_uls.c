@@ -1,47 +1,69 @@
 #include "uls.h"
 
-static void p_dir_name_S_t(t_list *files, s_flags *flags, char *source, int i) {
+static void p_dir_name_S_t(t_list *data, s_flags *flags, char *source, int i) {
     if (flags->p)
-        mx_flag_p(files, flags, source);
+        mx_flag_p(data, flags, source);
     if (flags->dir_print)
         mx_dir_name_print(i, source);
     if (flags->S)
-        mx_sort_by_size(files, source);
+        mx_sort_by_size(data, source);
     else if (flags->t)
-        mx_sort_by_time(flags, files, source);
+        mx_sort_by_time(flags, data, source);
 }
 
-static void work_with_flags(s_flags *flags, char *source, int i) {
+static void work_with_flags(s_flags *flags, t_list *data, char *source, int i) {
     t_list *sorted_list = NULL;
-    t_list *files = NULL;
 
-    mx_read_directory(source, &files, flags)
-    mx_sort_list(files, &mx_compare);
-    p_dir_name_S_t(files, flags, source, i);
-     if (flags->r)
-        files = mx_list_reverse(files);
+    p_dir_name_S_t(data, flags, source, i);
+    if (flags->r)
+        data = mx_list_reverse(data);
     if (flags->one)
-        mx_flag_one(files);
+        mx_flag_one(data);
     else if (flags->l || flags->o || flags->g)
-        mx_flag_l(files, source, flags);
+        mx_flag_l(data, source, flags);
     else
-        mx_print_uls(&files, sorted_list);
-    while (files) {
-        free(files->data);
-        mx_pop_front(&files);
+        mx_print_uls(&data, sorted_list);
+    while (data) {
+        free(data->data);
+        mx_pop_front(&data);
     }
 }
 
-void mx_read_uls(char **source, s_flags *flags) {
-    int size = mx_arrlen(source);
+static void list_creator(s_flags *flags, char *dirs, char **files, int i) {
+    t_list *data = NULL;
 
-    if (source && *source) {
-        if (source[1])
-            flags->dir_print = 1;
-        mx_bubble_sort(source, size);
-        for (int i = 0; source[i]; i++)
-            work_with_flags(flags, source[i], i);
+    if (dirs) {
+        flags->Y = 0;
+        mx_read_directory(dirs, &data, flags);
+        mx_sort_list(data, &mx_compare);
+        work_with_flags(flags, data, dirs, i);
     }
-    else
-        work_with_flags(flags, ".", 0);
+    else {
+        flags->Y = 1;
+        for (int i = 0; files[i]; i++)
+            mx_push_front(&data, files[i]);
+        mx_sort_list(data, &mx_compare);
+        work_with_flags(flags, data, NULL, i);
+    }
+    if (files)
+        mx_printchar('\n');
+}
+
+void mx_read_uls(char **files, char **dirs, s_flags *flags) {
+    int size_files = mx_arrlen(files);
+    int size_dirs = mx_arrlen(dirs);
+
+    if (files && *files) {
+        mx_bubble_sort(files, size_files);
+        list_creator(flags, NULL, files, 0);
+    }
+    if (dirs && *dirs) {
+        if (dirs[1])
+            flags->dir_print = 1;
+        mx_bubble_sort(dirs, size_dirs);
+        for (int i = 0; dirs[i]; i++)
+            list_creator(flags, dirs[i], NULL, i);
+    }
+    else if (!*dirs)
+        list_creator(flags, ".", NULL, 0);
 }

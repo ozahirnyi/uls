@@ -44,7 +44,7 @@ int mx_read_directory(char *source, t_list **files, s_flags *flags) {
     char *buf = NULL;
     struct stat lt;
 
-    if (lstat(source, &lt) >= 0) {
+    if (stat(source, &lt) >= 0) {
         if ((lt.st_mode & S_IFMT) == S_IFDIR) {
             part_1(files, flags, directory);
         }
