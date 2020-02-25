@@ -1,6 +1,6 @@
 #include "uls.h"
 
-static int parser(char **argv, int argc, s_flags *flags, int err) {
+static void parser(char **argv, int argc, s_flags *flags) {
     char **ways = NULL;
     int index = 1;
     int i = 0;
@@ -17,20 +17,25 @@ static int parser(char **argv, int argc, s_flags *flags, int err) {
     for (; index < argc; index++, i++)
         ways[i] = mx_strdup(argv[index]);
     ways[i] = NULL;
-    mx_read_uls(ways, flags, err);
+    mx_read_uls(ways, flags);
     mx_del_strarr(&ways);
-    return err;
 }
 
 int main(int argc, char **argv) {
     s_flags *flags = mx_flags_obnulyator();
-    int err = 0;
+    flags->err = 0;
+    struct stat lt;
 
+    if (lstat(source, &lt) < 0) {
+        mx_printerr("./uls: ");
+        perror(source);
+        flags->err = 1;
+    }
     if (argc > 1)
-        parser(argv, argc, flags, err);
+        parser(argv, argc, flags);
     else
-        mx_read_uls(NULL, flags, err);
+        mx_read_uls(NULL, flags);
     //printf("\n\n");
     //system("leaks -q uls");
-    return err;
+    return flags->err;
 }
