@@ -90,7 +90,7 @@ void mx_l_out_st_mode(unsigned long n, char *name);
 void mx_l_out_st_nlink(unsigned long n, int otstup, s_flags *fl);
 void mx_l_out_st_uid(unsigned int n, int otstup);
 void mx_l_out_st_gid(unsigned long n, int otstup, s_flags *fl);
-void mx_l_out_st_size(unsigned long n, int otstup);
+void mx_l_out_st_size(unsigned long n, int otstup, s_flags *fl);
 void mx_l_out_st_dev(unsigned int n, int otstup1, int otstup2);
 void mx_is_ascii(char *str, int len);
 void mx_l_out_st_mtime(long *amcb, s_flags *fl);

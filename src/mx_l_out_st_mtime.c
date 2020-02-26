@@ -51,8 +51,8 @@ static char *l_change_date(char *date, long n, s_flags *fl) {
         }
     }
     else {
-        new = date;
-        new[len - 1] = '\0';
+        date[len - 1] = '\0';
+        new = mx_strdup(&date[4]);
     }
     return new;
 }
