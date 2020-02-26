@@ -62,7 +62,7 @@ void mx_read_uls(char **files, char **dirs, s_flags *flags) {
     if (files && *files) {
         mx_bubble_sort(files, size_files);
         list_creator(flags, NULL, files, 0);
-        if (files && size_dirs > 0)
+        if (size_dirs > 0)
             mx_printchar('\n');
     }
     if (dirs && *dirs) {
@@ -72,6 +72,6 @@ void mx_read_uls(char **files, char **dirs, s_flags *flags) {
         for (int i = 0; dirs[i]; i++)
             list_creator(flags, dirs[i], NULL, i);
     }
-    else if (size_dirs == 0 && size_files == 0)
+    else if (size_dirs == 0 && size_files == 0 && !flags->err)
         list_creator(flags, ".", NULL, 0);
 }

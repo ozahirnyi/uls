@@ -1,27 +1,26 @@
 #include "uls.h"
 
-
-static char **ways_creator(char **argv, int argc, int index, char **files) {
+static char **ways_creator(char **argv, char **files, s_index *index, s_flags *flags) {
     int i = 0;
     int j = 0;
-    char **dirs = NULL;
+    char **dirs = (char **)malloc(sizeof(char *) * index->argc - index->index + 1);
     struct stat lt;
 
-    dirs = (char **)malloc(sizeof(char *) * argc - index + 1);
-    for (; index < argc; index++) {
-        if (lstat(argv[index], &lt) != -1) {
+    for (; index->index < index->argc; index->index++) {
+        if (lstat(argv[index->index], &lt) != -1) {
             if ((lt.st_mode & S_IFMT) == S_IFDIR) {
-                dirs[i] = mx_strdup(argv[index]);
+                dirs[i] = mx_strdup(argv[index->index]);
                 i++;
             }
             else {
-                files[j] = mx_strdup(argv[index]);
+                files[j] = mx_strdup(argv[index->index]);
                 j++;
             }
         }
         else {
+            flags->err = 1;
             mx_printerr("uls: ");
-            perror(argv[index]);
+            perror(argv[index->index]);
         }
     }
     files[j] = NULL;
@@ -29,41 +28,39 @@ static char **ways_creator(char **argv, int argc, int index, char **files) {
     return dirs;
 }
 
-static int parser(char **argv, int argc, s_flags *flags) {
-    char **files = NULL;
+static void parser(char **argv, s_index *index, s_flags *flags, char **files) {
     char **dirs = NULL;
-    int index = 1;
 
-    for (; argv[index] && argv[index][0] == '-' && argv[index][1]; index++) {
-        if (argv[index][1] == '-' && !argv[index][2]) {
-            index++;
+    for (; argv[index->index] && argv[index->index][0] == '-'
+        && argv[index->index][1]; index->index++) {
+        if (argv[index->index][1] == '-' && !argv[index->index][2]) {
+            index->index++;
             break;
         }
-        for (int q = 1; argv[index][q]; q++)
-            mx_flags_trig(argv[index][q], flags);
+        for (int q = 1; argv[index->index][q]; q++)
+            mx_flags_trig(argv[index->index][q], flags);
     }
-    files = (char **)malloc(sizeof(char *) * argc - index + 1);
-    dirs = ways_creator(argv, argc, index, files);
+    files = (char **)malloc(sizeof(char *) * index->argc - index->index + 1);
+    dirs = ways_creator(argv, files, index, flags);
     mx_read_uls(files, dirs, flags);
-    return 0;
+    mx_del_strarr(&files);
+    mx_del_strarr(&dirs);
 }
 
 int main(int argc, char **argv) {
     s_flags *flags = mx_flags_obnulyator();
+    s_index *index = (s_index *)malloc(sizeof(s_index));
+    char **files = NULL;
+
+    index->argc = argc;
+    index->index = 1;
     flags->err = 0;
     flags->Y = 0;
-//    struct stat lt;
-
-//    if (lstat(source, &lt) < 0) {
-//        mx_printerr("./uls: ");
-//        perror(source);
-//        flags->err = 1;
-//    }
     if (argc > 1)
-        parser(argv, argc, flags);
+        parser(argv, index, flags, files);
     else
         mx_read_uls(NULL,NULL, flags);
-    // printf("\n\n");
-    // system("leaks -q uls");
+    system("leaks -q uls");
+    printf("\n\n");
     return flags->err;
 }

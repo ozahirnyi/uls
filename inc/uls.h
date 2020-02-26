@@ -46,7 +46,12 @@
 #define MX_MAJOR(x) ((int32_t)(((u_int32_t)(x) >> 24) & 0xff))
 #define MX_MINOR(x) ((int32_t)((x) & 0xffffff))
 
-typedef struct print_uls {
+typedef struct t_main {
+    int argc;
+    int index;
+} s_index;
+
+typedef struct t_print_uls {
     int files_count;
     int *columns;
     int longest_name;
@@ -54,7 +59,7 @@ typedef struct print_uls {
     int *cast;
 } s_print;
 
-typedef struct flags {
+typedef struct t_flags {
     bool l;//+
     bool a;//+
     bool A;//+
@@ -107,7 +112,7 @@ void mx_flag_d(char *source, t_list **files);
 void mx_list_swap(t_list *lst);
 void mx_sort_by_time(s_flags *fl, t_list *files, char *argv);
 void mx_sort_by_size(t_list *files, char *argv);
-s_flags *mx_flags_obnulyator();
+s_flags *mx_flags_obnulyator(void);
 void mx_flag_p(t_list *files, s_flags *fl, char *argv);
 
 #endif

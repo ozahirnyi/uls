@@ -1,6 +1,6 @@
 #include "uls.h"
 
-s_flags *mx_flags_obnulyator() {
+s_flags *mx_flags_obnulyator(void) {
     s_flags *flags = (s_flags *)malloc(sizeof(s_flags));
 
     flags->l = 0;
