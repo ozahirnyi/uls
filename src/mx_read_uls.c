@@ -70,6 +70,6 @@ void mx_read_uls(char **files, char **dirs, s_flags *flags) {
         for (int i = 0; dirs[i]; i++)
             list_creator(flags, dirs[i], NULL, i);
     }
-    else if (dirs == NULL || !*dirs)
+    else if (dirs == NULL || files == NULL)
         list_creator(flags, ".", NULL, 0);
 }

@@ -57,7 +57,7 @@ int main(int argc, char **argv) {
         parser(argv, argc, flags);
     else
         mx_read_uls(NULL,NULL, flags);
-    //printf("\n\n");
-    //system("leaks -q uls");
+    // printf("\n\n");
+    // system("leaks -q uls");
     return flags->err;
 }
