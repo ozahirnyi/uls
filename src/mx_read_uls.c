@@ -11,7 +11,7 @@ static void p_dir_name_S_t(t_list *data, s_flags *flags, char *source, int i) {
         mx_sort_by_time(flags, data, source);
 }
 
-static int work_with_flags(s_flags *flags, t_list *data, char *source, int i) {
+static void work_with_flags(s_flags *flags, t_list *data, char *source, int i) {
     t_list *sorted_list = NULL;
 
     p_dir_name_S_t(data, flags, source, i);
@@ -34,18 +34,18 @@ static int work_with_flags(s_flags *flags, t_list *data, char *source, int i) {
         free(data->data);
         mx_pop_front(&data);
     }
-    return 0;
 }
 
 static void list_creator(s_flags *flags, char *dirs, char **files, int i) {
     t_list *data = NULL;
 
     if (dirs) {
-        mx_read_directory(dirs, &data, flags, 0);
+        mx_read_directory(dirs, &data, flags);
         mx_sort_list(data, &mx_compare);
         work_with_flags(flags, data, dirs, i);
     }
     else {
+        flags->Y = 1;
         for (int i = 0; files[i]; i++)
             mx_push_front(&data, files[i]);
         mx_sort_list(data, &mx_compare);
@@ -53,7 +53,7 @@ static void list_creator(s_flags *flags, char *dirs, char **files, int i) {
     }
 }
 
-int mx_read_uls(char **files, char **dirs, s_flags *flags, int err) {
+void mx_read_uls(char **files, char **dirs, s_flags *flags) {
     int size_files = mx_arrlen(files);
     int size_dirs = mx_arrlen(dirs);
 
@@ -72,5 +72,4 @@ int mx_read_uls(char **files, char **dirs, s_flags *flags, int err) {
     }
     else if (size_dirs == 0)
         list_creator(flags, ".", NULL, 0);
-    return err;
 }

@@ -39,7 +39,7 @@ static void part_1(t_list **files, s_flags *flags, DIR *directory) {
     flags->X = 1;
 }
 
-int mx_read_directory(char *source, t_list **files, s_flags *flags, int err) {
+int mx_read_directory(char *source, t_list **files, s_flags *flags) {
     DIR *directory = opendir(source);
     char *buf = NULL;
     struct stat lt;
@@ -48,7 +48,8 @@ int mx_read_directory(char *source, t_list **files, s_flags *flags, int err) {
         stat(source, &lt);
         if ((lt.st_mode & S_IFMT) == S_IFDIR) {
             part_1(files, flags, directory);
-        } else {
+        }
+        else {
             buf = mx_strdup(source);
             mx_push_front(files, buf);
             flags->X = 0;
@@ -58,5 +59,5 @@ int mx_read_directory(char *source, t_list **files, s_flags *flags, int err) {
         mx_printerr("uls: ");
         perror(source);
     }
-    return err;
+    return flags->err;
 }

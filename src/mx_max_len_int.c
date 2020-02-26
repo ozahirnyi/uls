@@ -25,7 +25,7 @@ int mx_max_len_int(t_list *names, int trig, char *argv) {
 
     while (p) {
         full_path = mx_strjoin_for_path(argv, p->data);
-        lstat(full_path, &buf);
+        stat(full_path, &buf);
         n = part(trig, buf);
         if (n > len)
             len = n;

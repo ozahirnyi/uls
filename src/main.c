@@ -29,7 +29,7 @@ static char **ways_creator(char **argv, int argc, int index, char **files) {
     return dirs;
 }
 
-static int parser(char **argv, int argc, s_flags *flags, int err) {
+static int parser(char **argv, int argc, s_flags *flags) {
     char **files = NULL;
     char **dirs = NULL;
     int index = 1;
@@ -44,19 +44,26 @@ static int parser(char **argv, int argc, s_flags *flags, int err) {
     }
     files = (char **)malloc(sizeof(char *) * argc - index + 1);
     dirs = ways_creator(argv, argc, index, files);
-    mx_read_uls(files, dirs, flags, err);
-    return err;
+    mx_read_uls(files, dirs, flags);
+    return 0;
 }
 
 int main(int argc, char **argv) {
     s_flags *flags = mx_flags_obnulyator();
-    int err = 0;
+    flags->err = 0;
+    flags->Y = 0;
+//    struct stat lt;
 
+//    if (lstat(source, &lt) < 0) {
+//        mx_printerr("./uls: ");
+//        perror(source);
+//        flags->err = 1;
+//    }
     if (argc > 1)
-        parser(argv, argc, flags, err);
+        parser(argv, argc, flags);
     else
-        mx_read_uls(NULL,NULL, flags, err);
+        mx_read_uls(NULL,NULL, flags);
     //printf("\n\n");
     //system("leaks -q uls");
-    return err;
+    return flags->err;
 }
