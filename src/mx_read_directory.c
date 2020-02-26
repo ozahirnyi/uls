@@ -44,14 +44,19 @@ int mx_read_directory(char *source, t_list **files, s_flags *flags, int err) {
     char *buf = NULL;
     struct stat lt;
 
-    stat(source, &lt);
-    if ((lt.st_mode & S_IFMT) == S_IFDIR) {
-        part_1(files, flags, directory);
+    if (directory) {
+        stat(source, &lt);
+        if ((lt.st_mode & S_IFMT) == S_IFDIR) {
+            part_1(files, flags, directory);
+        } else {
+            buf = mx_strdup(source);
+            mx_push_front(files, buf);
+            flags->X = 0;
+        }
     }
     else {
-        buf = mx_strdup(source);
-        mx_push_front(files, buf);
-        flags->X = 0;
+        mx_printerr("uls: ");
+        perror(source);
     }
     return err;
 }

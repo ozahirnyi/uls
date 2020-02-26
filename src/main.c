@@ -1,5 +1,6 @@
 #include "uls.h"
 
+
 static char **ways_creator(char **argv, int argc, int index, char **files) {
     int i = 0;
     int j = 0;
@@ -8,14 +9,19 @@ static char **ways_creator(char **argv, int argc, int index, char **files) {
 
     dirs = (char **)malloc(sizeof(char *) * argc - index + 1);
     for (; index < argc; index++) {
-        stat(argv[index], &lt);
-        if ((lt.st_mode & S_IFMT) == S_IFDIR) {
-            dirs[i] = mx_strdup(argv[index]);
-            i++;
+        if (lstat(argv[index], &lt) != -1) {
+            if ((lt.st_mode & S_IFMT) == S_IFDIR) {
+                dirs[i] = mx_strdup(argv[index]);
+                i++;
+            }
+            else {
+                files[j] = mx_strdup(argv[index]);
+                j++;
+            }
         }
         else {
-            files[j] = mx_strdup(argv[index]);
-            j++;
+            mx_printerr("uls: ");
+            perror(argv[index]);
         }
     }
     files[j] = NULL;
