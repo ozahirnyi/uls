@@ -97,6 +97,7 @@ void mx_l_out_st_mtime(long *amcb, s_flags *fl);
 int mx_max_len_int(t_list *names, int trig, char *argv);
 int mx_max_len_char(t_list *src, int trig, char *argv);
 char *mx_strjoin_for_path(char *argv, char *data);
+char *mx_change_argv(char *temp, int len);
 int mx_len_int(unsigned long n);
 void mx_flags_trig(char f, s_flags *trig);
 void mx_vivod_total(t_list *names, char *argv);
