@@ -72,7 +72,7 @@ void mx_flag_l(t_list *names, char *argv, s_flags *flags) {
         mx_vivod_total(names, argv);
         while (names) {
             char *full_path = mx_strjoin_for_path(argv, names->data);
-            stat(full_path, &buf);
+            lstat(full_path, &buf);
             part_1_of_cycle(otstup, buf, full_path, flags);
             part_2_of_cycle(buf, names, full_path, flags);
             mx_strdel(&full_path);

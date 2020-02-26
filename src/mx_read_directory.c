@@ -56,8 +56,15 @@ int mx_read_directory(char *source, t_list **files, s_flags *flags) {
         }
     }
     else {
+        buf = mx_change_argv(source, mx_strlen(source));
+        if (!buf) {
+            buf = mx_strnew(2);
+            buf[0] = ' ';
+            buf[1] = '\0';
+        }
         mx_printerr("uls: ");
-        perror(source);
+        perror(buf);
+        free(buf);
     }
     return flags->err;
 }

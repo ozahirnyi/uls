@@ -60,6 +60,9 @@ static bool check_flag1(char f, s_flags *trig) {
 void mx_flags_trig(char f, s_flags *trig) {
 	if (!check_flag1(f, trig) && !check_flag2(f, trig) 
 		&& !check_flag3(f, trig)) {
+	    mx_printerr("uls: illegal option -- ");
+	    write(2, &f, 1);
+	    write(2, "\n", 1);
         mx_printerr("usage: ls [-ATSUalo1gtucfpr] [file ...]\n");
         exit(1);
     }
