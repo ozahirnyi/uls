@@ -27,7 +27,7 @@ static void part_for_link(char *path, char *data)  {
 static void part_1_of_cycle(int *otstup, struct stat buf,
                             char *full_path, s_flags *fl) {
     mx_l_out_st_mode(buf.st_mode, full_path);
-    mx_l_out_st_nlink(buf.st_nlink, otstup[1]);
+    mx_l_out_st_nlink(buf.st_nlink, otstup[1], fl);
     if (!fl->g)
         mx_l_out_st_uid(buf.st_uid, otstup[2]);
     if (!fl->o)

@@ -40,7 +40,7 @@ static void list_creator(s_flags *flags, char *dirs, char **files, int i) {
     t_list *data = NULL;
 
     if (dirs) {
-        mx_read_directory(dirs, &data, flags, 0);
+        mx_read_directory(dirs, &data, flags);
         mx_sort_list(data, &mx_compare);
         work_with_flags(flags, data, dirs, i);
     }

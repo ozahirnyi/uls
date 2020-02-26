@@ -1,8 +1,8 @@
 #ifndef ULS_H
 #define ULS_H
 
-#include "libmx.h"
-//#include "libmx/inc/libmx.h"
+// #include "libmx.h"
+#include "libmx/inc/libmx.h"
 #include <sys/stat.h>
 #include <time.h>
 #include <dirent.h>
@@ -87,7 +87,7 @@ void mx_print_uls(t_list **files, t_list *sorted_list);
 void mx_flag_l(t_list *names, char *argv, s_flags *flags);
 void mx_l_out_st_blocks(unsigned long n, int otstup);
 void mx_l_out_st_mode(unsigned long n, char *name);
-void mx_l_out_st_nlink(unsigned long n, int otstup);
+void mx_l_out_st_nlink(unsigned long n, int otstup, s_flags *fl);
 void mx_l_out_st_uid(unsigned int n, int otstup);
 void mx_l_out_st_gid(unsigned long n, int otstup, s_flags *fl);
 void mx_l_out_st_size(unsigned long n, int otstup);
