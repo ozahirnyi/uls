@@ -41,7 +41,7 @@ static void part_1_of_cycle(int *otstup, struct stat buf,
         otstup[0] = otstup[4] + 7;
     }
     else
-        mx_l_out_st_size(buf.st_size, otstup[0]);
+        mx_l_out_st_size(buf.st_size, otstup[0], fl);
 }
 
 static void part_2_of_cycle(struct stat buf, t_list *p,
