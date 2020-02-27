@@ -11,11 +11,10 @@ static char *part_1(int len, char *date) {
     }
     new[j] = ' ';
     j++;
-    for (i = len - 5; i < len - 1; i++) {
+    for (i = len - 5; i < len; i++) {
         new[j] = date[i];
         j++;
     }
-    new[len] = ' ';
     return new;
 }
 
@@ -42,6 +41,7 @@ static char *l_change_date(char *date, long n, s_flags *fl) {
     char *new = NULL;
     int diff = (dtime - n); 
 
+    date[len - 1] = '\0';
     if (!fl->T) {
         if (diff > 183 * 86400) {
             new = part_1(len, date);
@@ -50,10 +50,8 @@ static char *l_change_date(char *date, long n, s_flags *fl) {
             new = part_2(len, date);
         }
     }
-    else {
-        date[len - 1] = '\0';
+    else
         new = mx_strdup(&date[4]);
-    }
     return new;
 }
 
