@@ -16,9 +16,6 @@
 #include <sys/acl.h>
 #include <malloc/malloc.h>
 
-#define MAX_INT 2147483647
-#define MIN_INT -2147483648
-
 #define S_IFMT   0170000  /* type of file mask */
 #define S_IFIFO  0010000  /* named pipe (fifo) */
 #define S_IFCHR  0020000  /* character special */
@@ -105,6 +102,7 @@ char *mx_strjoin_for_path(char *argv, char *data);
 char *mx_change_argv(char *temp, int len);
 int mx_len_int(unsigned long n);
 void mx_flags_trig(char f, s_flags *trig);
+int mx_r_bubble_sort(char **arr, int size);
 void mx_vivod_total(t_list *names, char *argv);
 void mx_dir_name_print(int i, char *source);
 void mx_flag_one(t_list *names);

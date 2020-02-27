@@ -34,6 +34,7 @@ FILES = main \
 		mx_flag_p \
 		mx_list_reverse \
 		mx_change_argv \
+		mx_r_bubble_sort \
 
 LIBMX_A = libmx/libmx.a
 
