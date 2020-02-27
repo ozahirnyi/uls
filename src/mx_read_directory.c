@@ -1,19 +1,11 @@
  #include "uls.h"
 
-//static char *path_for_error(char *str) {
-//    int max_len = mx_strlen(str) - 1;
-//    int temp_len = max_len;
-//    char *res = NULL;
-//
-//    while (str[temp_len - 1] != '/')
-//        temp_len--;
-//    res = mx_strnew(max_len - temp_len);
-//    for (int i = 0; str[temp_len]; temp_len++) {
-//        res[i] = str[temp_len];
-//        i++;
-//    }
-//    return res;
-//}
+static void err_print(char *str) {
+    mx_printerr("uls: ");
+    mx_printerr(str);
+    mx_printerr(": Permission denied\n");
+    free(str);
+}
 
 static bool trig_a(char *d_name, s_flags *flags) {
     if (flags->a
@@ -57,14 +49,7 @@ int mx_read_directory(char *source, t_list **files, s_flags *flags) {
     }
     else {
         buf = mx_change_argv(source, mx_strlen(source));
-        if (!buf) {
-            buf = mx_strnew(2);
-            buf[0] = ' ';
-            buf[1] = '\0';
-        }
-        mx_printerr("uls: ");
-        perror(buf);
-        free(buf);
+        err_print(buf);
     }
     return flags->err;
 }

@@ -1,26 +1,13 @@
 #include "uls.h"
 
-//static void ways_counter(char **argv, s_index *index, char **files, char **dirs) {
-//    int i = 0;
-//    int j = 0;
-//
-//    for (; index->index < index->argc; index->index++) {
-//        if (lstat(argv[index->index], &lt) != -1) {
-//            if ((lt.st_mode & S_IFMT) == S_IFDIR)
-//                i++;
-//            else
-//                j++;
-//        }
-//        else {
-//            flags->err = 1;
-//            mx_printerr("uls: ");
-//            perror(argv[index->index]);
-//        }
-//    }
-//    fikles
-//}
-//
-static char **ways_creator(char **argv, char **files, s_index *index, s_flags *flags) {
+static void err_print(s_flags *flags, char **argv, int index) {
+    flags->err = 1;
+    mx_printerr("uls: ");
+    perror(argv[index]);
+}
+
+static char **ways_creator(char **argv, char **files,
+                           s_index *index, s_flags *flags) {
     int i = 0;
     int j = 0;
     char **dirs = (char **)malloc(sizeof(char *) * index->argc - index->index + 1);
@@ -28,27 +15,21 @@ static char **ways_creator(char **argv, char **files, s_index *index, s_flags *f
 
     for (; index->index < index->argc; index->index++) {
         if (lstat(argv[index->index], &lt) != -1) {
-            if ((lt.st_mode & S_IFMT) == S_IFDIR) {
-                dirs[i] = mx_strdup(argv[index->index]);
-                i++;
-            }
-            else {
-                files[j] = mx_strdup(argv[index->index]);
-                j++;
-            }
+            if ((lt.st_mode & S_IFMT) == S_IFDIR)
+                dirs[i++] = mx_strdup(argv[index->index]);
+            else
+                files[j++] = mx_strdup(argv[index->index]);
         }
-        else {
-            flags->err = 1;
-            mx_printerr("uls: ");
-            perror(argv[index->index]);
-        }
+        else
+            err_print(flags, argv, index->index);
     }
     files[j] = NULL;
     dirs[i] = NULL;
     return dirs;
 }
 
-static void parser(char **argv, s_index *index, s_flags *flags, char **files) {
+static void parser(char **argv, s_index *index,
+                   s_flags *flags, char **files) {
     char **dirs = NULL;
 
     for (; argv[index->index] && argv[index->index][0] == '-'
@@ -80,7 +61,7 @@ int main(int argc, char **argv) {
         parser(argv, index, flags, files);
     else
         mx_read_uls(NULL,NULL, flags);
-    system("leaks -q uls");
-    printf("\n\n");
+//    system("leaks -q uls");
+//    printf("\n\n");
     return flags->err;
 }

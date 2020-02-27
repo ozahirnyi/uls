@@ -1,19 +1,23 @@
 #include "uls.h"
 
+static void sort_dirs(s_flags *flags, char **arr, int size) {
+    if (!flags->r)
+        mx_bubble_sort(arr, size);
+    else
+        mx_r_bubble_sort(arr, size);
+}
+
 static void p_dir_name_S_t(t_list *data, s_flags *flags, char *source) {
     if (flags->p)
         mx_flag_p(data, flags, source);
-//    if (flags->dir_print)
-//        mx_dir_name_print(i, source);
     if (flags->S)
         mx_sort_by_size(data, source);
     else if (flags->t)
         mx_sort_by_time(flags, data, source);
 }
 
-static void work_with_flags(s_flags *flags, t_list *data, char *source) {
-    t_list *sorted_list = NULL;
-
+static void work_with_flags(s_flags *flags, t_list *data,
+                            char *source, t_list *sorted_list) {
     p_dir_name_S_t(data, flags, source);
     if (flags->r)
         data = mx_list_reverse(data);
@@ -38,20 +42,21 @@ static void work_with_flags(s_flags *flags, t_list *data, char *source) {
 
 static void list_creator(s_flags *flags, char *dirs, char **files, int i) {
     t_list *data = NULL;
+    t_list *sorted_list = NULL;
 
     if (dirs) {
         if (flags->dir_print)
             mx_dir_name_print(i, dirs);
         mx_read_directory(dirs, &data, flags);
         mx_sort_list(data, &mx_compare);
-        work_with_flags(flags, data, dirs);
+        work_with_flags(flags, data, dirs, sorted_list);
     }
     else {
         flags->Y = 1;
         for (int i = 0; files[i]; i++)
             mx_push_front(&data, files[i]);
         mx_sort_list(data, &mx_compare);
-        work_with_flags(flags, data, dirs);
+        work_with_flags(flags, data, dirs, sorted_list);
     }
 }
 
@@ -60,7 +65,7 @@ void mx_read_uls(char **files, char **dirs, s_flags *flags) {
     int size_dirs = mx_arrlen(dirs);
 
     if (files && *files) {
-        mx_bubble_sort(files, size_files);
+        sort_dirs(flags, files, size_files);
         list_creator(flags, NULL, files, 0);
         if (size_dirs > 0)
             mx_printchar('\n');
@@ -68,7 +73,7 @@ void mx_read_uls(char **files, char **dirs, s_flags *flags) {
     if (dirs && *dirs) {
         if (dirs[1] || (dirs[0] && size_files > 0))
             flags->dir_print = 1;
-        mx_bubble_sort(dirs, size_dirs);
+        sort_dirs(flags, dirs, size_dirs);
         for (int i = 0; dirs[i]; i++)
             list_creator(flags, dirs[i], NULL, i);
     }
