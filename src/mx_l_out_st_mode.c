@@ -29,7 +29,7 @@ static void part_1(unsigned long n, char *prava) {
     prava[6] = (n & S_IXGRP) == S_IXGRP ? 'x' : '-';
     prava[7] = (n & S_IROTH) == S_IROTH ? 'r' : '-';
     prava[8] = (n & S_IWOTH) == S_IWOTH ? 'w' : '-';
-    prava[9] = (n & S_IXGRP) == S_IXGRP ? 'x' : '-';
+    prava[9] = (n & S_IXOTH) == S_IXOTH ? 'x' : '-';
     if ((n & S_IFBLK) == S_IFBLK)
         prava[0] = 'b';
     else if ((n & S_IFDIR) == S_IFDIR)

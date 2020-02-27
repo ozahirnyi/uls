@@ -114,5 +114,6 @@ void mx_sort_by_time(s_flags *fl, t_list *files, char *argv);
 void mx_sort_by_size(t_list *files, char *argv);
 s_flags *mx_flags_obnulyator(void);
 void mx_flag_p(t_list *files, s_flags *fl, char *argv);
+int mx_r_bubble_sort(char **arr, int size);
 
 #endif
