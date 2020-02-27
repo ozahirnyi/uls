@@ -14,14 +14,24 @@ static char **ways_creator(char **argv, char **files,
     struct stat lt;
 
     for (; index->index < index->argc; index->index++) {
-        if (stat(argv[index->index], &lt) != -1) {
-            if ((lt.st_mode & S_IFMT) == S_IFDIR)
-                dirs[i++] = mx_strdup(argv[index->index]);
-            else
-                files[j++] = mx_strdup(argv[index->index]);
+        if (flags->l) {
+            if (lstat(argv[index->index], &lt) != -1) {
+                if ((lt.st_mode & S_IFMT) == S_IFDIR)
+                    dirs[i++] = mx_strdup(argv[index->index]);
+                else
+                    files[j++] = mx_strdup(argv[index->index]);
+            } else
+                err_print(flags, argv, index->index);
         }
-        else
-            err_print(flags, argv, index->index);
+        else {
+            if (stat(argv[index->index], &lt) != -1) {
+                if ((lt.st_mode & S_IFMT) == S_IFDIR)
+                    dirs[i++] = mx_strdup(argv[index->index]);
+                else
+                    files[j++] = mx_strdup(argv[index->index]);
+            } else
+                err_print(flags, argv, index->index);
+        }
     }
     files[j] = NULL;
     dirs[i] = NULL;
@@ -43,6 +53,12 @@ static void parser(char **argv, s_index *index,
     }
     files = (char **)malloc(sizeof(char *) * index->argc - index->index + 1);
     dirs = ways_creator(argv, files, index, flags);
+    printf("\n\n");
+    for (int i = 0; files[i]; i++)
+        printf("%s\n", files[i]);
+    for (int i = 0; dirs[i]; i++)
+        printf("%s\n", dirs[i]);
+    printf("\n\n");
     mx_read_uls(files, dirs, flags);
     mx_del_strarr(&dirs);
     free(files);

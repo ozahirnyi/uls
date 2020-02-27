@@ -34,6 +34,7 @@ static void work_with_flags(s_flags *flags, t_list *data,
     }
     else
         mx_print_uls(&data, sorted_list);
+//        sorted_list = NULL;
     while (data) {
         free(data->data);
         mx_pop_front(&data);
@@ -71,6 +72,7 @@ void mx_read_uls(char **files, char **dirs, s_flags *flags) {
             mx_printchar('\n');
     }
     if (dirs && *dirs) {
+        flags->X = 1;
         if (dirs[1] || (dirs[0] && size_files > 0))
             flags->dir_print = 1;
         sort_dirs(flags, dirs, size_dirs);
