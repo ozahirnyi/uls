@@ -41,11 +41,11 @@ int mx_read_directory(char *source, t_list **files, s_flags *flags) {
         if ((lt.st_mode & S_IFMT) == S_IFDIR) {
             part_1(files, flags, directory);
         }
-        else {
-            buf = mx_strdup(source);
-            mx_push_front(files, buf);
-            flags->X = 0;
-        }
+//        else {
+//            buf = mx_strdup(source);
+//            mx_push_front(files, buf);
+//            flags->X = 0;
+//        }
     }
     else {
         buf = mx_change_argv(source, mx_strlen(source));

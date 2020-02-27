@@ -14,7 +14,7 @@ static char **ways_creator(char **argv, char **files,
     struct stat lt;
 
     for (; index->index < index->argc; index->index++) {
-        if (lstat(argv[index->index], &lt) != -1) {
+        if (stat(argv[index->index], &lt) != -1) {
             if ((lt.st_mode & S_IFMT) == S_IFDIR)
                 dirs[i++] = mx_strdup(argv[index->index]);
             else
