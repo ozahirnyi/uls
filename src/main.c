@@ -16,7 +16,7 @@ static char **ways_creator(char **argv, char **files,
     for (; index->index < index->argc; index->index++) {
         if (flags->l) {
             if (lstat(argv[index->index], &lt) != -1) {
-                if ((lt.st_mode & S_IFMT) == S_IFDIR)
+                if ((lt.st_mode & MX_IFMT) == MX_IFDIR)
                     dirs[i++] = mx_strdup(argv[index->index]);
                 else
                     files[j++] = mx_strdup(argv[index->index]);
@@ -25,7 +25,7 @@ static char **ways_creator(char **argv, char **files,
         }
         else {
             if (stat(argv[index->index], &lt) != -1) {
-                if ((lt.st_mode & S_IFMT) == S_IFDIR)
+                if ((lt.st_mode & MX_IFMT) == MX_IFDIR)
                     dirs[i++] = mx_strdup(argv[index->index]);
                 else
                     files[j++] = mx_strdup(argv[index->index]);

@@ -21,24 +21,33 @@ static int mx_for_plus_and_dog(char *prava, char *str) {
 }
 
 static void part_1(unsigned long n, char *prava) {
-    prava[1] = (n & S_IRUSR) == S_IRUSR ? 'r' : '-';
-    prava[2] = (n & S_IWUSR) == S_IWUSR ? 'w' : '-';
-    prava[3] = (n & S_IXUSR) == S_IXUSR ? 'x' : '-';
-    prava[4] = (n & S_IRGRP) == S_IRGRP ? 'r' : '-';
-    prava[5] = (n & S_IWGRP) == S_IWGRP ? 'w' : '-';
-    prava[6] = (n & S_IXGRP) == S_IXGRP ? 'x' : '-';
-    prava[7] = (n & S_IROTH) == S_IROTH ? 'r' : '-';
-    prava[8] = (n & S_IWOTH) == S_IWOTH ? 'w' : '-';
-    prava[9] = (n & S_IXOTH) == S_IXOTH ? 'x' : '-';
-    if ((n & S_IFBLK) == S_IFBLK)
-        prava[0] = 'b';
-    else if ((n & S_IFDIR) == S_IFDIR)
+    prava[1] = (n & MX_IRUSR) == MX_IRUSR ? 'r' : '-';
+    prava[2] = (n & MX_IWUSR) == MX_IWUSR ? 'w' : '-';
+    prava[3] = (n & MX_IXUSR) == MX_IXUSR ? 'x' : '-';
+    prava[4] = (n & MX_IRGRP) == MX_IRGRP ? 'r' : '-';
+    prava[5] = (n & MX_IWGRP) == MX_IWGRP ? 'w' : '-';
+    prava[6] = (n & MX_IXGRP) == MX_IXGRP ? 'x' : '-';
+    prava[7] = (n & MX_IROTH) == MX_IROTH ? 'r' : '-';
+    prava[8] = (n & MX_IWOTH) == MX_IWOTH ? 'w' : '-';
+    prava[9] = (n & MX_IXOTH) == MX_IXOTH ? 'x' : '-';
+}
+
+static void part_2(unsigned long n, char *prava) {
+    if ((n & MX_IFMT) == MX_IFREG)
+        prava[0] = '-';
+    else if ((n & MX_IFMT) == MX_IFDIR)
         prava[0] = 'd';
-    else if ((n & S_IFLNK) == S_IFLNK)
-        prava[0] = 'l';
-    else if ((n & S_IFCHR) == S_IFCHR)
+    else if ((n & MX_IFMT) == MX_IFBLK)
+        prava[0] = 'b';
+    else if ((n & MX_IFMT) == MX_IFCHR)
         prava[0] = 'c';
-    else 
+    else if ((n & MX_IFMT) == MX_IFIFO)
+        prava[0] = 'p';
+    else if ((n & MX_IFMT) == MX_IFLNK)
+        prava[0] = 'l';
+    else if ((n & MX_IFMT) == MX_IFSOCK)
+        prava[0] = 's';
+    else
         prava[0] = '-';
 }
 
@@ -47,11 +56,12 @@ void mx_l_out_st_mode(unsigned long n, char *name) {
     int len = 0;
 
     part_1(n, prava);
-    if ((n & S_ISUID) == S_ISUID)
+    part_2(n, prava);
+    if ((n & MX_ISUID) == MX_ISUID)
         prava[3] = 's';
-    if ((n & S_ISGID) == S_ISGID)
+    if ((n & MX_ISGID) == MX_ISGID)
         prava[6] = 's';
-    if ((n & S_ISVTX) == S_ISVTX)
+    if ((n & MX_ISVTX) == MX_ISVTX)
         prava[9] = 't';
     len = mx_for_plus_and_dog(prava, name);
     mx_printstr(prava);

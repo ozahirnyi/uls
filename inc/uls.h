@@ -15,23 +15,30 @@
 #include <sys/xattr.h>
 #include <sys/acl.h>
 
-#define S_IFMT   0170000  /* type of file mask */
-#define S_IFCHR  0020000  /* character special */
-#define S_IFDIR  0040000  /* directory */
-#define S_IFBLK  0060000  /* block special */
-#define S_IFLNK  0120000  /* symbolic link */
-#define S_ISUID  0004000  /* set user id on execution */
-#define S_ISGID  0002000  /* set group id on execution */
-#define S_ISVTX  0001000  /* save swapped text even after use */
-#define S_IRUSR  0000400  /* R ead permission, owner */
-#define S_IWUSR  0000200  /* W rite permission, owner */
-#define S_IXUSR  0000100  /* X execute/search permission, owner */
-#define S_IRGRP  0000040  /* R ead permission, group */
-#define S_IWGRP  0000020  /* W rite permission, group */
-#define S_IXGRP  0000010  /* X execute/search permission, group */
-#define S_IROTH  0000004  /* R ead permission, other */
-#define S_IWOTH  0000002  /* W rite permission, other */
-#define S_IXOTH  0000001  /* X execute/search permission, other */
+#define MX_IFMT   0170000  /* type of file mask */
+#define MX_IFIFO  0010000  /* named pipe (fifo) */
+#define MX_IFCHR  0020000  /* character special */
+#define MX_IFDIR  0040000  /* directory */
+#define MX_IFBLK  0060000  /* block special */
+#define MX_IFREG  0100000  /* regular */
+#define MX_IFLNK  0120000  /* symbolic link */
+#define MX_IFSOCK 0140000  /* socket */
+#define MX_IFWHT  0160000  /* whiteout */
+#define MX_ISUID  0004000  /* set user id on execution */
+#define MX_ISGID  0002000  /* set group id on execution */
+#define MX_ISVTX  0001000  /* save swapped text even after use */
+#define MX_IRWXU  0000700  /* RWX mask for owner */
+#define MX_IRUSR  0000400        /* R ead permission, owner */
+#define MX_IWUSR  0000200        /* W rite permission, owner */
+#define MX_IXUSR  0000100        /* X execute/search permission, owner */
+#define MX_IRWXG  0000070  /* RWX mask for group */
+#define MX_IRGRP  0000040        /* R ead permission, group */
+#define MX_IWGRP  0000020        /* W rite permission, group */
+#define MX_IXGRP  0000010        /* X execute/search permission, group */
+#define MX_IRWXO  0000007  /* RWX mask for other */
+#define MX_IROTH  0000004        /* R ead permission, other */
+#define MX_IWOTH  0000002        /* W rite permission, other */
+#define MX_IXOTH  0000001        /* X execute/search permission, other */
 #define MX_MAJOR(x) ((int32_t)(((u_int32_t)(x) >> 24) & 0xff))
 #define MX_MINOR(x) ((int32_t)((x) & 0xffffff))
 
@@ -64,10 +71,10 @@ typedef struct t_flags {
     bool S;//+
     bool r;//-
     bool f;//-
-    bool X;//triger na papku
-    bool dir_print;
-    bool err;
-    bool Y;
+    bool X;//
+    bool dir_print;//
+    bool err;//
+    bool Y;//
 } s_flags;
 
 t_list *mx_list_reverse(t_list *files);

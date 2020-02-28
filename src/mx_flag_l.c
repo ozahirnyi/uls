@@ -32,8 +32,8 @@ static void part_1_of_cycle(int *otstup, struct stat buf,
         mx_l_out_st_uid(buf.st_uid, otstup[2]);
     if (!fl->o)
         mx_l_out_st_gid(buf.st_gid, otstup[3]);
-    if ((buf.st_mode & S_IFMT) == S_IFBLK
-        || (buf.st_mode & S_IFMT) == S_IFCHR) {
+    if ((buf.st_mode & MX_IFMT) == MX_IFBLK
+        || (buf.st_mode & MX_IFMT) == MX_IFCHR) {
         if (!fl->X)
             mx_l_out_st_dev(buf.st_rdev, otstup[5] + 1, otstup[6]);
         else
@@ -55,7 +55,7 @@ static void part_2_of_cycle(struct stat buf, t_list *p,
     amcb[3] = buf.st_birthtime;
     mx_l_out_st_mtime(amcb, fl);
     mx_is_ascii(data, mx_strlen(data));
-    if ((buf.st_mode & S_IFLNK) == S_IFLNK)
+    if ((buf.st_mode & MX_IFLNK) == MX_IFLNK)
         part_for_link(full_path, p->data);
     else
         mx_printstr(data);
