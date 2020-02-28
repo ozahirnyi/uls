@@ -19,6 +19,7 @@
 #define S_IFMT   0170000  /* type of file mask */
 #define S_IFIFO  0010000  /* named pipe (fifo) */
 #define S_IFCHR  0020000  /* character special */
+#define MX_IFIFO 0010000  /* pipe */
 #define S_IFDIR  0040000  /* directory */
 #define S_IFBLK  0060000  /* block special */
 #define S_IFREG  0100000  /* regular */
@@ -72,10 +73,10 @@ typedef struct t_flags {
     bool S;//+
     bool r;//-
     bool f;//-
-    bool X;//triger na papku
-    bool dir_print;
-    bool err;
-    bool Y;
+    bool X;//
+    bool dir_print;//
+    bool err;//
+    bool Y;//
 } s_flags;
 
 t_list *mx_list_reverse(t_list *files);
