@@ -21,8 +21,10 @@ static void part_1(struct stat buf1, struct stat buf2,
 }
 
 static void part_2(char *full1, char *full2) {
-    mx_strdel(&full1);
-    mx_strdel(&full2);
+    if (malloc_size(full1))
+        free(full1);
+    if (malloc_size(full2))
+        free(full2);
 }
 
 void mx_sort_by_time(s_flags *fl, t_list *files, char *argv, s_flags *flags) {
@@ -39,7 +41,7 @@ void mx_sort_by_time(s_flags *fl, t_list *files, char *argv, s_flags *flags) {
             lstat(full_path1, &buf1);
             lstat(full_path2, &buf2);
             part_1(buf1, buf2, p, fl);
-            if (!flags->X)
+            if (flags->Y)
                 part_2(full_path1, full_path2);
             p = p->next;
         }

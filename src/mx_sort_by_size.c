@@ -1,8 +1,10 @@
 #include "uls.h"
 
 static void part_2(char *full1, char *full2) {
-    mx_strdel(&full1);
-    mx_strdel(&full2);
+    if (malloc_size(full1))
+        free(full1);
+    if (malloc_size(full2))
+        free(full2);
 }
 
 void mx_sort_by_size(t_list *files, char *argv, s_flags *flags) {
@@ -20,7 +22,7 @@ void mx_sort_by_size(t_list *files, char *argv, s_flags *flags) {
             lstat(full_path2, &buf2);
             if (buf1.st_size < buf2.st_size)
                 mx_list_swap(p);
-            if (!flags->X)
+            if (flags->Y)
                part_2(full_path1, full_path2);
             p = p->next;
         }

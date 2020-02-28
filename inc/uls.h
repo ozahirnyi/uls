@@ -14,6 +14,7 @@
 #include <sys/types.h>
 #include <sys/xattr.h>
 #include <sys/acl.h>
+#include <malloc/malloc.h>
 
 #define MX_IFMT   0170000  /* type of file mask */
 #define MX_IFIFO  0010000  /* named pipe (fifo) */

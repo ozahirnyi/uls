@@ -76,7 +76,7 @@ void mx_flag_l(t_list *names, char *argv, s_flags *flags) {
         lstat(full_path, &buf);
         part_1_of_cycle(otstup, buf, full_path, flags);
         part_2_of_cycle(buf, p, full_path, flags);
-        if (flags->Y)
+        if (flags->Y && full_path)
            mx_strdel(&full_path);
         p = p->next;
     }
