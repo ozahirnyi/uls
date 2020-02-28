@@ -1,7 +1,6 @@
 #ifndef ULS_H
 #define ULS_H
 
-// #include "libmx.h"
 #include "libmx/inc/libmx.h"
 #include <sys/stat.h>
 #include <time.h>
@@ -46,6 +45,8 @@
 typedef struct t_main {
     int argc;
     int index;
+    int i;
+    int j;
 } s_index;
 
 typedef struct t_print_uls {
@@ -105,6 +106,7 @@ void mx_flags_trig(char f, s_flags *trig);
 void mx_vivod_total(t_list *names, char *argv, s_flags *fl);
 void mx_dir_name_print(int i, char *source);
 void mx_flag_one(t_list *names);
+void mx_err_print(s_flags *flags, char **argv, int index);
 void mx_flag_d(char *source, t_list **files);
 void mx_list_swap(t_list *lst);
 void mx_sort_by_time(s_flags *fl, t_list *files, char *argv, s_flags *flags);
