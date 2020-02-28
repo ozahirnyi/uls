@@ -53,12 +53,6 @@ static void parser(char **argv, s_index *index,
     }
     files = (char **)malloc(sizeof(char *) * index->argc - index->index + 1);
     dirs = ways_creator(argv, files, index, flags);
-    printf("\n\n");
-    for (int i = 0; files[i]; i++)
-        printf("%s\n", files[i]);
-    for (int i = 0; dirs[i]; i++)
-        printf("%s\n", dirs[i]);
-    printf("\n\n");
     mx_read_uls(files, dirs, flags);
     mx_del_strarr(&dirs);
     free(files);

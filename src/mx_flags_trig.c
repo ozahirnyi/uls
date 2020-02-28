@@ -1,8 +1,11 @@
 #include "uls.h"
 
 static bool check_flag3(char f, s_flags *trig) {
-	if (f == 'g')
-		trig->g = 1;
+	if (f == 'g') {
+        trig->g = 1;
+        trig->one = 0;
+        trig->l = 1;
+    }
 	else if (f == 'T')
 		trig->T = 1;
 	else if (f == 'f')
@@ -24,6 +27,8 @@ static bool check_flag2(char f, s_flags *trig) {
 		trig->c = 0;
 		trig->u = 0;
 	}
+    else if (f == 'a')
+        trig->a = 1;
 	else if (f == 'c'){
 		trig->U = 0;
 		trig->c = 1;
@@ -42,14 +47,19 @@ static bool check_flag2(char f, s_flags *trig) {
 static bool check_flag1(char f, s_flags *trig) {
 	if (f == 'A')
 		trig->A = 1;
-	else if (f == 'a')
-		trig->a = 1;
-	else if (f == 'l')
-		trig->l = 1;
-	else if (f == 'o')
-		trig->o = 1;
-	else if (f == '1')
-		trig->one = 1;
+	else if (f == 'l') {
+        trig->l = 1;
+        trig->one = 0;
+    }
+	else if (f == 'o') {
+        trig->o = 1;
+        trig->one = 0;
+        trig->l = 1;
+    }
+	else if (f == '1') {
+        trig->one = 1;
+        trig->l = 0;
+    }
 	else if (f == 'S')
 		trig->S = 1;
 	else
@@ -63,7 +73,7 @@ void mx_flags_trig(char f, s_flags *trig) {
 	    mx_printerr("uls: illegal option -- ");
 	    write(2, &f, 1);
 	    write(2, "\n", 1);
-        mx_printerr("usage: ls [-ATSUalo1gtucfpr] [file ...]\n");
+        mx_printerr("usage: uls [-ATSUalo1gtucpr] [file ...]\n");
         exit(1);
     }
 }

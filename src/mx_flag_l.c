@@ -68,8 +68,9 @@ void mx_flag_l(t_list *names, char *argv, s_flags *flags) {
     struct stat buf;
     int *otstup = create_otstup(argv, names, flags);
     t_list *p = names;
-    
-    mx_vivod_total(names, argv, flags);
+
+    if (names && flags->X)
+        mx_vivod_total(names, argv, flags);
     while (p) {
         char *full_path = mx_strjoin_for_path(argv, p->data, flags);
         lstat(full_path, &buf);

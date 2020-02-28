@@ -23,12 +23,10 @@ static void work_with_flags(s_flags *flags, t_list *data,
         data = mx_list_reverse(data);
     if (flags->one)
         mx_flag_one(data);
-    else if (flags->l || flags->o || flags->g) {
-            mx_flag_l(data, source, flags);
-    }
+    else if (flags->l)
+        mx_flag_l(data, source, flags);
     else
         mx_print_uls(&data, sorted_list);
-//        sorted_list = NULL;
     while (data) {
         free(data->data);
         mx_pop_front(&data);
