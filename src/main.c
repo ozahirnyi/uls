@@ -1,40 +1,53 @@
 #include "../inc/uls.h"
 
-static void err_print(s_flags *flags, char **argv, int index) {
-    flags->err = 1;
-    mx_printerr("uls: ");
-    perror(argv[index]);
+static bool cycle_body_stat(s_index *index, char **argv,
+                            char **dirs, char **files) {
+    struct stat lt;
+    bool res = 0;
+
+    if (lstat(argv[index->index], &lt) != -1) {
+        if ((lt.st_mode & MX_IFMT) == MX_IFDIR)
+            dirs[index->i++] = mx_strdup(argv[index->index]);
+        else
+            files[index->j++] = mx_strdup(argv[index->index]);
+        res = 1;
+    }
+    return res;
+}
+
+static bool cycle_body_lstat(s_index *index, char **argv,
+                             char **dirs, char **files) {
+    struct stat lt;
+    bool res = 0;
+
+    if (stat(argv[index->index], &lt) != -1) {
+        if ((lt.st_mode & MX_IFMT) == MX_IFDIR)
+            dirs[index->i++] = mx_strdup(argv[index->index]);
+        else
+            files[index->j++] = mx_strdup(argv[index->index]);
+        res = 1;
+    }
+    return res;
 }
 
 static char **ways_creator(char **argv, char **files,
                            s_index *index, s_flags *flags) {
-    int i = 0;
-    int j = 0;
     char **dirs = (char **)malloc(sizeof(char *) * index->argc - index->index + 1);
-    struct stat lt;
 
     for (; index->index < index->argc; index->index++) {
         if (flags->l) {
-            if (lstat(argv[index->index], &lt) != -1) {
-                if ((lt.st_mode & MX_IFMT) == MX_IFDIR)
-                    dirs[i++] = mx_strdup(argv[index->index]);
-                else
-                    files[j++] = mx_strdup(argv[index->index]);
-            } else
-                err_print(flags, argv, index->index);
+            if (cycle_body_lstat(index, argv, dirs, files));
+            else
+                mx_err_print(flags, argv, index->index);
         }
         else {
-            if (stat(argv[index->index], &lt) != -1) {
-                if ((lt.st_mode & MX_IFMT) == MX_IFDIR)
-                    dirs[i++] = mx_strdup(argv[index->index]);
-                else
-                    files[j++] = mx_strdup(argv[index->index]);
-            } else
-                err_print(flags, argv, index->index);
+            if (cycle_body_stat(index, argv, dirs, files));
+            else
+                mx_err_print(flags, argv, index->index);
         }
     }
-    files[j] = NULL;
-    dirs[i] = NULL;
+    files[index->j] = NULL;
+    dirs[index->i] = NULL;
     return dirs;
 }
 
@@ -43,7 +56,7 @@ static void parser(char **argv, s_index *index,
     char **dirs = NULL;
 
     for (; argv[index->index] && argv[index->index][0] == '-'
-        && argv[index->index][1]; index->index++) {
+           && argv[index->index][1]; index->index++) {
         if (argv[index->index][1] == '-' && !argv[index->index][2]) {
             index->index++;
             break;
@@ -65,6 +78,8 @@ int main(int argc, char **argv) {
 
     index->argc = argc;
     index->index = 1;
+    index->i = 0;
+    index->j = 0;
     flags->err = 0;
     flags->Y = 0;
     if (argc > 1)
