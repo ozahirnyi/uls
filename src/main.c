@@ -1,4 +1,4 @@
-#include "uls.h"
+#include "../inc/uls.h"
 
 static bool cycle_body_stat(s_index *index, char **argv,
                             char **dirs, char **files) {
@@ -56,7 +56,7 @@ static void parser(char **argv, s_index *index,
     char **dirs = NULL;
 
     for (; argv[index->index] && argv[index->index][0] == '-'
-        && argv[index->index][1]; index->index++) {
+           && argv[index->index][1]; index->index++) {
         if (argv[index->index][1] == '-' && !argv[index->index][2]) {
             index->index++;
             break;
@@ -86,7 +86,5 @@ int main(int argc, char **argv) {
         parser(argv, index, flags, files);
     else
         mx_read_uls(NULL,NULL, flags);
-//    system("leaks -q uls");
-//    printf("\n\n");
     return flags->err;
 }

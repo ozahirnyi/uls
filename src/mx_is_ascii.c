@@ -1,4 +1,4 @@
-#include "uls.h"
+#include "../inc/uls.h"
 
 void mx_is_ascii(char *str, int len) {
     if (isatty(1) != 0) {

@@ -1,4 +1,4 @@
-#include "uls.h"
+#include "../inc/uls.h"
 
 static int mx_for_plus_and_dog(char *prava, char *str) {
     acl_t acl = NULL;

@@ -68,13 +68,13 @@ FILES = mx_printchar \
 		mx_sort_list \
 		mx_arrlen \
 
-SRC_PREFFIX = $(addprefix "src/", $(FILES))
+SRC_PREFFIX = $(addprefix src/, $(FILES))
 
-DEL_SRC = $(addsuffix ".c", $(FILES))
+DEL_SRC = $(addsuffix .c, $(FILES))
 
-SRC = $(addsuffix ".c", $(SRC_PREFFIX))
+SRC = $(addsuffix .c, $(SRC_PREFFIX))
 
-OBJ = $(addsuffix ".o", $(FILES))
+OBJ = $(addsuffix .o, $(FILES))
 
 FLAGS = -std=c11 -Wall -Wextra -Werror -Wpedantic
 
@@ -82,9 +82,9 @@ LIB = inc/libmx.h
 
 all: install
 
-install:
-	@cp $(LIB) .
-	@cp $(SRC) .
+install: libmx
+
+libmx: $(SRC) $(INC)
 	@clang $(CFLAGS) -c $(SRC)
 	@ar -rc $(NAME) $(OBJ)
 	@mkdir -p obj
@@ -96,8 +96,5 @@ uninstall: clean
 
 clean:
 	@rm -rf obj
-	@rm -rf $(DEL_SRC)
-	@rm -rf $(OBJ)
-	@rm -rf libmx.h
 
 reinstall: uninstall install

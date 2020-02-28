@@ -1,4 +1,4 @@
-#include "uls.h"
+#include "../inc/uls.h"
 
 static bool check_flag3(char f, s_flags *trig) {
 	if (f == 'g') {

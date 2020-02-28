@@ -1,4 +1,4 @@
-#include "uls.h"
+#include "../inc/uls.h"
 
 static int is_user(unsigned int st_uid, int n) {
     struct passwd *username;

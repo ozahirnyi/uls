@@ -1,4 +1,4 @@
-#include "uls.h"
+#include "../inc/uls.h"
 
 char *mx_strjoin_for_path(char *argv, char *data, s_flags *flags) {
     char *part = NULL;

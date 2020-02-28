@@ -1,4 +1,4 @@
-#include "uls.h"
+#include "../inc/uls.h"
 
 static void part_2(char *full1, char *full2) {
     if (malloc_size(full1))

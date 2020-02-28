@@ -1,4 +1,4 @@
-#include "uls.h"
+#include "../inc/uls.h"
 
 static int part(int trig, struct stat buf) {
     int n = 0;

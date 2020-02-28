@@ -1,4 +1,4 @@
-#include "uls.h"
+#include "../inc/uls.h"
 
 void mx_flag_p(t_list *files, s_flags *fl, char *argv) {
 	struct stat buf;

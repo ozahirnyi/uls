@@ -1,4 +1,4 @@
-#include "uls.h"
+#include "../inc/uls.h"
 
 static void sort_dirs(s_flags *flags, char **arr, int size) {
     if (!flags->r)

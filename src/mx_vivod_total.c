@@ -1,4 +1,4 @@
-#include "uls.h"
+#include "../inc/uls.h"
 
 void mx_vivod_total(t_list *names, char *argv, s_flags *fl) {
 	int sum = 0;
