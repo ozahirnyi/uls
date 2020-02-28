@@ -6,6 +6,7 @@
 #include <stdlib.h>
 #include <fcntl.h>
 #include <stdbool.h>
+#include <malloc/malloc.h>
 
 void mx_printint(int n);
 void mx_del_intarr(int ***arr, int size);

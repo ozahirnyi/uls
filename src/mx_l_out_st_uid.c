@@ -1,4 +1,4 @@
-#include "uls.h"
+#include "../inc/uls.h"
 
 void mx_l_out_st_uid(unsigned int n, int otstup) {
     struct passwd *username;

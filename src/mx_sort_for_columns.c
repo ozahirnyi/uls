@@ -1,4 +1,4 @@
-#include "uls.h"
+#include "../inc/uls.h"
 
 static void counter_zero(int *counter, int columns, int *i) {
     if (*counter == columns) {

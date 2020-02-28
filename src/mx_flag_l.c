@@ -1,4 +1,4 @@
-#include "uls.h"
+#include "../inc/uls.h"
 
 static int *create_otstup(char *argv, t_list *names, s_flags *flags) {
     int *otstup = (int *) malloc(sizeof(int) * 7);

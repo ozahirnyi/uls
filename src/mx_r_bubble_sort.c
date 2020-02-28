@@ -1,4 +1,4 @@
-#include "uls.h"
+#include "../inc/uls.h"
 
 int mx_r_bubble_sort(char **arr, int size) {
     int count = 0;

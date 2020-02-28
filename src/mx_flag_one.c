@@ -1,4 +1,4 @@
-#include "uls.h"
+#include "../inc/uls.h"
 
 void mx_flag_one(t_list *files) {
     t_list *p = files;

@@ -35,32 +35,30 @@ FILES = main \
 		mx_list_reverse \
 		mx_change_argv \
 		mx_r_bubble_sort \
+		mx_err_print \
 
-LIBMX_A = libmx/libmx.a
-
-SRC_PREFFIX = $(addprefix "src/", $(FILES))
+SRC_PREFFIX = $(addprefix src/, $(FILES))
 
 HEADER = inc/uls.h
 
-DEL_SRC = $(addsuffix ".c", $(FILES))
+DEL_SRC = $(addsuffix .c, $(FILES))
 
-SRC = $(addsuffix ".c", $(SRC_PREFFIX))
+SRC = $(addsuffix .c, $(SRC_PREFFIX))
 
-SRC_COMPILE = $(addsuffix ".c", $(FILES))
+SRC_COMPILE = $(addsuffix .c, $(SRC_PREFFIX))
 
-OBJ = $(addsuffix ".o", $(FILES))
+OBJ = $(addsuffix .o, $(FILES))
 
 CFLAGS = -std=c11 -Werror -Wall -Wextra -Wpedantic
 
-LIB_A = libmx.a
+LIB_A = libmx/libmx.a
 
 all: install
 
-install:
+install: uls
+
+uls : $(SRC) $(INC)
 	@make -C libmx install
-	@cp $(HEADER) .
-	@cp $(SRC) .
-	@cp $(LIBMX_A) .
 	@clang $(CFLAGS) -c $(SRC_COMPILE)
 	@clang $(CFLAGS) $(OBJ) $(LIB_A) -o $(NAME)
 	@mkdir -p obj
@@ -74,9 +72,5 @@ uninstall: clean
 clean:
 	@make -C libmx clean
 	@rm -rf obj
-	@rm -rf $(DEL_SRC)
-	@rm -rf $(OBJ)
-	@rm -rf $(LIB_A)
-	@rm -rf uls.h
 
 reinstall: uninstall install

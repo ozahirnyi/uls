@@ -1,4 +1,4 @@
-#include "uls.h"
+#include "../inc/uls.h"
 
 static char *part_1(int len, char *date) {
     int i;

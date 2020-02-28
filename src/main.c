@@ -1,4 +1,4 @@
-#include "uls.h"
+#include "../inc/uls.h"
 
 static void err_print(s_flags *flags, char **argv, int index) {
     flags->err = 1;
@@ -71,7 +71,5 @@ int main(int argc, char **argv) {
         parser(argv, index, flags, files);
     else
         mx_read_uls(NULL,NULL, flags);
-//    system("leaks -q uls");
-//    printf("\n\n");
     return flags->err;
 }

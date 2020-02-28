@@ -1,4 +1,4 @@
-#include "uls.h"
+#include "../inc/uls.h"
 
 static void part_1(struct stat buf1, struct stat buf2,
                    t_list *p, s_flags *fl) {

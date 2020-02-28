@@ -1,4 +1,4 @@
-#include "uls.h"
+#include "../inc/uls.h"
 
 int mx_longest_name(t_list *list) {
     t_list *buf = list;

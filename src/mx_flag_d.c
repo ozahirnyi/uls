@@ -1,4 +1,4 @@
-#include "uls.h"
+#include "../inc/uls.h"
 
 void mx_flag_d(char *source, t_list **files) {
 	int i = 0;

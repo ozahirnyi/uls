@@ -1,4 +1,4 @@
-#include "uls.h"
+#include "../inc/uls.h"
 
 int mx_lines_count(int files_count, int *columns, int longest_name) {
     struct winsize window;

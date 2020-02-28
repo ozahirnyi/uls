@@ -1,4 +1,4 @@
-#include "uls.h"
+#include "../inc/uls.h"
 
 static void tab_write(char *str, int longest_name) {
     int len = mx_strlen(str);

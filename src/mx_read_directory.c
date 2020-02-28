@@ -1,4 +1,4 @@
- #include "uls.h"
+#include "../inc/uls.h"
 
 static void err_print(char *str) {
     mx_printerr("uls: ");
