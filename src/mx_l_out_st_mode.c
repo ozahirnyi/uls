@@ -30,15 +30,24 @@ static void part_1(unsigned long n, char *prava) {
     prava[7] = (n & S_IROTH) == S_IROTH ? 'r' : '-';
     prava[8] = (n & S_IWOTH) == S_IWOTH ? 'w' : '-';
     prava[9] = (n & S_IXOTH) == S_IXOTH ? 'x' : '-';
-    if ((n & S_IFBLK) == S_IFBLK)
-        prava[0] = 'b';
-    else if ((n & S_IFDIR) == S_IFDIR)
+}
+
+static void part_2(unsigned long n, char *prava) {
+    if ((n & S_IFMT) == S_IFREG)
+        prava[0] = '-';
+    else if ((n & S_IFMT) == S_IFDIR)
         prava[0] = 'd';
-    else if ((n & S_IFLNK) == S_IFLNK)
-        prava[0] = 'l';
-    else if ((n & S_IFCHR) == S_IFCHR)
+    else if ((n & S_IFMT) == S_IFBLK)
+        prava[0] = 'b';
+    else if ((n & S_IFMT) == S_IFCHR)
         prava[0] = 'c';
-    else 
+    else if ((n & S_IFMT) == S_IFIFO)
+        prava[0] = 'p';
+    else if ((n & S_IFMT) == S_IFLNK)
+        prava[0] = 'l';
+    else if ((n & S_IFMT) == S_IFSOCK)
+        prava[0] = 's';
+    else
         prava[0] = '-';
 }
 
@@ -47,6 +56,7 @@ void mx_l_out_st_mode(unsigned long n, char *name) {
     int len = 0;
 
     part_1(n, prava);
+    part_2(n, prava);
     if ((n & S_ISUID) == S_ISUID)
         prava[3] = 's';
     if ((n & S_ISGID) == S_ISGID)
