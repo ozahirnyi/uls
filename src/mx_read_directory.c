@@ -2,9 +2,7 @@
 
 static void err_print(char *str) {
     mx_printerr("uls: ");
-    mx_printerr(str);
-    mx_printerr(": Permission denied\n");
-    free(str);
+    perror(str);
 }
 
 static bool trig_a(char *d_name, s_flags *flags) {
@@ -38,16 +36,10 @@ int mx_read_directory(char *source, t_list **files, s_flags *flags) {
 
     if (directory) {
         stat(source, &lt);
-        if ((lt.st_mode & S_IFMT) == S_IFDIR) {
-            part_1(files, flags, directory);
-        }
-        else {
-            buf = mx_strdup(source);
-            mx_push_front(files, buf);
-            flags->X = 0;
-        }
+        part_1(files, flags, directory);
     }
     else {
+        flags->err = 1;
         buf = mx_change_argv(source, mx_strlen(source));
         err_print(buf);
     }

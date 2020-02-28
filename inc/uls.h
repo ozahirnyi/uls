@@ -16,9 +16,6 @@
 #include <sys/acl.h>
 #include <malloc/malloc.h>
 
-#define MAX_INT 2147483647
-#define MIN_INT -2147483648
-
 #define S_IFMT   0170000  /* type of file mask */
 #define S_IFIFO  0010000  /* named pipe (fifo) */
 #define S_IFCHR  0020000  /* character special */

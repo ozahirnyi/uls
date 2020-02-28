@@ -10,9 +10,13 @@ int mx_lines_count(int files_count, int *columns, int longest_name) {
         return lines;
     }
     *columns = window.ws_col / longest_name;
-    if (files_count % *columns == 0)
-        lines = files_count / *columns;
+    if (columns[0] != 0 && files_count != 0) {
+        if (files_count % *columns == 0)
+            lines = files_count / *columns;
+        else
+            lines = (files_count / *columns) + 1;
+        return lines;
+    }
     else
-        lines = (files_count / *columns) + 1;
-    return lines;
+        return 0;
 }
