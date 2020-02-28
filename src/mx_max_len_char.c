@@ -17,7 +17,7 @@ static int is_group(unsigned int st_gid, int n) {
     return n;
 }
 
-int mx_max_len_char(t_list *src, int trig, char *argv) {
+int mx_max_len_char(t_list *src, int trig, char *argv, s_flags *flags) {
     int len = 0;
     t_list *p = src;
     struct stat buf;
@@ -25,7 +25,7 @@ int mx_max_len_char(t_list *src, int trig, char *argv) {
     char *full_path = NULL;
 
     while (p) {
-        full_path = mx_strjoin_for_path(argv, p->data);
+        full_path = mx_strjoin_for_path(argv, p->data, flags);
         lstat(full_path, &buf);
         if (trig == 1)
             n = is_user(buf.st_uid, n);
@@ -34,7 +34,8 @@ int mx_max_len_char(t_list *src, int trig, char *argv) {
         if (n > len)
             len = n;
         p = p->next;
-        mx_strdel(&full_path);
+        if (flags->Y)
+            mx_strdel(&full_path);
     }
     return len;
 }

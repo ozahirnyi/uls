@@ -1,6 +1,6 @@
 #include "uls.h"
 
-void mx_l_out_st_gid(unsigned long n, int otstup, s_flags *fl) {
+void mx_l_out_st_gid(unsigned long n, int otstup) {
     struct group *gr;
     int i;
 
@@ -13,10 +13,8 @@ void mx_l_out_st_gid(unsigned long n, int otstup, s_flags *fl) {
     }
     else {
         mx_printint(n);
-        if (fl->X) {
-            for (i = 0; i < otstup - mx_len_int(n); i++) {
-                mx_printchar(' ');
-            }
+        for (i = 0; i < otstup - mx_len_int(n); i++) {
+            mx_printchar(' ');
         }
     }
     mx_printchar(' ');

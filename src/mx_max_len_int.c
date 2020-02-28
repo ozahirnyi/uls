@@ -16,7 +16,7 @@ static int part(int trig, struct stat buf) {
     return n;
 }
 
-int mx_max_len_int(t_list *names, int trig, char *argv) {
+int mx_max_len_int(t_list *names, int trig, char *argv, s_flags *flags) {
     int len = 0;
     t_list *p = names;
     struct stat buf;
@@ -24,13 +24,14 @@ int mx_max_len_int(t_list *names, int trig, char *argv) {
     char *full_path = NULL;
 
     while (p) {
-        full_path = mx_strjoin_for_path(argv, p->data);
+        full_path = mx_strjoin_for_path(argv, p->data, flags);
         lstat(full_path, &buf);
         n = part(trig, buf);
         if (n > len)
             len = n;
         p = p->next;
-        mx_strdel(&full_path);
+        if (flags->Y)
+            mx_strdel(&full_path);
     }
     return len;
 }

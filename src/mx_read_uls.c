@@ -11,9 +11,9 @@ static void p_dir_name_S_t(t_list *data, s_flags *flags, char *source) {
     if (flags->p)
         mx_flag_p(data, flags, source);
     if (flags->S)
-        mx_sort_by_size(data, source);
+        mx_sort_by_size(data, source, flags);
     else if (flags->t)
-        mx_sort_by_time(flags, data, source);
+        mx_sort_by_time(flags, data, source, flags);
 }
 
 static void work_with_flags(s_flags *flags, t_list *data,
@@ -24,12 +24,6 @@ static void work_with_flags(s_flags *flags, t_list *data,
     if (flags->one)
         mx_flag_one(data);
     else if (flags->l || flags->o || flags->g) {
-        if (!flags->X)
-            while (data) {
-                mx_flag_l(data, data->data, flags);
-                data = data->next;
-            }
-        else
             mx_flag_l(data, source, flags);
     }
     else
