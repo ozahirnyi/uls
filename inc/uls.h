@@ -2,7 +2,7 @@
 #define ULS_H
 
 // #include "libmx.h"
-#include "libmx/inc/libmx.h"
+#include "../libmx/inc/libmx.h"
 #include <sys/stat.h>
 #include <time.h>
 #include <dirent.h>
